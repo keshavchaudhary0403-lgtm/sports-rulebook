@@ -1,0 +1,1897 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sports Rulebook</title>
+<meta name="description" content="Rules of 24 sports — cricket, football, kabaddi, chess and more — in Hindi and English. Searchable, with read-aloud.">
+<meta name="theme-color" content="#c6f432">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E %3Crect width="32" height="32" rx="8" fill="%23c6f432"/%3E %3Cpath d="M6 10.6c3.2-1.8 6.6-1.8 10 0v14c-3.4-1.8-6.8-1.8-10 0zM16 10.6c3.4-1.8 6.8-1.8 10 0v14c-3.2-1.8-6.6-1.8-10 0z" fill="none" stroke="%2314160f" stroke-width="2.1" stroke-linejoin="round"/%3E %3Cpath d="M9.2 15h3.4M9.2 18.6h3.4M19.4 15h3.4M19.4 18.6h3.4" stroke="%2314160f" stroke-width="1.7" stroke-linecap="round"/%3E %3Ccircle cx="25" cy="7" r="3.6" fill="%2314160f"/%3E %3C/svg%3E'>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="Sports Rulebook">
+<meta property="og:description" content="Rules of 24 sports in Hindi and English — searchable, with read-aloud.">
+<meta property="og:image" content="/icon-512.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script>
+  (function(){var t=null;try{t=localStorage.getItem('krb-theme')}catch(e){}
+  if(t!=='dark')t='light';
+  document.documentElement.dataset.theme=t;})();
+</script>
+<style>
+:root{
+  --bg:#f5f4ef; --bg2:#ffffff; --glass:rgba(255,255,255,.66); --glass2:rgba(255,255,255,.9);
+  --text:#14160f; --muted:#5f6457; --line:rgba(20,22,15,.1); --chip:rgba(20,22,15,.05);
+  --shadow:0 1px 2px rgba(20,22,15,.04),0 12px 32px -14px rgba(20,22,15,.18);
+  --lime:#c6f432; --accent:#4d7c0f;
+  --b1:#c6f432; --b2:#2dd4bf; --b3:#fdba74; --blob:.4; --grid:rgba(20,22,15,.07);
+  --brand:linear-gradient(100deg,#4d7c0f 0%,#0f9f6e 50%,#0e7490 100%);
+  --c:var(--accent); --r:22px;
+  --fh:"Space Grotesk","Noto Sans Devanagari",system-ui,sans-serif;
+  --fb:"Inter","Noto Sans Devanagari",system-ui,sans-serif;
+  --fm:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0c08; --bg2:#13160f; --glass:rgba(22,26,18,.6); --glass2:rgba(26,30,21,.92);
+    --text:#f1f4ea; --muted:#9aa190; --line:rgba(255,255,255,.08); --chip:rgba(255,255,255,.06);
+    --shadow:0 12px 40px -16px rgba(0,0,0,.75); --accent:#c6f432; --blob:.2; --grid:rgba(255,255,255,.045);
+    --brand:linear-gradient(100deg,#d4ff3a 0%,#3ef0a0 50%,#38d6ff 100%); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0c08; --bg2:#13160f; --glass:rgba(22,26,18,.6); --glass2:rgba(26,30,21,.92);
+    --text:#f1f4ea; --muted:#9aa190; --line:rgba(255,255,255,.08); --chip:rgba(255,255,255,.06);
+    --shadow:0 12px 40px -16px rgba(0,0,0,.75); --accent:#c6f432; --blob:.2; --grid:rgba(255,255,255,.045);
+    --brand:linear-gradient(100deg,#d4ff3a 0%,#3ef0a0 50%,#38d6ff 100%); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--fb);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+mark{background:color-mix(in srgb,var(--c) 30%,transparent);color:inherit;border-radius:4px;padding:0 2px}
+::selection{background:color-mix(in srgb,var(--c) 35%,transparent)}
+
+/* ---------- Ambient background ---------- */
+.bgfx{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bgfx i{position:absolute;border-radius:50%;filter:blur(90px);opacity:var(--blob);
+  animation:drift 24s ease-in-out infinite alternate;transition:background 1s}
+.bgfx i:nth-child(1){width:55vmax;height:55vmax;background:var(--b1);top:-25vmax;left:-15vmax}
+.bgfx i:nth-child(2){width:50vmax;height:50vmax;background:var(--b2);bottom:-28vmax;right:-18vmax;animation-delay:-8s}
+.bgfx i:nth-child(3){width:32vmax;height:32vmax;background:var(--b3);top:35%;left:45%;animation-delay:-15s}
+.bgfx::after{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(var(--grid) 1px,transparent 1px);background-size:22px 22px;
+  mask-image:linear-gradient(to bottom,#000 0%,transparent 70%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,transparent 70%)}
+@keyframes drift{to{transform:translate(9vmax,7vmax) scale(1.18)}}
+
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+
+/* ---------- Nav ---------- */
+.navwrap{position:sticky;top:0;z-index:30;padding:12px 0 6px;isolation:isolate}
+.navwrap::before{content:"";position:absolute;inset:0 0 -18px;z-index:-1;pointer-events:none;
+  background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  mask-image:linear-gradient(#000 78%,transparent);-webkit-mask-image:linear-gradient(#000 78%,transparent)}
+.nav{display:flex;align-items:center;gap:10px;padding:8px 8px 8px 14px;background:var(--glass);
+  backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);
+  border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--fh);font-weight:700;font-size:17px;letter-spacing:-.02em;white-space:nowrap}
+.logo .mk{width:36px;height:36px;flex:none;display:block;filter:drop-shadow(0 6px 14px rgba(120,160,0,.35));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.logo:hover .mk{transform:rotate(-10deg) scale(1.06)}
+.logo .mk .ball{transform-origin:24px 10px;animation:bounce 2.4s ease-in-out infinite}
+@keyframes bounce{50%{transform:translateY(-2px)}}
+.logo .tx b{font-weight:700}
+.logo .tx span{font-weight:500;color:var(--muted);margin-left:4px}
+.strig{flex:1;display:flex;align-items:center;gap:10px;min-width:0;padding:9px 12px;border-radius:12px;border:1px solid var(--line);
+  background:var(--chip);color:var(--muted);font-size:14px;text-align:left;transition:border-color .2s,background .2s}
+.strig:hover{border-color:color-mix(in srgb,var(--c) 50%,var(--line));background:var(--glass2)}
+.strig span{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+kbd{font-family:var(--fm);font-size:11px;padding:2px 6px;border-radius:6px;border:1px solid var(--line);background:var(--bg2);color:var(--muted)}
+.seg{display:flex;background:var(--chip);border:1px solid var(--line);border-radius:12px;padding:3px;position:relative}
+.seg button{border:0;background:transparent;padding:6px 10px;border-radius:9px;font-size:13px;font-weight:600;color:var(--muted);transition:.25s;white-space:nowrap}
+.seg button.on{background:var(--bg2);color:var(--text);box-shadow:0 2px 8px -2px rgba(0,0,0,.18)}
+.ibtn{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:12px;border:1px solid var(--line);background:var(--chip);transition:.25s}
+.ibtn:hover{background:var(--glass2);transform:rotate(-12deg)}
+.ibtn svg{width:18px;height:18px}
+.navlink{font-size:14px;font-weight:600;color:var(--muted);padding:8px 12px;border-radius:10px;white-space:nowrap;transition:.2s}
+.navlink:hover,.navlink.on{color:var(--text);background:var(--chip)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 2px 4px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;display:flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;font-size:14px;font-weight:500;
+  background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:.25s}
+.tab:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--tc) 50%,var(--line))}
+.tab.on{background:var(--tc);color:#fff;border-color:transparent;box-shadow:0 8px 20px -8px var(--tc)}
+.tab.on.home{color:var(--bg)}
+
+/* ---------- Reveal ---------- */
+.rv{opacity:0;transform:translateY(18px) scale(.985);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+
+main.wrap{padding-top:22px;padding-bottom:28px;min-height:70vh}
+.alt{display:block;color:var(--muted);font-size:.9em;margin-top:3px;font-weight:400}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;
+  background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(10px)}
+.kicker .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 #22c55e;animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}100%{box-shadow:0 0 0 10px rgba(34,197,94,0)}}
+.grad{background:var(--brand);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.glass{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);
+  border-radius:var(--r);box-shadow:var(--shadow)}
+
+/* ---------- Home ---------- */
+.hero{padding:44px 0 26px;text-align:center}
+.hero h1{font-family:var(--fh);font-size:clamp(38px,7vw,80px);line-height:1.04;letter-spacing:-.04em;margin:18px auto 14px;max-width:16ch;font-weight:700}
+.hero p{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:56ch;margin:0 auto 26px}
+.bigsearch{display:flex;align-items:center;gap:12px;width:min(640px,100%);margin:0 auto;padding:16px 18px;border-radius:18px;
+  font-size:16px;color:var(--muted);text-align:left;position:relative;overflow:hidden}
+.bigsearch::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:var(--brand);background-size:200%;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:shine 5s linear infinite;opacity:.8}
+.bigsearch span{flex:1}
+.bigsearch .typer::after{content:"|";animation:blink 1s steps(1) infinite;margin-left:1px}
+@keyframes blink{50%{opacity:0}}
+.sugg{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.sugg button{border:1px solid var(--line);background:var(--glass);padding:6px 13px;border-radius:999px;font-size:13px;font-weight:500;transition:.2s;backdrop-filter:blur(8px)}
+.sugg button:hover{transform:translateY(-2px);border-color:var(--c)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px;margin:30px auto 0}
+.stat{padding:16px;text-align:center}
+.stat b{display:block;font-family:var(--fh);font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+
+.ticker{overflow:hidden;margin:34px 0 26px;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;gap:10px;width:max-content;animation:scroll 50s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.track a{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:14px;white-space:nowrap}
+.track a i{width:7px;height:7px;border-radius:50%;background:var(--tc);font-style:normal}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:8px 0 14px}
+.sec-h h2{font-family:var(--fh);font-size:clamp(22px,3vw,30px);letter-spacing:-.03em;margin:0;line-height:1.2}
+.sec-h p{margin:0;color:var(--muted);font-size:14px}
+
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gc{grid-column:span 2;position:relative;overflow:hidden;padding:22px;min-height:250px;display:flex;flex-direction:column;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s;isolation:isolate}
+.gc.big{grid-column:span 3;min-height:270px}
+.gc::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .35s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--tc) 22%,transparent),transparent 60%)}
+.gc::after{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(150deg,color-mix(in srgb,var(--tc) 14%,transparent),transparent 55%)}
+.gc:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--tc) 45%,var(--line));box-shadow:0 24px 50px -24px var(--tc)}
+.gc:hover::before{opacity:1}
+.gc .emo{position:absolute;right:-8px;top:-6px;font-size:96px;line-height:1;opacity:.95;transform:rotate(12deg);transition:transform .5s cubic-bezier(.2,.7,.2,1);filter:drop-shadow(0 12px 18px rgba(0,0,0,.18))}
+.gc:hover .emo{transform:rotate(-6deg) scale(1.1) translateY(4px)}
+.gc .tag{display:inline-flex;align-self:flex-start;font-size:12px;font-weight:600;color:var(--tc);background:color-mix(in srgb,var(--tc) 13%,transparent);padding:4px 10px;border-radius:999px}
+.gc h3{font-family:var(--fh);font-size:28px;letter-spacing:-.03em;margin:12px 0 2px;line-height:1.15}
+.gc h3 .alt{font-size:15px;font-family:var(--fb);letter-spacing:0}
+.gc .meta{font-size:13px;color:var(--muted);margin-bottom:14px}
+.gc .fl{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.gc .fl span{font-size:12px;padding:5px 9px;border-radius:9px;background:var(--chip);border:1px solid var(--line)}
+.gc .go{position:absolute;right:18px;bottom:18px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
+  background:var(--tc);color:#fff;transform:scale(.85);opacity:.9;transition:.35s}
+.gc:hover .go{transform:scale(1) rotate(-45deg);opacity:1}
+.gc .fl{padding-right:50px}
+
+.dyk{grid-column:span 4;padding:22px 24px;display:flex;flex-direction:column;gap:10px;min-height:200px;position:relative;overflow:hidden}
+.dyk .lbl{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dyk .lbl b{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.dyk .body{font-size:clamp(17px,2.2vw,21px);line-height:1.5;font-weight:500;transition:opacity .4s,transform .4s}
+.dyk .body.out{opacity:0;transform:translateY(8px)}
+.dyk .body .alt{font-size:.78em}
+.dyk .src{font-size:13px;color:var(--muted);margin-top:auto}
+.dyk .src b{color:var(--tc)}
+.dyk .bar{position:absolute;left:0;bottom:0;height:3px;background:var(--tc,var(--c));width:0}
+.dyk .bar.run{animation:fill 7s linear forwards}
+@keyframes fill{to{width:100%}}
+.gcard2{grid-column:span 6;padding:22px;display:flex;flex-direction:column;gap:14px;min-height:200px;position:relative;overflow:hidden;isolation:isolate;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s}
+.gcard2::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(150deg,color-mix(in srgb,var(--accent) 16%,transparent),transparent 60%)}
+.gcard2:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.gcard2 .top{display:flex;align-items:center;justify-content:space-between}
+.gcard2 .tag2{font-size:12px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);padding:4px 10px;border-radius:999px}
+.gcard2 .go2{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--text);color:var(--bg);transition:transform .35s}
+.gcard2:hover .go2{transform:rotate(-45deg)}
+.gcard2 .avs{display:flex;margin-top:auto;overflow:hidden;padding:2px}
+.gcard2 .avs span{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:21px;margin-left:-10px;
+  background:color-mix(in srgb,var(--tc) 22%,var(--bg2));border:2px solid var(--bg2);transition:margin .35s cubic-bezier(.2,.7,.2,1)}
+.gcard2 .avs span:first-child{margin-left:0}
+.gcard2 .avs span.more{font-size:13px;font-weight:700;font-family:var(--fh);color:var(--text);background:color-mix(in srgb,var(--text) 8%,var(--bg2))}
+.gcard2:hover .avs span{margin-left:-2px}
+.gcard2 h3{font-family:var(--fh);font-size:24px;letter-spacing:-.03em;margin:0;line-height:1.2}
+.gcard2 p{color:var(--muted);font-size:14px;margin:4px 0 0}
+
+/* ---------- Game page ---------- */
+.progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--c);z-index:60;box-shadow:0 0 12px var(--c);transition:width .1s}
+.ghero{position:relative;overflow:hidden;padding:30px 28px;margin-bottom:18px;isolation:isolate}
+.ghero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,color-mix(in srgb,var(--c) 26%,transparent),transparent 60%)}
+.ghero .emo{position:absolute;right:18px;top:50%;font-size:clamp(90px,16vw,170px);line-height:1;transform:translateY(-50%) rotate(10deg);
+  animation:float 6s ease-in-out infinite;filter:drop-shadow(0 20px 30px rgba(0,0,0,.25));opacity:.95}
+@keyframes float{50%{transform:translateY(-56%) rotate(4deg)}}
+.ghero h1{font-family:var(--fh);font-size:clamp(34px,5.5vw,60px);letter-spacing:-.04em;line-height:1.05;margin:12px 0 6px;max-width:70%}
+.ghero h1 .alt{font-size:.42em;letter-spacing:-.01em;margin-top:8px}
+.ghero .bd{color:var(--muted);font-size:14px;max-width:65%}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px;max-width:80%}
+.fact{padding:11px 13px;border-radius:14px;background:var(--glass2);border:1px solid var(--line)}
+.fact span{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fact b{font-size:14px;font-weight:600;line-height:1.35;display:block;margin-top:2px}
+.fact b .alt{font-size:12px}
+
+.glayout{display:grid;grid-template-columns:250px 1fr;gap:18px;align-items:start}
+.glayout>*{min-width:0}
+.toc{position:sticky;top:132px;padding:14px}
+.toc small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:2px 10px 8px}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:8px 10px;border-radius:10px;font-size:14px;color:var(--muted);transition:.2s;cursor:pointer;line-height:1.35}
+.toc a em{font-style:normal;font-family:var(--fm);font-size:12px;opacity:.7}
+.toc a:hover{color:var(--text);background:var(--chip)}
+.toc a.on{color:var(--text);background:color-mix(in srgb,var(--c) 14%,transparent);box-shadow:inset 3px 0 0 var(--c)}
+
+.tools{display:flex;gap:10px;margin-bottom:14px}
+.finput{flex:1;min-width:0;display:flex;align-items:center;gap:10px;padding:0 14px;border-radius:14px}
+.finput input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:15px;padding:12px 0}
+.finput:focus-within{border-color:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
+.pbtn{padding:0 16px;border-radius:14px;border:1px solid var(--line);background:var(--glass);font-size:14px;font-weight:600;white-space:nowrap;transition:.2s;backdrop-filter:blur(10px)}
+.pbtn:hover{border-color:var(--c)}
+
+.sec{margin-bottom:14px;overflow:hidden;scroll-margin-top:140px}
+.sec .shw{display:flex;align-items:center;gap:4px;padding-right:12px}
+.sec .shw .sh{flex:1;min-width:0}
+.sec .sh{width:100%;border:0;background:none;text-align:left;cursor:pointer;padding:18px 20px;display:flex;align-items:center;gap:14px;-webkit-tap-highlight-color:transparent}
+.sec .sh:active{background:var(--chip)}
+.sec .sb{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1)}
+.sec .sb>div{overflow:hidden;min-height:0}
+.sec.open .sb{grid-template-rows:1fr}
+.sec .n{flex:none;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-family:var(--fm);font-weight:600;font-size:14px;
+  background:var(--c);color:#fff;box-shadow:0 8px 18px -8px var(--c)}
+.sec .st{flex:1;font-family:var(--fh);font-size:19px;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.sec .st .alt{font-family:var(--fb);font-size:13px;letter-spacing:0}
+.sec .cnt{font-size:12px;color:var(--muted);white-space:nowrap}
+.sec .chev{transition:transform .35s;color:var(--muted)}
+.sec.open .chev{transform:rotate(180deg)}
+.rules{list-style:none;margin:0;padding:0 12px 12px}
+.rules li{display:grid;grid-template-columns:52px 1fr 36px;gap:6px;padding:13px 10px;border-top:1px solid var(--line);border-radius:12px;scroll-margin-top:160px;transition:background .3s}
+.rules li:hover{background:var(--chip)}
+.rules .num{font-family:var(--fm);font-size:12px;font-weight:600;color:var(--c);padding-top:3px}
+.rules .tx{font-size:15.5px;line-height:1.65}
+.rules .tx .alt{font-size:14px;margin-top:5px;padding-left:10px;border-left:2px solid color-mix(in srgb,var(--c) 40%,transparent)}
+.rules li.flash{animation:flash 2.6s ease}
+@keyframes flash{0%,35%{background:color-mix(in srgb,var(--c) 22%,transparent)}100%{background:transparent}}
+.hidden{display:none!important}
+
+/* ---------- Read aloud ---------- */
+.spk{width:34px;height:34px;flex:none;display:grid;place-items:center;border-radius:50%;border:1px solid transparent;background:transparent;
+  color:var(--muted);opacity:.6;transition:.2s;align-self:start;margin-top:-4px}
+.spk svg{width:17px;height:17px}
+.rules li:hover .spk,.spk:focus-visible{opacity:1}
+.spk:hover{opacity:1;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
+@media (hover:none){.spk{opacity:.85}}
+.lsn{display:inline-flex;align-items:center;gap:7px;flex:none;height:36px;padding:0 13px;border-radius:999px;font-size:13px;font-weight:600;
+  border:1px solid color-mix(in srgb,var(--c) 30%,var(--line));background:color-mix(in srgb,var(--c) 9%,transparent);color:var(--text);transition:.2s}
+.lsn svg{width:16px;height:16px;color:var(--c)}
+.lsn:hover{background:color-mix(in srgb,var(--c) 18%,transparent);transform:translateY(-1px)}
+.lsn.big{height:44px;padding:0 18px;font-size:14px;margin-top:16px;background:var(--c);color:#fff;border-color:transparent;box-shadow:0 10px 24px -10px var(--c)}
+.lsn.big svg{color:#fff}
+.lsn.big:hover{background:var(--c);filter:brightness(1.08)}
+.rules li.speaking{background:color-mix(in srgb,var(--c) 13%,transparent);box-shadow:inset 3px 0 0 var(--c)}
+.spk.on,.spk.eqon,.rules li.speaking .spk{opacity:1;color:#fff;background:var(--c);border-color:transparent}
+.spk.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 22%,transparent)}
+.lsn.on,.sec.speaking-h .lsn.on{background:var(--c);color:#fff;border-color:transparent}
+.lsn.on svg{color:#fff}
+.sec.speaking-h .lsn{opacity:1}
+.sec.speaking-h .lsn svg{color:#fff}
+.eq{display:inline-flex;align-items:flex-end;gap:2px;height:14px}
+.eq i{width:3px;background:currentColor;border-radius:2px;animation:eq .9s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:-.3s}.eq i:nth-child(3){animation-delay:-.6s}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+.dyk .lbl .acts{display:flex;gap:8px;align-items:center}
+.dyk .spk{opacity:1;border-color:var(--line);margin:0}
+
+.player{position:fixed;left:50%;bottom:16px;z-index:70;width:min(620px,calc(100% - 24px));transform:translate(-50%,140%);opacity:0;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .3s;pointer-events:none}
+.player.on{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.player .in{position:relative;overflow:hidden;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 10px;border-radius:20px;
+  background:var(--glass2);border:1px solid var(--line);box-shadow:0 24px 60px -18px rgba(0,0,0,.45);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4)}
+.player .pp{width:46px;height:46px;flex:none;border-radius:50%;border:0;display:grid;place-items:center;background:var(--c);color:#fff;box-shadow:0 8px 20px -8px var(--c)}
+.player .pp svg{width:20px;height:20px}
+.player .meta{flex:1;min-width:0}
+.player .meta small{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:600}
+.player .meta small b{color:var(--c)}
+.player .meta .now{font-size:14px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.player .note{font-size:12px;color:#b45309;margin-top:2px;line-height:1.3}
+.player .ctl{display:flex;align-items:center;gap:6px}
+.player .vl{display:flex;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:2px}
+.player .vl button{border:0;background:none;font-size:12px;font-weight:700;padding:5px 8px;border-radius:8px;color:var(--muted)}
+.player .vl button.on{background:var(--bg2);color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.player .sm{height:32px;min-width:32px;padding:0 8px;border-radius:10px;border:1px solid var(--line);background:var(--chip);font-size:12px;font-weight:700;display:grid;place-items:center}
+.player .sm svg{width:15px;height:15px}
+.player .pg{position:absolute;left:0;bottom:0;height:3px;background:var(--c);width:0;transition:width .4s}
+body.tts-on footer.wrap{padding-bottom:120px}
+@media (max-width:560px){
+  .player{bottom:10px}
+  .player .in{flex-wrap:wrap;gap:8px}
+  .player .meta{flex:1 1 calc(100% - 60px)}
+  .player .ctl{width:100%;justify-content:space-between}
+}
+.empty{color:var(--muted);text-align:center;padding:36px;border:1px dashed var(--line);border-radius:var(--r)}
+.nextg{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 24px;margin-top:24px;transition:.3s}
+.nextg:hover{transform:translateY(-3px);border-color:var(--tc)}
+.nextg small{color:var(--muted);font-size:13px}
+.nextg b{display:block;font-family:var(--fh);font-size:24px;letter-spacing:-.03em}
+.nextg .e{font-size:48px}
+
+/* ---------- Guide ---------- */
+.tablewrap{overflow-x:auto;margin-bottom:30px;padding:0;background:var(--bg2)}
+.tablewrap tbody td,.tablewrap tbody th{background:var(--bg2)}
+.tablewrap tbody tr:hover td,.tablewrap tbody tr:hover th{background:color-mix(in srgb,var(--tc,var(--c)) 7%,var(--bg2))}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:720px;font-size:14px}
+th.sp{position:sticky;left:0;z-index:1;box-shadow:1px 0 0 var(--line)}
+tbody th.sp{color:color-mix(in srgb,var(--tc) 78%,var(--text));font-family:var(--fh);font-size:15px;font-weight:600}
+th.sp a{display:flex;align-items:center;gap:8px;white-space:nowrap}
+th.sp .e{font-size:20px}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+thead th{font-family:var(--fh);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:color-mix(in srgb,var(--text) 4%,var(--bg2));white-space:nowrap}
+thead th .e{font-size:20px;margin-right:6px}
+tbody th{color:var(--muted);font-weight:600;font-size:13px;white-space:nowrap}
+tbody tr{transition:background .2s}
+tbody tr:hover{background:var(--chip)}
+tr:last-child td,tr:last-child th{border-bottom:0}
+td .alt{font-size:12px}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.term{padding:16px;transition:.3s;position:relative;overflow:hidden}
+.term:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--tc) 45%,var(--line))}
+.term small{font-size:12px;font-weight:600;color:var(--tc)}
+.term b{display:block;font-family:var(--fh);font-size:18px;letter-spacing:-.02em;margin:4px 0 4px;line-height:1.3}
+.term b .alt{font-family:var(--fb);font-size:13px;letter-spacing:0}
+.term p{margin:0;font-size:14px;color:var(--muted)}
+.term p .alt{font-size:13px;opacity:.85}
+
+/* ---------- Command palette ---------- */
+.pal{position:fixed;inset:0;z-index:80;display:none;background:rgba(4,5,10,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:9vh 16px 16px;justify-content:center;align-items:flex-start}
+.pal.on{display:flex;animation:fade .2s}
+@keyframes fade{from{opacity:0}}
+.panel{width:min(760px,100%);max-height:78vh;display:flex;flex-direction:column;background:var(--glass2);border:1px solid var(--line);border-radius:22px;
+  box-shadow:0 40px 100px -20px rgba(0,0,0,.5);overflow:hidden;animation:pop .28s cubic-bezier(.2,.9,.3,1.2);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+@keyframes pop{from{transform:translateY(-10px) scale(.97);opacity:0}}
+.phead{display:flex;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.phead input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:18px}
+.pchips{display:flex;gap:6px;overflow-x:auto;padding:10px 14px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.pchips:empty{display:none}
+.pchips button{flex:none;border:1px solid var(--line);background:var(--chip);padding:5px 11px;border-radius:999px;font-size:13px;font-weight:500}
+.pchips button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.plist{overflow-y:auto;padding:8px;overscroll-behavior:contain}
+.pgrp{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px 10px 6px}
+.pi{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:11px 12px;border-radius:14px;cursor:pointer;border:1px solid transparent}
+.pi .e{font-size:20px;line-height:1.3}
+.pi .m{font-size:12px;color:var(--muted);margin-bottom:3px}
+.pi .m b{color:var(--tc);font-weight:600}
+.pi .t{font-size:14.5px;line-height:1.55}
+.pi .t .alt{font-size:13px}
+.pi.sel{background:color-mix(in srgb,var(--tc) 12%,transparent);border-color:color-mix(in srgb,var(--tc) 35%,transparent)}
+.pfoot{display:flex;gap:16px;justify-content:space-between;padding:10px 16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.pfoot span{display:flex;gap:6px;align-items:center}
+.phint{padding:22px 14px;text-align:center;color:var(--muted)}
+.phint .sugg{margin-top:12px}
+
+footer.wrap{padding-top:8px;padding-bottom:40px;text-align:center;color:var(--muted);font-size:13px}
+footer .glass{padding:18px;border-radius:18px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .glayout{grid-template-columns:1fr}
+  .toc{position:static;display:flex;gap:6px;overflow-x:auto;padding:8px;scrollbar-width:none}
+  .toc::-webkit-scrollbar{display:none}
+  .toc small{display:none}
+  .toc a{flex:none;white-space:nowrap}
+  .toc a .alt{display:none}
+  .facts{grid-template-columns:repeat(2,1fr);max-width:100%}
+  .ghero h1,.ghero .bd{max-width:72%}
+}
+@media (max-width:760px){
+  .bento{grid-template-columns:1fr 1fr}
+  .gc,.gc.big{grid-column:span 2;min-height:220px}
+  .dyk{grid-column:span 2}.gcard2{grid-column:span 2;min-height:150px}
+  .gcard2 .avs span{width:38px;height:38px;font-size:18px;margin-left:-8px}
+  .gcard2:hover .avs span{margin-left:-8px}
+  .gcard2 .avs span.more{font-size:12px}
+  .nav .navlink,.strig kbd,.logo .tx{display:none}
+  .strig{padding:9px 10px}
+  .seg button{padding:6px 8px;font-size:12px}
+  .ghero{padding:22px 18px}
+  .ghero .emo{top:22px;right:8px;transform:rotate(10deg);font-size:84px}
+  @keyframes float{50%{transform:translateY(-6px) rotate(4deg)}}
+  .ghero h1,.ghero .bd{max-width:100%}
+  .ghero h1{padding-right:70px}
+  .rules li{grid-template-columns:40px 1fr 32px}
+  .sec .shw{padding-right:8px}
+  .sec .sh{padding:14px}
+  .stats{gap:8px}
+  .pal{padding:10px}
+  .panel{max-height:88vh}
+  .pfoot{display:none}
+}
+/* ---------- Toast ---------- */
+.toast{position:fixed;left:50%;top:84px;z-index:90;transform:translate(-50%,-12px);opacity:0;pointer-events:none;
+  width:max-content;max-width:calc(100% - 32px);padding:12px 16px;border-radius:14px;font-size:14px;line-height:1.45;text-align:center;
+  background:var(--text);color:var(--bg);box-shadow:0 16px 40px -12px rgba(0,0,0,.4);transition:.3s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.lbtn{display:none;font-size:13px;font-weight:700;font-family:var(--fb)}
+
+/* ---------- Phone: clean & spacious ---------- */
+@media (max-width:640px){
+  body{font-size:15px}
+  .wrap{padding:0 16px}
+  .navwrap{padding:10px 0 4px}
+  .nav{gap:8px;padding:6px;border-radius:16px}
+  .logo .mk{width:34px;height:34px}
+  .strig{padding:0 12px;height:40px;border-radius:12px}
+  .strig kbd{display:none}
+  #langSeg{display:none}
+  .lbtn{display:grid}
+  .ibtn{width:40px;height:40px}
+  .tabs{gap:6px;padding:8px 0 2px;max-height:56px;transition:max-height .3s ease,opacity .25s,padding .3s}
+  .tab{padding:6px 12px;font-size:13px}
+  body.tabs-hide .tabs{max-height:0;opacity:0;padding-top:0;padding-bottom:0;pointer-events:none}
+  main.wrap{padding-top:14px}
+
+  /* Home */
+  .hero{padding:22px 0 8px}
+  .hero h1{font-size:38px;line-height:1.08;margin:14px auto 10px}
+  .hero p{font-size:15px;margin-bottom:20px}
+  .bigsearch{padding:14px 16px;font-size:15px}
+  .bigsearch kbd{display:none}
+  .sugg{gap:6px;margin-top:14px}
+  .sugg button:nth-child(n+6){display:none}
+  .stats{margin-top:22px;gap:8px}
+  .stat{padding:12px 6px;border-radius:16px}
+  .stat b{font-size:26px}
+  .ticker{display:none}
+  .sec-h{margin:30px 0 12px;flex-direction:column;align-items:flex-start;gap:2px}
+  .sec-h h2{font-size:22px}
+  .bento{grid-template-columns:1fr 1fr;gap:10px}
+  .gc,.gc.big{grid-column:span 1;min-height:0;padding:16px;border-radius:18px;gap:0}
+  .gc .tag,.gc .fl,.gc .go{display:none}
+  .gc .emo{position:static;transform:none;font-size:30px;width:52px;height:52px;display:grid;place-items:center;border-radius:14px;
+    background:color-mix(in srgb,var(--tc) 14%,var(--bg2));filter:none;margin-bottom:12px}
+  .gc:hover .emo{transform:none}
+  .gc h3{font-size:18px;margin:0 0 2px}
+  .gc .meta{margin:0;font-size:12px}
+  .gc::before{display:none}
+  .dyk,.gcard2{grid-column:span 2}
+  .dyk{min-height:0;padding:18px}
+  .dyk .body{font-size:16px}
+  .gcard2{min-height:0;padding:18px}
+
+  /* Sport page */
+  .ghero{padding:20px 18px 18px;border-radius:22px;margin-bottom:14px}
+  .ghero .kicker{font-size:11px;padding:4px 10px;max-width:calc(100% - 70px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:inline-block}
+  .ghero .emo{top:16px;right:14px;font-size:52px;transform:rotate(8deg);animation:none}
+  .ghero h1{font-size:30px;padding-right:0;margin:14px 0 4px}
+  .ghero .bd{font-size:13px}
+  .facts{grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+  .fact{padding:10px 12px;border-radius:12px}
+  .fact span{font-size:10px}
+  .fact b{font-size:13px}
+  .lsn.big{width:100%;justify-content:center;height:48px;margin-top:16px;font-size:15px}
+  .toc{display:none}
+  .tools{margin-bottom:12px}
+  .tools .pbtn{display:none}
+  .finput input{padding:11px 0}
+  .sec{border-radius:18px;margin-bottom:12px;scroll-margin-top:90px}
+  .sec .shw{padding-right:10px}
+  .sec .sh{padding:14px 12px 14px 14px;gap:10px}
+  .sec .n{width:32px;height:32px;border-radius:10px;font-size:12px}
+  .sec .st{font-size:16px}
+  .sec .cnt{display:none}
+  .sec .shw .lsn{width:auto;padding:0 12px;height:34px}
+  .sec .shw .lsn span{display:inline}
+  .rules{padding:0 8px 8px}
+  .rules li{grid-template-columns:34px 1fr 34px;gap:4px;padding:14px 6px;scroll-margin-top:110px}
+  .rules .num{font-size:11px;padding-top:3px}
+  .rules .tx{font-size:15px;line-height:1.6}
+  .spk{opacity:1;color:color-mix(in srgb,var(--c) 70%,var(--muted));background:transparent;border:1px solid var(--line);width:32px;height:32px}
+  .spk svg{width:15px;height:15px}
+  .rules li{border-radius:0}
+  .rules li.speaking{border-radius:12px}
+  .nextg{padding:18px 20px}
+  .nextg b{font-size:20px}
+  .nextg .e{font-size:36px}
+  footer.wrap{font-size:12px}
+  footer .glass{padding:14px;border-radius:14px}
+
+  /* Guide */
+  .tablewrap{border-radius:18px}
+  th,td{padding:12px 14px}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="bgfx"><i></i><i></i><i></i></div>
+<div class="progress" id="prog"></div>
+
+<div class="navwrap"><div class="wrap">
+  <nav class="nav">
+    <a href="#/" class="logo" aria-label="Home"><svg class="mk" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="10" fill="#c6f432"/>
+      <path d="M7 11.2c2.9-1.6 5.9-1.6 9 0v12.6c-3.1-1.6-6.1-1.6-9 0zM16 11.2c3.1-1.6 6.1-1.6 9 0v12.6c-2.9-1.6-5.9-1.6-9 0z" fill="none" stroke="#14160f" stroke-width="1.9" stroke-linejoin="round"/>
+      <path d="M10 15.2h3M10 18.4h3M19 15.2h3M19 18.4h3" stroke="#14160f" stroke-width="1.5" stroke-linecap="round"/>
+      <circle class="ball" cx="24" cy="7.6" r="3.4" fill="#14160f"/>
+    </svg><span class="tx" id="logoTx"></span></a>
+    <button class="strig" id="strig" aria-label="Search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span id="strigTx"></span><kbd>Ctrl K</kbd>
+    </button>
+    <a href="#/guide" class="navlink" id="navGuide"></a>
+    <div class="seg" id="langSeg" role="group" aria-label="Language">
+      <button data-l="hi">हिंदी</button><button data-l="en">English</button>
+    </div>
+    <button class="ibtn lbtn" id="langBtn" aria-label="Switch language"></button>
+    <button class="ibtn" id="themeBtn" aria-label="Toggle theme"></button>
+  </nav>
+  <div class="tabs" id="tabs"></div>
+</div></div>
+
+<main class="wrap" id="app"></main>
+<footer class="wrap"><div class="glass" id="foot"></div></footer>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="player" id="player" aria-live="polite">
+  <div class="in">
+    <button class="pp" id="tPlay" aria-label="Play / pause"></button>
+    <div class="meta"><small id="tLabel"></small><div class="now" id="tNow"></div><div class="note hidden" id="tNote"></div></div>
+    <div class="ctl">
+      <div class="vl" role="group" aria-label="Voice language"><button data-v="hi">हिं</button><button data-v="en">EN</button></div>
+      <button class="sm" id="tPrev" aria-label="Previous"></button>
+      <button class="sm" id="tNext" aria-label="Next"></button>
+      <button class="sm" id="tRate" aria-label="Speed">1×</button>
+      <button class="sm" id="tStop" aria-label="Stop"></button>
+    </div>
+    <div class="pg" id="tPg"></div>
+  </div>
+</div>
+
+<div class="pal" id="pal" aria-hidden="true">
+  <div class="panel" role="dialog" aria-label="Search">
+    <div class="phead">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="pin" type="search" autocomplete="off" spellcheck="false">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="pchips" id="pchips"></div>
+    <div class="plist" id="plist"></div>
+    <div class="pfoot"><span><kbd>↑</kbd><kbd>↓</kbd> <em id="fNav"></em></span><span><kbd>Enter</kbd> <em id="fOpen"></em></span><span id="pcount"></span></div>
+  </div>
+</div>
+
+<script>
+/* ================= DATA ================= */
+const GAMES = [
+{ id:"cricket", name:["क्रिकेट","Cricket"], icon:"🏏", c:"#0d9488",
+  body:["ICC · नियम: MCC Laws of Cricket","ICC · Rules: MCC Laws of Cricket"],
+  facts:[[["खिलाड़ी","Players"],["11 प्रति टीम","11 per side"]],[["पिच","Pitch"],["22 गज (20.12 मी)","22 yards (20.12 m)"]],[["फॉर्मेट","Formats"],["Test · ODI · T20","Test · ODI · T20"]],[["ओवर","Over"],["6 गेंदें","6 balls"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम में 11 खिलाड़ी होते हैं। टॉस जीतने वाला कप्तान तय करता है कि पहले बल्लेबाज़ी करनी है या गेंदबाज़ी।","Each side has 11 players. The captain who wins the toss chooses whether to bat or bowl first."],
+    ["एक ओवर में 6 वैध गेंदें होती हैं। वाइड और नो-बॉल ओवर की गिनती में नहीं आतीं।","An over has 6 legal deliveries. Wides and no-balls don't count towards the over."],
+    ["एक ही गेंदबाज़ लगातार दो ओवर नहीं डाल सकता।","The same bowler cannot bowl two consecutive overs."],
+    ["जो टीम ज़्यादा रन बनाए वो जीतती है। Test में जीतने के लिए विरोधी की दोनों पारियाँ ख़त्म करनी होती हैं, वरना मैच ड्रॉ।","The team that scores more runs wins. In a Test you must dismiss the opponent twice to win, otherwise it's a draw."],
+    ["पिच 22 गज लंबी होती है; दोनों सिरों पर विकेट (3 स्टंप + 2 बेल) लगते हैं।","The pitch is 22 yards long, with a wicket (3 stumps + 2 bails) at each end."],
+    ["दोनों बल्लेबाज़ों के एक-दूसरे के छोर तक पहुँचने पर 1 रन बनता है।","One run is scored when both batters cross and reach the opposite ends."]]},
+  {t:["फॉर्मेट","Formats"], r:[
+    ["Test: 5 दिन, हर टीम की 2 पारियाँ, दिन में लगभग 90 ओवर।","Test: 5 days, 2 innings per side, about 90 overs per day."],
+    ["फॉलो-ऑन (Follow-on): Test में पहली पारी में 200+ रन की बढ़त हो तो विरोधी को तुरंत दोबारा बल्लेबाज़ी कराई जा सकती है।","Follow-on: in a Test, a first-innings lead of 200+ lets you make the opponent bat again straight away."],
+    ["ODI (वनडे): हर टीम 50 ओवर; एक गेंदबाज़ अधिकतम 10 ओवर।","ODI: 50 overs per side; a bowler can bowl a maximum of 10 overs."],
+    ["T20: हर टीम 20 ओवर; एक गेंदबाज़ अधिकतम 4 ओवर।","T20: 20 overs per side; a maximum of 4 overs per bowler."],
+    ["सुपर ओवर (Super Over): लिमिटेड ओवर मैच टाई होने पर 1-1 ओवर का मुक़ाबला; वो भी टाई हो तो नतीजा आने तक फिर सुपर ओवर।","Super Over: a tied limited-overs match goes to a one-over contest; if that ties too, it repeats until there is a result."],
+    ["DLS method: बारिश या रुकावट से ओवर घटें तो Duckworth-Lewis-Stern से नया टारगेट तय होता है।","DLS method: when rain or delays cut overs, the revised target is set using Duckworth-Lewis-Stern."]]},
+  {t:["आउट होने के तरीके","Dismissals"], r:[
+    ["बोल्ड (Bowled): गेंद सीधे स्टंप पर लगे और बेल गिर जाए।","Bowled: the ball hits the stumps and dislodges a bail."],
+    ["कैच (Caught): बल्ले या दस्ताने से लगी गेंद ज़मीन छूने से पहले फ़ील्डर पकड़ ले।","Caught: a fielder catches the ball off the bat or glove before it touches the ground."],
+    ["LBW (Leg Before Wicket): गेंद बल्ले से पहले पैड/शरीर पर लगे और स्टंप्स से टकराने वाली हो। लेग स्टंप के बाहर टप्पा खाई गेंद पर LBW नहीं होता।","LBW (Leg Before Wicket): the ball hits the pad/body before the bat and would have gone on to hit the stumps. No LBW if the ball pitched outside leg stump."],
+    ["रन आउट (Run Out): रन लेते समय बल्लेबाज़ के क्रीज़ में पहुँचने से पहले विकेट गिरा दिया जाए।","Run Out: the wicket is broken while a running batter is short of the crease."],
+    ["नॉन-स्ट्राइकर रन आउट (पहले 'Mankad'): गेंद फेंकने से पहले नॉन-स्ट्राइकर क्रीज़ छोड़ दे तो उसे रन आउट करना अब पूरी तरह वैध है।","Non-striker run out (formerly 'Mankad'): if the non-striker leaves the crease before the ball is released, running them out is now a fully legal run out."],
+    ["स्टंप्ड (Stumped): बल्लेबाज़ क्रीज़ से बाहर हो, रन न ले रहा हो, और विकेटकीपर बेल गिरा दे। नो-बॉल पर स्टंपिंग नहीं।","Stumped: the batter is out of the crease, not attempting a run, and the keeper breaks the wicket. Not possible off a no-ball."],
+    ["हिट विकेट (Hit Wicket): शॉट खेलते या रन शुरू करते समय बल्लेबाज़ बल्ले/शरीर से खुद स्टंप गिरा दे।","Hit Wicket: the batter breaks their own stumps with bat or body while playing a shot or setting off for a run."],
+    ["अन्य तरीके: फ़ील्डिंग में रुकावट (Obstructing the field — अब handled the ball भी इसी में), गेंद दो बार मारना, टाइम्ड आउट (नया बल्लेबाज़ समय पर तैयार न हो), रिटायर्ड आउट।","Other modes: Obstructing the field (now includes handled the ball), Hit the ball twice, Timed out (incoming batter not ready in time), Retired out."]]},
+  {t:["रन और एक्स्ट्रा","Runs & Extras"], r:[
+    ["बाउंड्री: गेंद ज़मीन छूकर बाउंड्री पार करे = 4 रन; बिना टप्पे सीधे पार करे = 6 रन।","Boundary: the ball crosses the rope after touching the ground = 4 runs; clears it on the full = 6 runs."],
+    ["वाइड (Wide): गेंद बल्लेबाज़ की पहुँच से बहुत दूर हो — 1 रन एक्स्ट्रा और गेंद दोबारा।","Wide: the ball is too far from the batter's reach — 1 extra run and the ball is bowled again."],
+    ["नो-बॉल (No-ball): गेंदबाज़ का अगला पैर पॉपिंग क्रीज़ से आगे हो, या कमर से ऊपर फुल टॉस (beamer) हो — 1 रन एक्स्ट्रा और गेंद दोबारा।","No-ball: the bowler's front foot lands beyond the popping crease, or a full toss above waist height (beamer) — 1 extra run and the ball is bowled again."],
+    ["फ्री हिट (Free Hit): लिमिटेड ओवर में नो-बॉल के बाद अगली गेंद फ्री हिट; इस पर बोल्ड, कैच या LBW नहीं — सिर्फ़ रन आउट जैसे कुछ तरीके लागू।","Free Hit: in limited-overs cricket the delivery after a no-ball is a free hit; the batter can't be bowled, caught or LBW — only a few modes like run out apply."],
+    ["बाई (Bye): गेंद बल्ले या शरीर को छुए बिना निकल जाए और बल्लेबाज़ रन लें।","Bye: runs taken when the ball passes without touching the bat or body."],
+    ["लेग बाई (Leg Bye): गेंद शरीर से लगकर निकले और रन लें — पर बल्लेबाज़ ने शॉट खेलने या बचने की कोशिश की हो।","Leg Bye: runs taken after the ball hits the body — only if the batter tried to play a shot or avoid the ball."],
+    ["पेनल्टी रन: बॉल टेम्परिंग, या ज़मीन पर रखे फ़ील्डर के हेलमेट से गेंद लगने जैसे मामलों में 5 पेनल्टी रन।","Penalty runs: 5 penalty runs for offences like ball tampering or the ball hitting a fielder's helmet lying on the ground."]]},
+  {t:["फ़ील्डिंग और पावरप्ले","Fielding & Powerplay"], r:[
+    ["ODI पावरप्ले: ओवर 1–10 में 30-गज़ घेरे के बाहर अधिकतम 2 फ़ील्डर; 11–40 में 4; 41–50 में 5।","ODI powerplays: overs 1–10 max 2 fielders outside the 30-yard circle; overs 11–40 max 4; overs 41–50 max 5."],
+    ["T20 पावरप्ले: ओवर 1–6 में घेरे के बाहर अधिकतम 2 फ़ील्डर; उसके बाद अधिकतम 5।","T20 powerplay: overs 1–6 max 2 fielders outside the circle; after that max 5."],
+    ["लेग साइड पर स्क्वायर लेग के पीछे 2 से ज़्यादा फ़ील्डर नहीं रख सकते।","No more than 2 fielders are allowed behind square leg on the leg side."],
+    ["बाउंसर (Bouncer): ODI में एक ओवर में कंधे से ऊपर अधिकतम 2, T20 में 1। ज़्यादा होने पर नो-बॉल।","Bouncers: ODIs allow 2 above-shoulder deliveries per over, T20s allow 1. Any more is a no-ball."],
+    ["स्लो ओवर रेट: तय समय में ओवर पूरे न हों तो बाकी ओवरों में घेरे के बाहर एक फ़ील्डर कम।","Slow over rate: if overs aren't completed on time, one fewer fielder is allowed outside the circle for the remaining overs."]]},
+  {t:["अंपायर, DRS और आधुनिक नियम","Umpires, DRS & Modern Rules"], r:[
+    ["मैदान पर 2 अंपायर, एक तीसरा (TV) अंपायर और मैच रेफ़री होते हैं।","There are two on-field umpires, a third (TV) umpire and a match referee."],
+    ["DRS (Decision Review System): हर टीम को सीमित रिव्यू मिलते हैं; रिव्यू गलत निकले तो एक रिव्यू कम, सही निकले तो बचा रहता है।","DRS (Decision Review System): each team gets a limited number of reviews; an unsuccessful review is lost, a successful one is retained."],
+    ["अंपायर्स कॉल (Umpire's Call): DRS में मामला बहुत करीबी हो तो मैदानी अंपायर का फ़ैसला ही बना रहता है और रिव्यू नहीं घटता।","Umpire's Call: when DRS shows a very marginal case, the on-field decision stands and the review is not lost."],
+    ["स्टॉप क्लॉक (Stop Clock): ODI/T20I में ओवरों के बीच 60 सेकंड में अगला ओवर शुरू करना होता है; 2 चेतावनी के बाद हर बार 5 रन पेनल्टी।","Stop Clock: in ODIs and T20Is the next over must start within 60 seconds; after 2 warnings, 5 penalty runs each time."],
+    ["गेंद चमकाने के लिए लार (saliva) लगाना प्रतिबंधित है।","Using saliva to shine the ball is banned."],
+    ["कंकशन सब्स्टिट्यूट: सिर पर चोट लगने पर उसी तरह का खिलाड़ी बदल सकते हैं।","Concussion Substitute: a like-for-like replacement is allowed after a head injury."],
+    ["इम्पैक्ट प्लेयर (Impact Player): IPL का नियम — मैच के दौरान एक खिलाड़ी बदल सकते हैं (इंटरनेशनल क्रिकेट में नहीं)।","Impact Player: an IPL rule — one player can be swapped in during the match (not used in international cricket)."]]}
+  ]},
+
+{ id:"football", name:["फुटबॉल","Football"], icon:"⚽", c:"#4f46e5",
+  body:["FIFA · नियम: IFAB Laws of the Game","FIFA · Rules: IFAB Laws of the Game"],
+  facts:[[["खिलाड़ी","Players"],["11 (GK सहित)","11 (incl. GK)"]],[["समय","Duration"],["90 मिनट (2×45)","90 min (2×45)"]],[["गोल","Goal"],["7.32 × 2.44 मी","7.32 × 2.44 m"]],[["पेनल्टी","Penalty"],["11 मी स्पॉट","11 m spot"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम में 11 खिलाड़ी, जिनमें 1 गोलकीपर। किसी टीम के 7 से कम खिलाड़ी रह जाएँ तो मैच नहीं चल सकता।","Each team has 11 players including 1 goalkeeper. A match can't continue if a team has fewer than 7."],
+    ["गोल तभी माना जाता है जब पूरी गेंद गोल लाइन पार करे — दोनों पोस्ट के बीच और क्रॉसबार के नीचे।","A goal counts only when the whole ball crosses the goal line, between the posts and under the crossbar."],
+    ["किक-ऑफ़ (Kick-off) से सीधे गोल किया जा सकता है।","A goal can be scored directly from the kick-off."],
+    ["गोलकीपर सिर्फ़ अपने पेनल्टी एरिया के अंदर गेंद को हाथ लगा सकता है।","The goalkeeper may handle the ball only inside their own penalty area."],
+    ["मैदान: इंटरनेशनल मैच में लंबाई 100–110 मी, चौड़ाई 64–75 मी। पेनल्टी एरिया गोल लाइन से 16.5 मी तक।","Pitch: international matches are 100–110 m long and 64–75 m wide. The penalty area extends 16.5 m from the goal line."]]},
+  {t:["समय और सब्स्टिट्यूशन","Time & Substitutions"], r:[
+    ["45-45 मिनट के 2 हाफ़; हाफ़-टाइम 15 मिनट तक। रेफ़री रुकावट का समय (stoppage time) जोड़ता है।","Two halves of 45 minutes; half-time up to 15 minutes. The referee adds stoppage time."],
+    ["एक्स्ट्रा टाइम (Extra Time): नॉकआउट मैच ड्रॉ होने पर 15-15 मिनट के 2 हाफ़।","Extra Time: knockout games level after 90 minutes play two further halves of 15 minutes."],
+    ["पेनल्टी शूटआउट (Penalty Shootout): दोनों टीमें बारी-बारी से 5-5 पेनल्टी; बराबरी पर सडन डेथ।","Penalty Shootout: teams take 5 penalties each, alternately; if still level, sudden death."],
+    ["ज़्यादातर प्रतियोगिताओं में 5 सब्स्टिट्यूशन, खेल के दौरान अधिकतम 3 मौकों में (हाफ़-टाइम अलग)। एक्स्ट्रा टाइम में 1 और।","Most competitions allow 5 substitutes, used in no more than 3 stoppages during play (half-time doesn't count). One more in extra time."],
+    ["कंकशन सब्स्टिट्यूट सामान्य सब्स्टिट्यूशन से अलग मिलता है।","Concussion substitutes are allowed on top of normal substitutions."]]},
+  {t:["ऑफ़साइड","Offside"], r:[
+    ["ऑफ़साइड पोज़िशन: खिलाड़ी विरोधी हाफ़ में हो और गेंद तथा दूसरे-आख़िरी विरोधी (आमतौर पर आख़िरी डिफ़ेंडर) — दोनों से गोल लाइन के ज़्यादा क़रीब हो।","Offside position: a player is in the opponent's half and nearer to the goal line than both the ball and the second-last opponent (usually the last defender)."],
+    ["सिर्फ़ ऑफ़साइड पोज़िशन में खड़ा होना गलती नहीं — गलती तब है जब साथी के गेंद खेलते समय वो खेल में दख़ल दे।","Being in an offside position is not an offence by itself — it becomes one only if the player gets involved in play when a teammate plays the ball."],
+    ["आख़िरी डिफ़ेंडर के बराबर (level) होना ऑनसाइड है।","Being level with the second-last opponent is onside."],
+    ["गोल किक, थ्रो-इन और कॉर्नर किक से सीधे ऑफ़साइड नहीं होता।","There is no offside directly from a goal kick, throw-in or corner kick."],
+    ["अपने हाफ़ में खड़ा खिलाड़ी कभी ऑफ़साइड नहीं होता।","A player in their own half can never be offside."],
+    ["ऑफ़साइड होने पर विरोधी टीम को इनडायरेक्ट फ़्री किक मिलती है।","Offside is punished with an indirect free kick to the opponents."]]},
+  {t:["फ़ाउल और फ़्री किक","Fouls & Free Kicks"], r:[
+    ["डायरेक्ट फ़्री किक: किक मारना, ट्रिप करना, धक्का देना, पकड़ना, टैकल में खिलाड़ी को मारना, हैंडबॉल — इससे सीधे गोल हो सकता है।","Direct Free Kick: kicking, tripping, pushing, holding, striking an opponent in a tackle, handball — a goal can be scored directly."],
+    ["पेनल्टी किक: अपने ही पेनल्टी एरिया में डायरेक्ट फ़्री किक वाला फ़ाउल करने पर, 11 मी (12 गज़) के स्पॉट से।","Penalty Kick: awarded for a direct-free-kick foul inside your own penalty area, taken from the 11 m (12 yd) spot."],
+    ["इनडायरेक्ट फ़्री किक: खतरनाक खेल, बिना छुए रास्ता रोकना, ऑफ़साइड, या साथी के जानबूझकर पैर से दिए बैक-पास को गोलकीपर का हाथ में लेना। गोल से पहले किसी दूसरे खिलाड़ी का छूना ज़रूरी।","Indirect Free Kick: dangerous play, impeding without contact, offside, or the keeper handling a deliberate back-pass kicked by a teammate. Another player must touch the ball before a goal."],
+    ["फ़्री किक के समय विरोधी खिलाड़ी गेंद से कम से कम 9.15 मी (10 गज़) दूर रहें।","At a free kick, opponents must be at least 9.15 m (10 yd) from the ball."],
+    ["हैंडबॉल (Handball): जानबूझकर हाथ/बाज़ू से गेंद छूना, या हाथ फैलाकर शरीर को अस्वाभाविक रूप से बड़ा करना। हाथ से गोल हो जाए (गलती से भी) तो गोल नहीं।","Handball: deliberately touching the ball with hand or arm, or making the body unnaturally bigger with the arm. A goal scored with the hand, even accidentally, doesn't count."],
+    ["एडवांटेज (Advantage): फ़ाउल के बाद भी पीड़ित टीम को फ़ायदा हो तो रेफ़री खेल चलने दे सकता है।","Advantage: the referee can let play continue after a foul if that benefits the team that was fouled."]]},
+  {t:["कार्ड","Cards"], r:[
+    ["पीला कार्ड (Yellow Card): चेतावनी — अनस्पोर्टिंग व्यवहार, बार-बार फ़ाउल, समय बर्बाद करना, रेफ़री से बहस।","Yellow Card: a caution — unsporting behaviour, persistent fouling, time-wasting, dissent."],
+    ["एक ही मैच में 2 पीले कार्ड = लाल कार्ड।","Two yellow cards in one match = a red card."],
+    ["लाल कार्ड (Red Card): खिलाड़ी बाहर, टीम 10 से खेलेगी। गंभीर फ़ाउल, हिंसा, थूकना, या फ़ाउल/हैंडबॉल से गोल का स्पष्ट मौका (DOGSO) रोकना।","Red Card: the player is sent off and the team plays with 10. For serious foul play, violent conduct, spitting, or denying an obvious goal-scoring opportunity (DOGSO) by a foul or handball."],
+    ["लाल कार्ड पाए खिलाड़ी की जगह कोई सब्स्टिट्यूट नहीं आ सकता।","A sent-off player cannot be replaced."]]},
+  {t:["खेल दोबारा शुरू करना","Restarts"], r:[
+    ["थ्रो-इन (Throw-in): गेंद साइड लाइन पार करे तो — दोनों हाथ, सिर के पीछे से ऊपर, दोनों पैर ज़मीन पर। थ्रो-इन से सीधे गोल नहीं।","Throw-in: when the ball crosses the touchline — both hands, from behind and over the head, both feet on the ground. No goal directly from a throw-in."],
+    ["गोल किक (Goal Kick): हमलावर टीम की आख़िरी छुई गेंद गोल लाइन के बाहर (गोल के अलावा) जाए।","Goal Kick: when the attacking team last touches the ball before it crosses the goal line without a goal."],
+    ["कॉर्नर किक (Corner Kick): डिफ़ेंडिंग टीम की आख़िरी छुई गेंद उनकी गोल लाइन के बाहर जाए। कॉर्नर से सीधे गोल हो सकता है।","Corner Kick: when the defending team last touches the ball before it crosses their goal line. A goal can be scored directly."],
+    ["ड्रॉप्ड बॉल (Dropped Ball): चोट या किसी और वजह से खेल रुके तो।","Dropped Ball: used to restart after play stops for an injury or another reason."]]},
+  {t:["गोलकीपर और VAR","Goalkeeper & VAR"], r:[
+    ["8 सेकंड नियम: गोलकीपर गेंद हाथ में 8 सेकंड से ज़्यादा नहीं रख सकता; 2025-26 से तोड़ने पर विरोधी को कॉर्नर किक मिलती है।","8-second rule: the keeper can't hold the ball for more than 8 seconds; since 2025-26 the opponents are awarded a corner kick."],
+    ["पेनल्टी के समय गोलकीपर का कम से कम एक पैर गोल लाइन पर या उसके ऊपर होना चाहिए।","At a penalty, the goalkeeper must have at least part of one foot on or above the goal line."],
+    ["VAR सिर्फ़ 4 मामलों में दख़ल देता है: गोल, पेनल्टी, सीधा लाल कार्ड, और गलत खिलाड़ी को कार्ड (mistaken identity)।","VAR intervenes in only 4 situations: goals, penalties, direct red cards and mistaken identity."],
+    ["VAR तभी फ़ैसला बदलवाता है जब गलती साफ़ और स्पष्ट (clear and obvious error) हो।","VAR only overturns a decision for a clear and obvious error."]]}
+  ]},
+
+{ id:"badminton", name:["बैडमिंटन","Badminton"], icon:"🏸", c:"#ea580c",
+  body:["BWF · Badminton World Federation","BWF · Badminton World Federation"],
+  facts:[[["स्कोरिंग","Scoring"],["21 पॉइंट · बेस्ट ऑफ़ 3","21 pts · best of 3"]],[["कोर्ट","Court"],["13.4 × 6.1 मी","13.4 × 6.1 m"]],[["नेट","Net"],["1.55 मी (पोस्ट)","1.55 m (posts)"]],[["सर्विस ऊँचाई","Serve height"],["1.15 मी से नीचे","Below 1.15 m"]]],
+  sections:[
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["रैली पॉइंट सिस्टम: हर रैली जीतने वाले को पॉइंट मिलता है, चाहे सर्विस किसी की भी हो।","Rally point system: the winner of every rally scores a point, whoever served."],
+    ["एक गेम 21 पॉइंट का; मैच 3 में से 2 गेम जीतने पर (best of 3)।","A game is played to 21 points; a match is the best of 3 games."],
+    ["ड्यूस (Deuce): 20-20 होने पर गेम जीतने के लिए 2 पॉइंट की बढ़त ज़रूरी।","Deuce: at 20-20 a player needs a 2-point lead to win the game."],
+    ["29-29 पर जो पहले 30वाँ पॉइंट ले, वो गेम जीत जाता है।","At 29-29, whoever wins the 30th point wins the game."],
+    ["रैली जीतने वाला ही अगली सर्विस करता है।","The winner of the rally serves next."]]},
+  {t:["ब्रेक और साइड बदलना","Intervals & Ends"], r:[
+    ["किसी खिलाड़ी के 11 पॉइंट होने पर 60 सेकंड का इंटरवल।","A 60-second interval when a player reaches 11 points."],
+    ["दो गेम के बीच 120 सेकंड (2 मिनट) का ब्रेक।","A 120-second (2-minute) break between games."],
+    ["हर गेम के बाद साइड बदलती है; तीसरे गेम में किसी के 11 पॉइंट होने पर भी।","Players change ends after each game, and in the deciding third game when a player reaches 11."]]},
+  {t:["सर्विस","Service"], r:[
+    ["सर्विस हमेशा तिरछी (diagonal) होती है — सामने वाले के आमने-सामने के सर्विस कोर्ट में।","Service is always diagonal, into the opposite service court."],
+    ["सर्वर का स्कोर ईवन (0, 2, 4…) हो तो दाएँ कोर्ट से, ऑड (1, 3, 5…) हो तो बाएँ कोर्ट से।","If the server's score is even (0, 2, 4…) they serve from the right court; if odd (1, 3, 5…), from the left."],
+    ["फ़िक्स्ड हाइट रूल: रैकेट से टकराते समय पूरी शटल कोर्ट की सतह से 1.15 मी से नीचे होनी चाहिए।","Fixed-height rule: the whole shuttle must be below 1.15 m from the court surface at the moment it is struck."],
+    ["सर्विस के समय सर्वर और रिसीवर दोनों के पैर ज़मीन पर, अपने सर्विस कोर्ट के अंदर और लाइन छुए बिना।","Server and receiver must keep their feet on the ground inside their service courts, without touching the lines."],
+    ["पहले शटल के बेस (cork) पर मारना ज़रूरी; सर्विस एक ही लगातार आगे की मोशन में हो, बीच में रुकना फ़ॉल्ट।","The base (cork) must be hit first; the serve must be one continuous forward motion — pausing is a fault."],
+    ["सर्विस में शटल नेट छूकर सही कोर्ट में गिरे तो वैध है।","A serve that clips the net and lands in the correct court is good."],
+    ["डबल्स: रिसीव करने वाली टीम रैली जीते तो सर्विस उनके पास; खिलाड़ी सिर्फ़ अपनी सर्विस पर पॉइंट जीतने पर अपना कोर्ट बदलते हैं।","Doubles: when the receiving side wins a rally they gain the serve; partners switch left/right only when they win a point on their own serve."]]},
+  {t:["कोर्ट की सीमा","Court Boundaries"], r:[
+    ["सिंगल्स: लंबा और पतला कोर्ट — अंदर वाली साइड लाइन (5.18 मी चौड़ाई) और सबसे पीछे वाली बैक लाइन।","Singles: long and narrow — the inner sidelines (5.18 m wide) and the back boundary line."],
+    ["डबल्स सर्विस: छोटा और चौड़ा — बाहर वाली साइड लाइन, पर पीछे की सीमा अंदर वाली डबल्स लॉन्ग सर्विस लाइन।","Doubles service: short and wide — the outer sidelines, but the back limit is the inner doubles long service line."],
+    ["डबल्स में सर्विस के बाद पूरा चौड़ा और लंबा कोर्ट इस्तेमाल होता है।","After the serve in doubles, the full wide and long court is in play."],
+    ["लाइन पर गिरी शटल अंदर (IN) मानी जाती है।","A shuttle landing on the line is IN."]]},
+  {t:["फ़ॉल्ट और लेट","Faults & Lets"], r:[
+    ["शटल कोर्ट के बाहर गिरे, नेट के नीचे/बीच से जाए, या नेट पार न करे।","The shuttle lands out, passes under or through the net, or fails to cross the net."],
+    ["शटल खिलाड़ी के शरीर या कपड़ों को छू जाए।","The shuttle touches a player's body or clothing."],
+    ["एक ही साइड से शटल दो बार मारी जाए — डबल्स में दोनों पार्टनर का लगातार मारना भी फ़ॉल्ट।","The shuttle is hit twice on the same side — in doubles, partners hitting in succession is also a fault."],
+    ["रैली के दौरान रैकेट, शरीर या कपड़ों से नेट या पोस्ट छूना।","Touching the net or posts with racket, body or clothing during a rally."],
+    ["नेट के ऊपर से विरोधी की साइड में जाकर शटल मारना फ़ॉल्ट; टकराने का बिंदु अपनी साइड हो तो फ़ॉलो-थ्रू में रैकेट आगे जाना ठीक है।","Hitting the shuttle on the opponent's side of the net is a fault; a follow-through over the net is fine if contact was made on your side."],
+    ["विरोधी का ध्यान जानबूझकर भटकाना या रास्ता रोकना (obstruction) फ़ॉल्ट है।","Deliberately distracting or obstructing the opponent is a fault."],
+    ["लेट (Let): अनपेक्षित रुकावट, जैसे दूसरी शटल कोर्ट में आ जाए — रैली दोबारा, किसी को पॉइंट नहीं।","Let: an unforeseen interruption, e.g. another shuttle lands on court — the rally is replayed and no point is given."]]}
+  ]},
+
+{ id:"kabaddi", name:["कबड्डी","Kabaddi"], icon:"🤼", c:"#e11d48",
+  body:["AKFI / IKF · लीग: Pro Kabaddi (PKL)","AKFI / IKF · League: Pro Kabaddi (PKL)"],
+  facts:[[["खिलाड़ी","Players"],["7 मैदान पर · 12 स्क्वाड","7 on court · 12 squad"]],[["समय","Duration"],["2×20 मिनट (पुरुष)","2×20 min (men)"]],[["कोर्ट","Court"],["13 × 10 मी (पुरुष)","13 × 10 m (men)"]],[["रेड समय","Raid time"],["30 सेकंड (PKL)","30 sec (PKL)"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम के 7 खिलाड़ी मैदान पर; स्क्वाड में 12 तक (5 सब्स्टिट्यूट)।","7 players per side on court; a squad of up to 12 (5 substitutes)."],
+    ["पुरुष: 20-20 मिनट के 2 हाफ़, बीच में 5 मिनट का ब्रेक। महिला/जूनियर मैचों में समय कम होता है।","Men: two halves of 20 minutes with a 5-minute break. Women's and junior matches are shorter."],
+    ["टीमें बारी-बारी से रेड करती हैं — एक टीम हमला, दूसरी डिफ़ेंस।","Teams raid alternately — one attacks while the other defends."],
+    ["कोर्ट: पुरुष 13 मी × 10 मी, महिला 12 मी × 8 मी; मिड लाइन दोनों हाफ़ बाँटती है।","Court: men 13 m × 10 m, women 12 m × 8 m; the mid line divides the two halves."],
+    ["जिस टीम के ज़्यादा पॉइंट, वो जीतती है।","The team with more points wins."]]},
+  {t:["रेड","Raiding"], r:[
+    ["रेडर विरोधी हाफ़ में लगातार 'कबड्डी-कबड्डी' बोलता रहता है (cant)। साँस टूटी या बोलना रुका तो रेडर आउट।","The raider keeps chanting 'kabaddi-kabaddi' (the cant) in the opponent's half. If the chant breaks, the raider is out."],
+    ["PKL में हर रेड के लिए 30 सेकंड की समय सीमा।","In PKL each raid has a 30-second time limit."],
+    ["रेडर को बॉक लाइन (baulk line) पार करनी ज़रूरी है, वरना रेडर आउट।","The raider must cross the baulk line, otherwise the raider is out."],
+    ["टच पॉइंट: रेडर डिफ़ेंडर को छूकर सुरक्षित मिड लाइन पार कर ले तो हर छुए गए डिफ़ेंडर पर 1 पॉइंट, और वो डिफ़ेंडर आउट।","Touch point: if the raider touches defenders and safely crosses back over the mid line, 1 point per defender touched, and those defenders are out."],
+    ["बोनस पॉइंट: मैदान पर कम से कम 6 डिफ़ेंडर हों और रेडर एक पैर से बोनस लाइन पार करे (दूसरा पैर हवा में) तो 1 बोनस पॉइंट।","Bonus point: with at least 6 defenders on court, if the raider crosses the bonus line with one foot (the other in the air) — 1 bonus point."],
+    ["डू-ऑर-डाई रेड: लगातार 2 खाली रेड (empty raid) के बाद तीसरी रेड में पॉइंट लाना ज़रूरी, वरना रेडर आउट।","Do-or-die raid: after 2 consecutive empty raids, the third raid must score or the raider is out."],
+    ["सुपर रेड (Super Raid): एक ही रेड में 3 या ज़्यादा पॉइंट (PKL शब्द)।","Super Raid: 3 or more points in a single raid (PKL term)."]]},
+  {t:["टैकल और डिफ़ेंस","Tackling & Defence"], r:[
+    ["टैकल: डिफ़ेंडर रेडर को पकड़कर मिड लाइन तक लौटने से रोक दें तो डिफ़ेंडिंग टीम को 1 पॉइंट।","Tackle: if defenders stop the raider getting back to the mid line, the defending team scores 1 point."],
+    ["सुपर टैकल: मैदान पर 3 या कम डिफ़ेंडर हों और वो रेडर को टैकल करें तो 2 पॉइंट (PKL)।","Super Tackle: with 3 or fewer defenders on court, tackling the raider earns 2 points (PKL)."],
+    ["डिफ़ेंडर बिना संघर्ष (struggle) के बाउंड्री से बाहर चला जाए तो आउट।","A defender who steps out of bounds without a struggle is out."],
+    ["लॉबी (Lobby): कोर्ट के किनारे की पट्टी — सिर्फ़ रेडर और डिफ़ेंडर के बीच संघर्ष शुरू होने के बाद खेल का हिस्सा बनती है।","Lobby: the side strips come into play only once a struggle has begun between raider and defender."],
+    ["बाल, कपड़े पकड़ना या कैंची पकड़ (scissors) जैसे खतरनाक तरीके फ़ाउल हैं।","Holding hair or clothing, or dangerous holds such as the scissors grip, are fouls."]]},
+  {t:["ऑल आउट और रिवाइवल","All Out & Revival"], r:[
+    ["रिवाइवल (Revival): विरोधी का एक खिलाड़ी आउट होने पर आपका एक आउट खिलाड़ी (आउट होने के क्रम में) वापस आता है।","Revival: for each opponent put out, one of your out players returns, in the order they went out."],
+    ["ऑल आउट (Lona): किसी टीम के सारे खिलाड़ी आउट हो जाएँ तो विरोधी को 2 एक्स्ट्रा पॉइंट, और आउट टीम के सातों खिलाड़ी वापस आ जाते हैं।","All Out (Lona): when an entire team is out, the opponents get 2 extra points and all seven players of that team return."]]},
+  {t:["कार्ड और टाई","Cards & Ties"], r:[
+    ["ग्रीन कार्ड — चेतावनी; येलो कार्ड — 2 मिनट निलंबन; रेड कार्ड — बाकी मैच से बाहर।","Green card — warning; yellow card — 2-minute suspension; red card — out for the rest of the match."],
+    ["PKL लीग मैच बराबर रहे तो टाई, दोनों टीमों को पॉइंट मिलते हैं।","A level PKL league match is a tie, and both teams get points."],
+    ["नॉकआउट में टाई होने पर 5-5 रेड का टाई-ब्रेकर; फिर भी बराबरी तो गोल्डन रेड (Golden Raid)।","In knockouts a tie goes to a 5-raid tie-breaker; if still level, a Golden Raid decides it."]]}
+  ]},
+
+{ id:"hockey", name:["हॉकी","Hockey"], icon:"🏑", c:"#0284c7",
+  body:["FIH · Hockey India","FIH · Hockey India"],
+  facts:[[["खिलाड़ी","Players"],["11 (GK सहित)","11 (incl. GK)"]],[["समय","Duration"],["4×15 मिनट","4×15 min"]],[["मैदान","Pitch"],["91.4 × 55 मी","91.4 × 55 m"]],[["सर्कल","Circle"],["14.63 मी","14.63 m"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम में 11 खिलाड़ी, जिनमें 1 गोलकीपर।","11 players per side, including 1 goalkeeper."],
+    ["रोलिंग सब्स्टिट्यूशन: कितनी भी बार, कभी भी खिलाड़ी बदल सकते हैं (पेनल्टी कॉर्नर के दौरान नहीं)।","Rolling substitutions: unlimited, at any time (except during a penalty corner)."],
+    ["15-15 मिनट के 4 क्वार्टर; Q1-Q2 और Q3-Q4 के बीच 2 मिनट, हाफ़-टाइम 10 मिनट।","Four 15-minute quarters; 2 minutes between Q1–Q2 and Q3–Q4, 10 minutes at half-time."],
+    ["गेंद सिर्फ़ स्टिक के फ्लैट (समतल) साइड या किनारे से खेली जा सकती है; गोल (उभरी) साइड से नहीं।","The ball may be played only with the flat face or edges of the stick, never the rounded back."],
+    ["फ़ील्ड खिलाड़ी पैर या शरीर से गेंद नहीं रोक सकते; सिर्फ़ गोलकीपर अपने सर्कल में।","Field players can't stop the ball with their feet or body; only the goalkeeper inside their circle."]]},
+  {t:["गोल","Scoring a Goal"], r:[
+    ["गोल तभी जब हमलावर ने गेंद शूटिंग सर्कल ('D') के अंदर से खेली हो।","A goal counts only if an attacker played the ball inside the shooting circle (the 'D')."],
+    ["शूटिंग सर्कल का दायरा गोल से 14.63 मी (16 गज़)।","The shooting circle extends 14.63 m (16 yd) from the goal."],
+    ["सर्कल के बाहर से मारा गया शॉट बिना किसी के छुए गोल में चला जाए तो गोल नहीं।","A shot from outside the circle that goes in untouched is not a goal."]]},
+  {t:["पेनल्टी कॉर्नर","Penalty Corner"], r:[
+    ["कब मिलता है: डिफ़ेंस सर्कल के अंदर फ़ाउल करे, अपने 23 मी क्षेत्र में जानबूझकर फ़ाउल करे, या जानबूझकर गेंद अपनी बैकलाइन के बाहर भेजे।","Awarded when: the defence fouls inside the circle, fouls deliberately in its own 23 m area, or deliberately plays the ball over its own back line."],
+    ["गेंद बैकलाइन पर गोल पोस्ट से कम से कम 10 मी दूर से पुश की जाती है।","The ball is pushed from the back line at least 10 m from the goalpost."],
+    ["डिफ़ेंस: 5 खिलाड़ी (गोलकीपर सहित) गोल लाइन के पीछे, बाकी सेंटर लाइन पर।","Defence: 5 players (including the GK) behind the goal line, the rest at the centre line."],
+    ["शॉट लेने से पहले गेंद सर्कल के बाहर जानी ज़रूरी।","The ball must travel outside the circle before a shot can be taken."],
+    ["पहला शॉट हिट हो तो गेंद गोल लाइन पर 460 मिमी (बैकबोर्ड) से नीचे होनी चाहिए; ड्रैग फ़्लिक ऊँची जा सकती है।","If the first shot is a hit, it must cross the goal line below 460 mm (backboard height); a drag flick may go higher."]]},
+  {t:["पेनल्टी स्ट्रोक और शूटआउट","Penalty Stroke & Shootout"], r:[
+    ["पेनल्टी स्ट्रोक: फ़ाउल से संभावित गोल रोका गया हो — गोल से 6.4 मी दूर स्पॉट से, सिर्फ़ गोलकीपर के सामने।","Penalty Stroke: awarded when a foul prevents a probable goal — taken from a spot 6.4 m from goal, one-on-one with the keeper."],
+    ["शूटआउट: ड्रॉ के बाद नतीजा ज़रूरी हो तो 5-5 खिलाड़ी, 23 मी लाइन से शुरू, गोल करने के लिए 8 सेकंड।","Shootout: when a result is needed after a draw, 5 players each start from the 23 m line and have 8 seconds to score."]]},
+  {t:["फ़ाउल और फ़्री हिट","Fouls & Free Hits"], r:[
+    ["ऑब्स्ट्रक्शन (Obstruction): शरीर या स्टिक से विरोधी को गेंद तक पहुँचने से रोकना।","Obstruction: using body or stick to block an opponent from reaching the ball."],
+    ["खतरनाक खेल: उठी हुई गेंद (raised ball) जो किसी को खतरे में डाले, या खतरनाक टैकल/स्टिक।","Dangerous play: a raised ball that endangers someone, or dangerous tackles or stick use."],
+    ["फ़्री हिट पर विरोधी कम से कम 5 मी दूर रहें।","Opponents must be at least 5 m away at a free hit."],
+    ["सेल्फ़-पास (Self-pass): फ़्री हिट लेने वाला खिलाड़ी खुद ही गेंद लेकर आगे बढ़ सकता है।","Self-pass: the player taking a free hit can carry on with the ball themselves."],
+    ["अटैकिंग 23 मी क्षेत्र में फ़्री हिट पर गेंद सर्कल में जाने से पहले कम से कम 5 मी चलनी चाहिए या किसी डिफ़ेंडर से छूनी चाहिए।","From a free hit in the attacking 23 m area, the ball must travel 5 m or touch a defender before entering the circle."]]},
+  {t:["कार्ड और वीडियो रेफ़रल","Cards & Video Referral"], r:[
+    ["ग्रीन कार्ड: 2 मिनट निलंबन।","Green card: 2-minute suspension."],
+    ["येलो कार्ड: कम से कम 5 मिनट निलंबन, गंभीरता के हिसाब से ज़्यादा।","Yellow card: suspension of at least 5 minutes, longer depending on severity."],
+    ["रेड कार्ड: पूरे मैच से बाहर।","Red card: out for the rest of the match."],
+    ["निलंबन के दौरान टीम एक खिलाड़ी कम के साथ खेलती है।","While a player is suspended, the team plays one short."],
+    ["वीडियो रेफ़रल: टीम फ़ैसले पर रिव्यू ले सकती है; सही निकला तो बचा रहता है, गलत तो ख़त्म।","Video referral: a team can challenge a decision; it keeps the referral if successful and loses it if not."]]}
+  ]},
+
+{ id:"khokho", name:["खो-खो","Kho-Kho"], icon:"🏃", c:"#ca8a04",
+  body:["KKFI · Kho Kho Federation of India","KKFI · Kho Kho Federation of India"],
+  facts:[[["खिलाड़ी","Players"],["12 स्क्वाड · 9 मैदान पर","12 squad · 9 on field"]],[["समय","Duration"],["2 पारी · 9-9 मिनट","2 innings · 9-min turns"]],[["मैदान","Field"],["27 × 16 मी","27 × 16 m"]],[["खंभे","Poles"],["दोनों छोर पर 1-1","1 at each end"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम में 12 खिलाड़ी; 9 मैदान में उतरते हैं। एक टीम पीछा (chase) करती है, दूसरी बचाव (defend)।","Each team has 12 players; 9 take the field. One team chases while the other defends."],
+    ["चेज़िंग टीम के 8 खिलाड़ी बीच की लेन के खानों में बारी-बारी उल्टी दिशाओं में मुँह करके बैठते हैं; 9वाँ सक्रिय चेज़र (active chaser) होता है।","8 chasers sit in the squares of the central lane, facing alternate directions; the 9th is the active chaser."],
+    ["मैच में 2 पारियाँ होती हैं; हर पारी में दोनों टीमें 9-9 मिनट पीछा और 9-9 मिनट बचाव करती हैं।","A match has 2 innings; in each innings both teams chase for 9 minutes and defend for 9 minutes."],
+    ["डिफ़ेंडर 3-3 के बैच में मैदान में आते हैं; तीनों आउट होते ही अगला बैच तुरंत अंदर आना चाहिए।","Defenders enter in batches of 3; as soon as all three are out, the next batch must come in."],
+    ["मैदान 27 मी × 16 मी, बीच में लंबी लेन और दोनों छोर पर एक-एक खंभा (pole)।","The field is 27 m × 16 m, with a central lane and a pole at each end."],
+    ["आख़िर में जिस टीम के ज़्यादा पॉइंट हों, वो जीतती है।","The team with more points at the end wins."]]},
+  {t:["पीछा करना","Chasing"], r:[
+    ["सक्रिय चेज़र हथेली से डिफ़ेंडर को छूकर आउट करता है; हर आउट पर चेज़िंग टीम को पॉइंट मिलता है।","The active chaser puts a defender out by touching them with the palm; every out earns the chasing team a point."],
+    ["खो (Kho): सक्रिय चेज़र बैठे साथी को पीछे से छूकर ज़ोर से 'खो' बोलता है; वो साथी नया सक्रिय चेज़र बन जाता है।","Kho: the active chaser touches a seated teammate from behind and says 'Kho' loudly; that teammate becomes the new active chaser."],
+    ["सक्रिय चेज़र बीच की लेन पार नहीं कर सकता; दूसरी तरफ़ जाने के लिए उसे छोर वाले खंभे का चक्कर लगाना होता है।","The active chaser can't cross the central lane; to switch sides they must go round the pole at the end."],
+    ["एक खंभे की दिशा में चल पड़ा चेज़र बीच में पलटकर उल्टी दिशा में नहीं जा सकता।","Once a chaser starts towards one pole, they can't turn back the other way midway."],
+    ["बैठा चेज़र सही 'खो' मिलने से पहले उठ नहीं सकता; जल्दी उठना फ़ाउल है।","A seated chaser can't get up before receiving a proper kho; rising early is a foul."],
+    ["फ़ाउल होने पर अंपायर चेज़र को दिशा बदलने या खो देने को कहता है, और उस दौरान हुआ आउट नहीं गिना जाता।","On a foul the umpire makes the chaser reverse or give a kho, and an out made through the foul doesn't count."]]},
+  {t:["बचाव","Defending"], r:[
+    ["डिफ़ेंडर आउट होता है: सक्रिय चेज़र के छूने पर, बाउंड्री से बाहर पैर पड़ने पर, या बैच में देर से आने पर।","A defender is out when touched by the active chaser, on stepping outside the boundary, or on entering late with their batch."],
+    ["डिफ़ेंडर पूरे मैदान में कहीं भी दौड़ सकते हैं और बीच की लेन भी पार कर सकते हैं।","Defenders may run anywhere on the field, including across the central lane."],
+    ["अच्छे डिफ़ेंडर 'चेन' और 'रिंग' जैसी दौड़ से चेज़र को चकमा देकर ज़्यादा देर टिकते हैं।","Good defenders use patterns like the chain and ring runs to dodge chasers and survive longer."]]},
+  {t:["टाई और लीग नियम","Ties & League Rules"], r:[
+    ["मैच टाई होने पर दोनों टीमों को एक-एक अतिरिक्त पारी मिलती है।","If a match is tied, each team gets one extra innings."],
+    ["Ultimate Kho Kho (UKK) लीग में 7-7 मिनट की बारी, 'वज़ीर' (जो दोनों दिशाओं में दौड़ सकता है) और 'ड्रीम रन' (टिके रहने पर डिफ़ेंस को बोनस पॉइंट) जैसे नियम हैं।","The Ultimate Kho Kho (UKK) league uses 7-minute turns, a 'Wazir' (a chaser who may run in either direction) and the 'Dream Run' (bonus points for defenders who survive)."]]}
+  ]},
+
+{ id:"chess", name:["शतरंज","Chess"], icon:"♟️", c:"#475569",
+  body:["FIDE · AICF (All India Chess Federation)","FIDE · AICF (All India Chess Federation)"],
+  facts:[[["खिलाड़ी","Players"],["2","2"]],[["बोर्ड","Board"],["8 × 8 (64 खाने)","8 × 8 (64 squares)"]],[["मोहरे","Pieces"],["16 प्रति खिलाड़ी","16 per player"]],[["लक्ष्य","Goal"],["चेकमेट","Checkmate"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["सफ़ेद (White) पहले चलता है; फिर दोनों बारी-बारी एक-एक चाल चलते हैं।","White moves first; then the players alternate, one move each."],
+    ["बोर्ड ऐसे रखा जाता है कि हर खिलाड़ी के दाएँ कोने में सफ़ेद खाना हो।","The board is placed so each player has a light square in the right-hand corner."],
+    ["हर पक्ष: 1 राजा, 1 वज़ीर, 2 हाथी, 2 ऊँट, 2 घोड़े, 8 प्यादे। वज़ीर अपने रंग के खाने पर शुरू करता है।","Each side has 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights and 8 pawns. The queen starts on her own colour."],
+    ["लक्ष्य: विरोधी के राजा को चेकमेट करना।","The goal is to checkmate the opponent's king."]]},
+  {t:["मोहरों की चाल","How Pieces Move"], r:[
+    ["राजा (King): किसी भी दिशा में 1 खाना; वो कभी ऐसे खाने पर नहीं जा सकता जहाँ उस पर हमला हो।","King: one square in any direction; it may never move into check."],
+    ["वज़ीर (Queen): सीधी या तिरछी लाइन में जितने चाहे उतने खाने।","Queen: any number of squares in a straight line or diagonal."],
+    ["हाथी (Rook): सीधा आगे-पीछे या दाएँ-बाएँ; ऊँट (Bishop): सिर्फ़ तिरछा।","Rook: any distance along ranks and files. Bishop: any distance diagonally."],
+    ["घोड़ा (Knight): ढाई घर (L आकार — 2 एक तरफ़, 1 मुड़कर); ये बीच के मोहरों के ऊपर से कूद सकता है।","Knight: moves in an L shape (2 one way, 1 sideways) and can jump over other pieces."],
+    ["प्यादा (Pawn): एक खाना आगे; पहली चाल में दो खाने तक। मारता (capture) तिरछा एक खाना आगे।","Pawn: moves one square forward, or two on its first move; it captures one square diagonally forward."]]},
+  {t:["ख़ास चालें","Special Moves"], r:[
+    ["कैसलिंग (Castling): राजा हाथी की तरफ़ 2 खाने चलता है और हाथी उसके ऊपर से दूसरी तरफ़ आ जाता है।","Castling: the king moves two squares towards a rook, and the rook hops over to the other side of the king."],
+    ["कैसलिंग नहीं हो सकती अगर राजा या वो हाथी पहले चल चुका हो, राजा चेक में हो, बीच के खाने पर हमला हो, या बीच में कोई मोहरा हो।","No castling if the king or that rook has moved, the king is in check, it passes through or lands on an attacked square, or pieces stand between."],
+    ["आँ पासाँ (En passant): विरोधी का प्यादा 2 खाने चलकर आपके प्यादे के बगल में आए, तो अगली ही चाल में आप उसे ऐसे मार सकते हैं जैसे वो 1 खाना चला हो।","En passant: if an enemy pawn moves two squares and lands beside your pawn, you may capture it as if it had moved one — only on the very next move."],
+    ["प्रमोशन (Promotion): आख़िरी पंक्ति तक पहुँचा प्यादा वज़ीर, हाथी, ऊँट या घोड़ा बनना ही चाहिए।","Promotion: a pawn reaching the last rank must become a queen, rook, bishop or knight."]]},
+  {t:["चेक, मात और ड्रॉ","Check, Mate & Draws"], r:[
+    ["चेक (Check): राजा पर हमला; उसे तुरंत बचाना ज़रूरी — राजा हटाकर, बीच में मोहरा लगाकर, या हमलावर को मारकर।","Check: the king is attacked and must be saved at once — by moving it, blocking, or capturing the attacker."],
+    ["चेकमेट (Checkmate): राजा चेक में है और बचने की कोई वैध चाल नहीं — खेल ख़त्म, हमलावर जीता।","Checkmate: the king is in check with no legal escape — the game ends and the attacker wins."],
+    ["स्टेलमेट (Stalemate): चाल चलने वाले के पास कोई वैध चाल नहीं, पर राजा चेक में नहीं — खेल ड्रॉ।","Stalemate: the side to move has no legal move but isn't in check — the game is drawn."],
+    ["दूसरे ड्रॉ: आपसी सहमति, एक ही स्थिति 3 बार दोहराना, 50 चालों तक न कोई मोहरा मरे न प्यादा चले, या मात देने लायक मोहरे ही न बचें (जैसे सिर्फ़ दोनों राजा)।","Other draws: agreement, threefold repetition, the 50-move rule (no capture or pawn move in 50 moves each), or insufficient material such as king vs king."],
+    ["कोई भी खिलाड़ी हार मानकर (resign) खेल ख़त्म कर सकता है।","Either player may resign to end the game."]]},
+  {t:["टूर्नामेंट नियम","Tournament Rules"], r:[
+    ["टच-मूव (Touch-move): अपना मोहरा जानबूझकर छुआ तो उसी को चलना होगा; विरोधी का छुआ तो (अगर संभव हो) उसे मारना होगा। सिर्फ़ ठीक करने से पहले 'J'adoube' या 'adjust' बोलें।","Touch-move: deliberately touch your own piece and you must move it; touch an opponent's piece and you must capture it if legal. Say 'J'adoube' or 'adjust' first if you only want to straighten it."],
+    ["चेस क्लॉक: चाल उसी हाथ से चलें जिससे घड़ी दबाते हैं। समय ख़त्म = हार, सिवाय तब जब विरोधी किसी भी तरह मात न दे सके — तब ड्रॉ।","Chess clock: press the clock with the hand you moved with. Running out of time loses — unless the opponent cannot possibly checkmate, which makes it a draw."],
+    ["गलत (illegal) चाल पर पहली बार विरोधी को अतिरिक्त समय मिलता है; दूसरी गलत चाल पर हार।","After a first illegal move the opponent gets extra time; a second illegal move loses the game."],
+    ["खेल के दौरान मोबाइल फ़ोन की आवाज़ आए तो खिलाड़ी हार जाता है (FIDE)।","If a player's mobile phone makes a sound in the playing area, that player loses (FIDE)."]]}
+  ]},
+
+{ id:"tabletennis", name:["टेबल टेनिस","Table Tennis"], icon:"🏓", c:"#7c3aed",
+  body:["ITTF · WTT","ITTF · WTT"],
+  facts:[[["स्कोरिंग","Scoring"],["11 पॉइंट · बेस्ट ऑफ़ 5/7","11 pts · best of 5/7"]],[["टेबल","Table"],["2.74 × 1.525 मी","2.74 × 1.525 m"]],[["नेट","Net"],["15.25 सेमी","15.25 cm"]],[["बॉल","Ball"],["40 मिमी","40 mm"]]],
+  sections:[
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["हर रैली पर पॉइंट; एक गेम 11 पॉइंट का।","A point is scored on every rally; a game is played to 11."],
+    ["10-10 होने पर 2 पॉइंट की बढ़त ज़रूरी।","At 10-10 a 2-point lead is needed."],
+    ["मैच आमतौर पर बेस्ट ऑफ़ 5 या बेस्ट ऑफ़ 7 गेम का होता है।","Matches are usually best of 5 or best of 7 games."]]},
+  {t:["सर्विस","Service"], r:[
+    ["बॉल खुली, सपाट हथेली पर रखें, कम से कम 16 सेमी लगभग सीधा ऊपर उछालें, और नीचे आते समय मारें।","Rest the ball on an open, flat palm, toss it almost vertically at least 16 cm, and strike it as it falls."],
+    ["सर्विस के समय बॉल टेबल की सतह से ऊपर और एंड लाइन के पीछे हो, और रिसीवर को साफ़ दिखे — शरीर या हाथ से छिपाना मना।","During the serve the ball must be above the table and behind the end line, and visible to the receiver — no hiding it with body or arm."],
+    ["सर्विस पहले अपनी तरफ़ एक बार टप्पा खाए, फिर नेट पार करके सामने एक बार।","The serve must bounce once on the server's side, then once on the receiver's side."],
+    ["हर खिलाड़ी लगातार 2 सर्विस करता है; 10-10 के बाद हर पॉइंट पर सर्विस बदलती है।","Each player serves 2 points in a row; from 10-10 the serve alternates every point."],
+    ["सर्विस नेट छूकर सही जगह गिरे तो लेट (Let) — सर्विस दोबारा।","A serve that touches the net and lands correctly is a let and is replayed."],
+    ["डबल्स में सर्विस अपने दाएँ आधे हिस्से से सामने वाले के दाएँ आधे हिस्से में (तिरछी)।","In doubles the serve goes from the server's right half to the receiver's right half, diagonally."]]},
+  {t:["रैली","The Rally"], r:[
+    ["सर्विस के बाद बॉल को नेट के ऊपर या बगल से सीधे विरोधी की तरफ़ टेबल पर गिराना होता है।","After the serve, the ball must be returned over or around the net to land directly on the opponent's side."],
+    ["अपनी तरफ़ बॉल का एक बार टप्पा खाना ज़रूरी; टेबल के ऊपर से बिना टप्पे के मारना (volley) पॉइंट गँवाना है।","The ball must bounce once on your side; hitting it before it bounces over the table loses the point."],
+    ["टेबल का ऊपरी किनारा (edge) छूकर बॉल अंदर है; साइड वाला हिस्सा छूकर नहीं।","A ball clipping the top edge of the table is good; one hitting the side face is not."],
+    ["पॉइंट गँवाते हैं: खाली हाथ से टेबल छूना, टेबल हिलाना, नेट छूना, बॉल शरीर से लगना।","You lose the point for touching the table with your free hand, moving the table, touching the net, or being hit by the ball."],
+    ["डबल्स में दोनों पार्टनर बारी-बारी से ही बॉल मारते हैं।","In doubles, partners must hit the ball alternately."]]},
+  {t:["दूसरे नियम","Other Rules"], r:[
+    ["हर गेम के बाद साइड बदलती है; आख़िरी गेम में किसी के 5 पॉइंट होने पर भी।","Players change ends after each game, and in the deciding game when someone reaches 5 points."],
+    ["एक्सपीडाइट सिस्टम: कोई गेम 10 मिनट चले (जब तक दोनों के 9+ पॉइंट न हों) तो सर्वर को 13 रिटर्न के अंदर पॉइंट जीतना होता है, वरना पॉइंट रिसीवर का।","Expedite system: if a game lasts 10 minutes (unless both players have 9+ points), the server must win the point within 13 returns or it goes to the receiver."],
+    ["रैकेट की एक तरफ़ काली रबर और दूसरी तरफ़ किसी अलग चमकीले रंग (जैसे लाल) की होनी चाहिए।","The racket must have black rubber on one side and a bright, clearly different colour (such as red) on the other."],
+    ["गेम के बीच 1 मिनट का ब्रेक; हर खिलाड़ी/टीम मैच में एक बार 1 मिनट का टाइम-आउट ले सकती है।","There is a 1-minute break between games; each player or pair may take one 1-minute time-out per match."]]}
+  ]},
+
+{ id:"volleyball", name:["वॉलीबॉल","Volleyball"], icon:"🏐", c:"#db2777",
+  body:["FIVB · Volleyball Federation of India","FIVB · Volleyball Federation of India"],
+  facts:[[["खिलाड़ी","Players"],["6 प्रति टीम","6 per side"]],[["स्कोरिंग","Scoring"],["25 पॉइंट · बेस्ट ऑफ़ 5","25 pts · best of 5"]],[["नेट","Net"],["2.43 मी पुरुष · 2.24 मी महिला","2.43 m men · 2.24 m women"]],[["कोर्ट","Court"],["18 × 9 मी","18 × 9 m"]]],
+  sections:[
+  {t:["बुनियादी नियम और स्कोरिंग","Basics & Scoring"], r:[
+    ["हर टीम के 6 खिलाड़ी कोर्ट पर; हर रैली पर पॉइंट (rally point)।","6 players per side on court; every rally scores a point."],
+    ["सेट 25 पॉइंट का, 2 पॉइंट की बढ़त ज़रूरी। मैच बेस्ट ऑफ़ 5 सेट; निर्णायक 5वाँ सेट 15 पॉइंट का।","Sets are played to 25 with a 2-point lead. Matches are best of 5 sets; the deciding 5th set is played to 15."],
+    ["एक टीम बॉल लौटाने से पहले अधिकतम 3 बार छू सकती है (ब्लॉक का छूना नहीं गिना जाता)।","A team may touch the ball at most 3 times before returning it (a block touch doesn't count)."],
+    ["एक खिलाड़ी लगातार दो बार बॉल नहीं छू सकता (ब्लॉक के बाद छोड़कर)।","A player can't touch the ball twice in a row (except after a block)."]]},
+  {t:["सर्विस और रोटेशन","Serve & Rotation"], r:[
+    ["सर्वर एंड लाइन के पीछे से, रेफ़री की सीटी के 8 सेकंड के अंदर सर्विस करता है।","The server serves from behind the end line within 8 seconds of the referee's whistle."],
+    ["रिसीव करने वाली टीम रैली जीते तो सर्विस उसे मिलती है और उसके खिलाड़ी एक पोज़िशन घड़ी की दिशा (clockwise) में घूमते हैं।","When the receiving team wins the rally, it gains the serve and its players rotate one position clockwise."],
+    ["सर्विस के समय खिलाड़ी सही रोटेशन क्रम में न हों तो पोज़िशन फ़ॉल्ट।","Players out of rotational order at the moment of service commit a position fault."],
+    ["सर्विस नेट छूकर पार चली जाए तो खेल जारी रहता है।","A serve that touches the net and goes over stays in play."]]},
+  {t:["फ़ॉल्ट","Faults"], r:[
+    ["बॉल बाहर गिरे, एंटीना से लगे, या एंटीना के बाहर से पार हो।","The ball lands out, hits an antenna, or crosses outside the antennae."],
+    ["रैली के दौरान एंटीना के बीच नेट छूना फ़ॉल्ट है।","Touching the net between the antennae during a rally is a fault."],
+    ["पूरा पैर सेंटर लाइन पार करके विरोधी कोर्ट में जाना फ़ॉल्ट; पैर का कुछ हिस्सा लाइन पर/ऊपर हो तो ठीक।","A whole foot crossing the centre line into the opponent's court is a fault; part of the foot on or above the line is fine."],
+    ["बॉल पकड़ना या फेंकना (lift / held ball) फ़ॉल्ट है — बॉल साफ़ मारनी होती है।","Catching or throwing the ball (a lift or held ball) is a fault — it must be cleanly hit."],
+    ["बैक-रो खिलाड़ी अटैक लाइन (3 मी) के आगे से नेट की ऊँचाई के ऊपर अटैक या ब्लॉक नहीं कर सकते।","Back-row players can't attack the ball above net height from in front of the 3 m attack line, and can't block."]]},
+  {t:["लिबेरो, सब्स्टिट्यूशन और टाइम-आउट","Libero, Subs & Time-outs"], r:[
+    ["लिबेरो (Libero) अलग रंग की जर्सी पहनता है और सिर्फ़ बैक-रो डिफ़ेंस खेलता है।","The libero wears a different-coloured jersey and plays only as a back-row defender."],
+    ["इंटरनेशनल नियमों में लिबेरो सर्विस, ब्लॉक या नेट से ऊपर अटैक नहीं कर सकता।","Under international rules the libero can't serve, block, or attack the ball above net height."],
+    ["लिबेरो की अदला-बदली असीमित है और सामान्य सब्स्टिट्यूशन में नहीं गिनी जाती।","Libero replacements are unlimited and don't count as substitutions."],
+    ["हर टीम प्रति सेट 6 सब्स्टिट्यूशन कर सकती है।","Each team may make 6 substitutions per set."],
+    ["हर टीम प्रति सेट 2 टाइम-आउट ले सकती है, हर एक 30 सेकंड का।","Each team gets 2 time-outs per set, of 30 seconds each."]]}
+  ]},
+
+{ id:"basketball", name:["बास्केटबॉल","Basketball"], icon:"🏀", c:"#dc2626",
+  body:["FIBA · Basketball Federation of India","FIBA · Basketball Federation of India"],
+  facts:[[["खिलाड़ी","Players"],["5 कोर्ट पर · 12 स्क्वाड","5 on court · 12 squad"]],[["समय","Duration"],["4×10 मिनट (FIBA)","4×10 min (FIBA)"]],[["रिंग","Hoop"],["3.05 मी ऊँचा","3.05 m high"]],[["शॉट क्लॉक","Shot clock"],["24 सेकंड","24 sec"]]],
+  sections:[
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["3-पॉइंट लाइन के अंदर से बास्केट = 2 पॉइंट; लाइन के बाहर से = 3 पॉइंट (FIBA में लाइन 6.75 मी पर)।","A basket from inside the 3-point line = 2 points; from beyond it = 3 points (the line is 6.75 m away in FIBA)."],
+    ["फ़्री थ्रो (Free Throw) = 1 पॉइंट।","A free throw is worth 1 point."],
+    ["FIBA में 10-10 मिनट के 4 क्वार्टर (NBA में 12-12 मिनट)। बराबरी पर 5 मिनट का ओवरटाइम, नतीजा आने तक।","FIBA plays 4 quarters of 10 minutes (the NBA uses 12). A tie goes to 5-minute overtimes until there's a winner."]]},
+  {t:["बॉल के साथ चलना","Moving With the Ball"], r:[
+    ["बॉल लेकर चलने के लिए ड्रिबल (उछालते रहना) ज़रूरी।","You must dribble to move with the ball."],
+    ["ट्रैवलिंग (Travelling): बिना ड्रिबल किए बॉल लेकर 2 से ज़्यादा कदम चलना।","Travelling: taking more than 2 steps while holding the ball without dribbling."],
+    ["डबल ड्रिबल: ड्रिबल रोककर बॉल पकड़ने के बाद फिर ड्रिबल करना, या दोनों हाथों से एक साथ ड्रिबल करना।","Double dribble: dribbling again after stopping and holding the ball, or dribbling with both hands at once."],
+    ["बैककोर्ट वायलेशन: बॉल एक बार विरोधी हाफ़ (frontcourt) में चली जाए तो उसे वापस अपने हाफ़ में नहीं ले जा सकते।","Backcourt violation: once the ball is in the frontcourt, the team can't take it back into its own half."]]},
+  {t:["समय के नियम","Time Rules"], r:[
+    ["24 सेकंड शॉट क्लॉक: इतने समय में शॉट लेना ज़रूरी; ऑफ़ेंसिव रिबाउंड जैसे मामलों में घड़ी 14 सेकंड पर रीसेट होती है।","24-second shot clock: a shot must be taken in that time; after an offensive rebound and similar cases it resets to 14."],
+    ["8 सेकंड नियम: बॉल को 8 सेकंड में अपने हाफ़ से आगे ले जाना होता है।","8-second rule: the team must get the ball out of its own half within 8 seconds."],
+    ["3 सेकंड नियम: हमलावर खिलाड़ी विरोधी की बास्केट के नीचे वाले पेंट (restricted area) में 3 सेकंड से ज़्यादा नहीं रुक सकता।","3-second rule: an attacking player can't stay in the opponent's restricted area (the paint) for more than 3 seconds."],
+    ["5 सेकंड नियम: कसकर घिरा खिलाड़ी 5 सेकंड में पास, शॉट या ड्रिबल करे; थ्रो-इन भी 5 सेकंड में।","5-second rule: a closely guarded player must pass, shoot or dribble within 5 seconds; throw-ins must also be made within 5 seconds."]]},
+  {t:["फ़ाउल","Fouls"], r:[
+    ["पर्सनल फ़ाउल: धक्का, पकड़ना, गलत तरीके से रास्ता रोकना (blocking) या टकराना (charging)।","Personal foul: illegal contact such as pushing, holding, blocking or charging."],
+    ["शूटिंग फ़ाउल पर 2 या 3 फ़्री थ्रो; फ़ाउल के बावजूद बास्केट हो जाए तो वो गिनी जाती है और 1 फ़्री थ्रो और (and-one)।","A shooting foul earns 2 or 3 free throws; if the basket still goes in, it counts plus 1 free throw (the 'and-one')."],
+    ["FIBA में 5 पर्सनल फ़ाउल (NBA में 6) पर खिलाड़ी बाहर (foul out)।","A player fouls out after 5 personal fouls in FIBA (6 in the NBA)."],
+    ["टीम फ़ाउल: एक क्वार्टर में टीम के 5वें फ़ाउल से, हर डिफ़ेंसिव फ़ाउल पर विरोधी को 2 फ़्री थ्रो।","Team fouls: from a team's 5th foul in a quarter, every defensive foul gives the opponents 2 free throws."],
+    ["गोलटेंडिंग: नीचे आती हुई बॉल को बास्केट की तरफ़ जाते समय रोकना — बास्केट गिनी जाती है।","Goaltending: blocking the ball on its downward flight towards the basket — the basket is awarded."]]}
+  ]},
+
+{ id:"tennis", name:["टेनिस","Tennis"], icon:"🎾", c:"#65a30d",
+  body:["ITF · AITA (All India Tennis Association)","ITF · AITA (All India Tennis Association)"],
+  facts:[[["स्कोरिंग","Scoring"],["0 · 15 · 30 · 40 · गेम","0 · 15 · 30 · 40 · Game"]],[["सेट","Sets"],["बेस्ट ऑफ़ 3 या 5","Best of 3 or 5"]],[["कोर्ट","Court"],["23.77 × 8.23 मी (सिंगल्स)","23.77 × 8.23 m (singles)"]],[["नेट","Net"],["0.914 मी (बीच में)","0.914 m (centre)"]]],
+  sections:[
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["पॉइंट: 0 (Love), 15, 30, 40, फिर गेम।","Points go 0 (love), 15, 30, 40, then game."],
+    ["ड्यूस (Deuce): 40-40 पर लगातार 2 पॉइंट जीतने ज़रूरी — पहले एडवांटेज (Advantage), फिर गेम।","Deuce: at 40-40 you must win two points in a row — first advantage, then game."],
+    ["सेट: जो पहले 6 गेम जीते, 2 गेम की बढ़त के साथ; 6-6 पर टाई-ब्रेक।","Set: first to 6 games with a 2-game lead; at 6-6 a tie-break is played."],
+    ["टाई-ब्रेक: पहले 7 पॉइंट, 2 पॉइंट की बढ़त के साथ।","Tie-break: first to 7 points with a 2-point lead."],
+    ["मैच ज़्यादातर बेस्ट ऑफ़ 3 सेट; पुरुषों के ग्रैंड स्लैम बेस्ट ऑफ़ 5। ग्रैंड स्लैम के आख़िरी सेट में 6-6 पर 10 पॉइंट का टाई-ब्रेक।","Most matches are best of 3 sets; men's Grand Slams are best of 5. In a Grand Slam final set, 6-6 goes to a 10-point tie-break."]]},
+  {t:["सर्विस","Service"], r:[
+    ["सर्वर बेसलाइन के पीछे, सेंटर मार्क और साइडलाइन के बीच खड़ा होकर तिरछे सर्विस बॉक्स में सर्विस करता है।","The server stands behind the baseline, between the centre mark and the sideline, and serves diagonally into the service box."],
+    ["दो मौके मिलते हैं; दोनों चूके तो डबल फ़ॉल्ट (Double Fault) और पॉइंट गया।","You get two attempts; missing both is a double fault and loses the point."],
+    ["सर्विस नेट छूकर सही बॉक्स में गिरे तो लेट (Let) — दोबारा सर्विस।","A serve that clips the net and lands in the correct box is a let and is replayed."],
+    ["फ़ुट फ़ॉल्ट: बॉल मारने से पहले बेसलाइन या कोर्ट पर पैर रखना।","Foot fault: touching the baseline or the court with a foot before hitting the ball."],
+    ["हर पॉइंट पर सर्वर साइड बदलता है (पहला पॉइंट दाईं तरफ़ से); हर गेम के बाद सर्विस दूसरे खिलाड़ी के पास।","The server alternates sides each point, starting from the right; the serve passes to the other player after each game."]]},
+  {t:["खेल के दौरान","During Play"], r:[
+    ["बॉल अपनी तरफ़ सिर्फ़ एक बार टप्पा खा सकती है; बिना टप्पे के मारना (volley) ठीक है, पर सर्विस का रिटर्न टप्पे के बाद ही।","The ball may bounce only once on your side; volleys are allowed, but the return of serve must bounce first."],
+    ["लाइन के किसी भी हिस्से को छूने वाली बॉल अंदर (IN) है।","A ball touching any part of the line is in."],
+    ["पॉइंट गँवाते हैं: बॉल शरीर से लगे, खेल के दौरान नेट छुएँ, या बॉल के नेट पार करने से पहले मारें।","You lose the point if the ball hits you, if you touch the net during play, or if you hit the ball before it crosses the net."],
+    ["सेट के पहले गेम और फिर हर विषम (odd) गेम के बाद साइड बदलती है; टाई-ब्रेक में हर 6 पॉइंट पर।","Players change ends after the first game and every odd game of a set; in a tie-break, every 6 points."]]},
+  {t:["रिव्यू और आचरण","Reviews & Conduct"], r:[
+    ["कई टूर्नामेंट में इलेक्ट्रॉनिक लाइन कॉलिंग (Hawk-Eye) होती है; जहाँ चैलेंज सिस्टम है वहाँ खिलाड़ी कॉल पर चैलेंज कर सकते हैं।","Many tournaments use electronic line calling (Hawk-Eye); where a challenge system is used, players can challenge calls."],
+    ["पॉइंट्स के बीच 25 सेकंड का शॉट क्लॉक।","There is a 25-second shot clock between points."],
+    ["आचरण उल्लंघन (code violation) पर क्रम से: चेतावनी, पॉइंट पेनल्टी, गेम पेनल्टी।","Code violations escalate: warning, then point penalty, then game penalty."]]}
+  ]},
+
+{ id:"carrom", name:["कैरम","Carrom"], icon:"🪙", c:"#854d0e",
+  body:["ICF (International Carrom Federation) · AICF","ICF (International Carrom Federation) · AICF"],
+  facts:[[["खिलाड़ी","Players"],["2 या 4","2 or 4"]],[["गोटियाँ","Coins"],["9 सफ़ेद · 9 काली · 1 क्वीन","9 white · 9 black · 1 queen"]],[["बोर्ड","Board"],["74 सेमी खेलने की सतह","74 cm playing surface"]],[["गेम","Game"],["25 पॉइंट या 8 बोर्ड","25 pts or 8 boards"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["2 खिलाड़ी (सिंगल्स) या 4 (डबल्स — पार्टनर आमने-सामने)।","Played by 2 (singles) or 4 (doubles, with partners sitting opposite)."],
+    ["9 सफ़ेद, 9 काली गोटियाँ और 1 लाल क्वीन। पहला शॉट (ब्रेक) मारने वाला सफ़ेद गोटियों से खेलता है।","There are 9 white coins, 9 black coins and 1 red queen. The player who breaks plays white."],
+    ["स्ट्राइकर अपनी बेसलाइन के अंदर रखा जाता है, दोनों लाइनों को छूते हुए।","The striker is placed within the player's baseline, touching both lines."],
+    ["स्ट्राइकर उंगली से फ़्लिक करके मारा जाता है; बेस से हाथ या शरीर आगे निकालकर नहीं खेल सकते।","The striker is flicked with a finger; you may not reach forward of your base with hand or body to play."]]},
+  {t:["गोटी डालना और क्वीन","Pocketing & the Queen"], r:[
+    ["अपनी गोटी पॉकेट में डाली तो अगला शॉट भी आपका।","Pocket one of your own coins and you get another turn."],
+    ["क्वीन डालने के बाद उसे 'कवर' करना ज़रूरी — उसी या अगले शॉट में अपनी एक गोटी डालें। कवर नहीं हुई तो क्वीन वापस बीच में।","After pocketing the queen you must 'cover' it by pocketing one of your own coins on the same or next shot. If not covered, the queen returns to the centre."],
+    ["अपनी आख़िरी गोटी क्वीन कवर होने से पहले डाल दी तो वो बोर्ड हार जाते हैं।","If you pocket your last coin before the queen has been covered, you lose the board."],
+    ["विरोधी की गोटी डाल दी तो वो पॉकेट में ही रहती है (उसकी गिनी जाती है) और आपकी बारी ख़त्म।","Pocketing an opponent's coin leaves it pocketed (it counts for them) and ends your turn."]]},
+  {t:["फ़ाउल और ड्यू","Fouls & Dues"], r:[
+    ["स्ट्राइकर पॉकेट में गया तो फ़ाउल: बारी गई और आपकी डाली हुई एक गोटी वापस बीच में (ड्यू/penalty)।","Pocketing the striker is a foul: you lose your turn and one of your pocketed coins goes back to the centre as a penalty (due)."],
+    ["अगर अभी कोई गोटी डाली ही नहीं, तो ये 'ड्यू' बाकी रहता है और अगली गोटी डालते ही चुकाना होता है।","If you haven't pocketed a coin yet, the penalty stays owed (a 'due') and is paid back as soon as you pocket one."],
+    ["स्ट्राइकर या गोटी बोर्ड से बाहर जाना, या हाथ से गोटी छूना/हिलाना भी फ़ाउल है।","Knocking the striker or a coin off the board, or touching or moving coins with your hand, is also a foul."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["जो पहले अपनी सारी गोटियाँ डाल दे, वो बोर्ड जीतता है।","Whoever pockets all their own coins first wins the board."],
+    ["बोर्ड जीतने वाले को विरोधी की बची हुई हर गोटी पर 1 पॉइंट, और क्वीन कवर की हो तो 3 पॉइंट और।","The board winner scores 1 point for each opponent coin left on the board, plus 3 points if they covered the queen."],
+    ["गेम: जो पहले 25 पॉइंट तक पहुँचे, या 8 बोर्ड के बाद जिसके ज़्यादा पॉइंट (ICF नियम)।","Game: first to 25 points, or the higher score after 8 boards (ICF rules)."],
+    ["ICF नियमों में खिलाड़ी के 22 पॉइंट हो जाने के बाद क्वीन के पॉइंट नहीं जुड़ते।","Under ICF rules, once a player reaches 22 points, the queen no longer adds points."]]}
+  ]}
+,
+
+{ id:"wrestling", name:["कुश्ती","Wrestling"], icon:"🤼‍♂️", c:"#9d174d",
+  body:["UWW · WFI (Wrestling Federation of India)","UWW · WFI (Wrestling Federation of India)"],
+  facts:[[["स्टाइल","Styles"],["फ़्रीस्टाइल · ग्रीको-रोमन","Freestyle · Greco-Roman"]],[["समय","Duration"],["2 × 3 मिनट","2 × 3 min"]],[["मैट","Mat"],["9 मी का घेरा","9 m circle"]],[["तुरंत जीत","Instant win"],["फ़ॉल (पिन)","Fall (pin)"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["मुक़ाबला 3-3 मिनट के 2 पीरियड का, बीच में 30 सेकंड का ब्रेक।","A bout has two 3-minute periods with a 30-second break."],
+    ["पहलवान वज़न वर्ग (weight category) के हिसाब से लड़ते हैं; हर दिन सुबह वज़न (weigh-in) होता है।","Wrestlers compete in weight categories, with a weigh-in on the morning of competition."],
+    ["फ़्रीस्टाइल में पूरे शरीर (पैरों सहित) पर पकड़ ली जा सकती है; ग्रीको-रोमन में कमर के नीचे पकड़ना या पैरों से अटैक मना है।","In freestyle you may attack the whole body including the legs; in Greco-Roman, holds below the waist and attacking with the legs are banned."],
+    ["एक पहलवान लाल और दूसरा नीली सिंगलेट पहनता है।","One wrestler wears red, the other blue."]]},
+  {t:["जीत के तरीके","Ways to Win"], r:[
+    ["फ़ॉल (Fall / चित): विरोधी के दोनों कंधे एक साथ मैट पर दबा देना — मुक़ाबला वहीं ख़त्म।","Fall (pin): holding both of the opponent's shoulders on the mat at the same time ends the bout at once."],
+    ["टेक्निकल सुपीरियोरिटी: फ़्रीस्टाइल में 10 पॉइंट और ग्रीको-रोमन में 8 पॉइंट की बढ़त होते ही जीत।","Technical superiority: a 10-point lead in freestyle, or 8 in Greco-Roman, ends the bout."],
+    ["पॉइंट्स पर जीत: समय ख़त्म होने पर ज़्यादा पॉइंट वाला जीतता है।","Win on points: the wrestler with more points when time runs out wins."],
+    ["पॉइंट बराबर हों तो: ज़्यादा क़ीमत वाला दाँव (बड़ा मूव), फिर कम चेतावनी (cautions), फिर आख़िरी पॉइंट किसने लिया — इस क्रम से फ़ैसला।","If points are level: the higher-value move wins, then fewer cautions, then whoever scored the last point."],
+    ["चोट, अयोग्यता (disqualification) या विरोधी के न आने पर भी जीत मिलती है।","A bout can also be won by injury, disqualification or the opponent's forfeit."]]},
+  {t:["पॉइंट","Scoring"], r:[
+    ["टेकडाउन (Takedown): विरोधी को गिराकर उसके ऊपर नियंत्रण = 2 पॉइंट; सीधे ख़तरे की स्थिति (danger position) में गिराया तो 4।","Takedown: bringing the opponent down and controlling them = 2 points; straight into the danger position = 4."],
+    ["एक्सपोज़र (Exposure): विरोधी की पीठ को मैट की तरफ़ घुमाना, जैसे गट-रेंच = 2 पॉइंट।","Exposure: turning the opponent's back towards the mat, such as with a gut-wrench = 2 points."],
+    ["पुश-आउट / स्टेप-आउट: विरोधी का पैर लाल घेरे (protection area) के बाहर चला जाए = 1 पॉइंट।","Push-out / step-out: the opponent puts a foot outside the red zone = 1 point."],
+    ["ऊँची उठाकर पटकना (Grand Amplitude): 4 पॉइंट; सीधे ख़तरे की स्थिति में गिरे तो 5।","Grand-amplitude throw: 4 points; 5 if the opponent lands straight in the danger position."]]},
+  {t:["पैसिविटी, चेतावनी और चैलेंज","Passivity, Cautions & Challenges"], r:[
+    ["पैसिविटी: जो पहलवान अटैक नहीं करता, उसे 30 सेकंड का 'एक्टिविटी क्लॉक' मिलता है; उसमें पॉइंट नहीं आए तो विरोधी को 1 पॉइंट।","Passivity: a wrestler who isn't attacking is put on a 30-second activity clock; if neither scores in that time, the opponent gets 1 point."],
+    ["पकड़ से भागना, जानबूझकर मैट से बाहर जाना, या विरोधी की उंगलियाँ मरोड़ना जैसे फ़ाउल पर विरोधी को पॉइंट और चेतावनी।","Fleeing a hold, deliberately leaving the mat, or bending fingers earns the opponent points and the offender a caution."],
+    ["एक मुक़ाबले में 3 चेतावनी (cautions) मिलने पर पहलवान अयोग्य (disqualified)।","Three cautions in a bout lead to disqualification."],
+    ["कोच फ़ैसले पर चैलेंज ले सकता है (वीडियो रिव्यू); चैलेंज गलत निकला तो विरोधी को 1 पॉइंट।","A coach may challenge a decision for video review; if the challenge fails, the opponent gets 1 point."]]}
+  ]},
+
+{ id:"boxing", name:["मुक्केबाज़ी","Boxing"], icon:"🥊", c:"#991b1b",
+  body:["World Boxing · BFI (Boxing Federation of India)","World Boxing · BFI (Boxing Federation of India)"],
+  facts:[[["राउंड","Rounds"],["3 × 3 मिनट (एमेच्योर)","3 × 3 min (amateur)"]],[["आराम","Rest"],["1 मिनट","1 min"]],[["जज","Judges"],["5","5"]],[["स्कोरिंग","Scoring"],["10-पॉइंट मस्ट","10-point must"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["एमेच्योर (ओलंपिक) बॉक्सिंग में 3-3 मिनट के 3 राउंड, बीच में 1 मिनट आराम। प्रोफ़ेशनल बॉक्सिंग में 4 से 12 राउंड।","Amateur (Olympic) bouts have three 3-minute rounds with 1 minute of rest. Professional bouts run 4 to 12 rounds."],
+    ["मुक्केबाज़ वज़न वर्ग में लड़ते हैं और मुक़ाबले से पहले वज़न होता है।","Boxers compete in weight classes and weigh in before the bout."],
+    ["एलीट पुरुष एमेच्योर मुक्केबाज़ बिना हेडगार्ड लड़ते हैं; महिलाएँ और जूनियर हेडगार्ड पहनते हैं।","Elite men's amateur boxing is fought without headguards; women and juniors wear them."],
+    ["एक कोना लाल और एक नीला होता है; रेफ़री रिंग में होता है और 5 जज स्कोर करते हैं।","One corner is red and one blue; a referee controls the ring and 5 judges score."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["पॉइंट सिर्फ़ साफ़ मुक्कों पर — बंद दस्ताने के नकल वाले हिस्से से, सिर या शरीर के आगे/बगल में, बेल्ट के ऊपर।","Only clean punches score — with the knuckle part of a closed glove, on the front or sides of the head or body above the belt."],
+    ["10-पॉइंट मस्ट सिस्टम: हर जज हर राउंड के विजेता को 10 और हारने वाले को 9 या कम देता है।","10-point must system: each judge gives the round winner 10 and the loser 9 or fewer."],
+    ["जज साफ़ मुक्कों की संख्या, मुक़ाबले पर दबदबा, तकनीक और रणनीति, और नियमों के पालन को देखते हैं।","Judges look at the number of quality blows, domination of the bout, technique and tactics, and rule-breaking."],
+    ["फ़ैसला: सर्वसम्मति (unanimous) — सारे जज एक तरफ़; विभाजित (split) — बहुमत से।","Decisions are unanimous (all judges agree) or split (by majority)."]]},
+  {t:["जीत के तरीके","Ways to Win"], r:[
+    ["नॉकआउट (KO): गिरा हुआ मुक्केबाज़ 10 की गिनती तक खड़ा होकर लड़ने को तैयार न हो।","Knockout (KO): a boxer who goes down can't get up and continue before the count of 10."],
+    ["RSC (Referee Stops Contest): रेफ़री को लगे कि एक मुक्केबाज़ बहुत पिछड़ रहा है या आगे लड़ना ख़तरनाक है।","RSC (Referee Stops Contest): the referee stops the bout because a boxer is outclassed or can't safely continue."],
+    ["स्टैंडिंग काउंट: एमेच्योर बॉक्सिंग में ज़ोरदार मुक्का खाए मुक्केबाज़ को रेफ़री खड़े-खड़े 8 तक गिनती दे सकता है।","Standing count: in amateur boxing the referee can give a boxer who's badly hurt a count of 8 while standing."],
+    ["अयोग्यता (DSQ) — बार-बार या गंभीर फ़ाउल पर; या कोना तौलिया फेंककर हार मान ले।","Disqualification (DSQ) for repeated or serious fouls; or the corner can retire their boxer."]]},
+  {t:["फ़ाउल","Fouls"], r:[
+    ["बेल्ट के नीचे मारना, सिर के पीछे या गर्दन पर मारना (rabbit punch), खुले दस्ताने से मारना।","Hitting below the belt, on the back of the head or neck (rabbit punch), or with an open glove."],
+    ["सिर से टक्कर मारना (head butt), कोहनी या कंधे का इस्तेमाल।","Head-butting, or using the elbow or shoulder."],
+    ["विरोधी को पकड़कर रखना (holding), दबाना, या 'Break' कहने के बाद मारना।","Holding or clinching the opponent, or hitting after the referee calls 'Break'."],
+    ["गिरे हुए मुक्केबाज़ को मारना।","Hitting an opponent who is down."],
+    ["फ़ाउल पर रेफ़री चेतावनी (caution), फिर औपचारिक चेतावनी (warning) देता है; warning पर जज पॉइंट काट सकते हैं।","For fouls the referee gives a caution, then an official warning; warnings can cost points on the judges' cards."]]}
+  ]},
+
+{ id:"archery", name:["तीरंदाज़ी","Archery"], icon:"🏹", c:"#d97706",
+  body:["World Archery · AAI (Archery Association of India)","World Archery · AAI (Archery Association of India)"],
+  facts:[[["रिकर्व दूरी","Recurve distance"],["70 मी","70 m"]],[["कंपाउंड दूरी","Compound distance"],["50 मी","50 m"]],[["टारगेट","Target"],["10 रिंग · 1–10 पॉइंट","10 rings · 1–10 pts"]],[["सेट जीत","Set win"],["6 सेट पॉइंट","6 set points"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["रिकर्व (ओलंपिक धनुष): 70 मी दूरी, 122 सेमी का टारगेट।","Recurve (the Olympic bow): shot at 70 m on a 122 cm target face."],
+    ["कंपाउंड (पुली वाला धनुष): 50 मी दूरी, 80 सेमी का टारगेट जिसमें 10 का घेरा छोटा होता है।","Compound (the pulley bow): shot at 50 m on an 80 cm target with a smaller 10 ring."],
+    ["टारगेट में 10 रिंग: बाहर से अंदर 1 से 10 पॉइंट। बीच का सबसे छोटा घेरा 'X' (इनर टेन) — बराबरी तोड़ने में काम आता है।","The target has 10 rings scoring 1 to 10 from outside in. The innermost ring, the 'X' (inner ten), is used to break ties."],
+    ["तीर दो रिंग के बीच की लाइन को छुए तो ज़्यादा वाला स्कोर मिलता है।","An arrow touching the line between two rings scores the higher value."],
+    ["तीरंदाज़ अपने तीर तभी निकालते हैं जब सब निशाना लगा चुके हों और जज स्कोर लिख लें।","Arrows are only pulled after everyone has shot and the scores have been recorded."]]},
+  {t:["रिकर्व मैच — सेट सिस्टम","Recurve Matches — Set System"], r:[
+    ["हर सेट में हर तीरंदाज़ 3 तीर चलाता है; ज़्यादा कुल स्कोर वाले को 2 सेट पॉइंट, बराबरी पर दोनों को 1।","Each set is 3 arrows per archer; the higher total earns 2 set points, a tie gives 1 each."],
+    ["जो पहले 6 सेट पॉइंट तक पहुँचे, वो मैच जीतता है।","The first archer to 6 set points wins the match."],
+    ["5 सेट के बाद 5-5 हो तो शूट-ऑफ़: एक-एक तीर, जिसका तीर केंद्र के ज़्यादा पास वो जीता।","At 5-5 after five sets there's a shoot-off: one arrow each, closest to the centre wins."],
+    ["व्यक्तिगत मैच में तीरंदाज़ बारी-बारी चलाते हैं, हर तीर के लिए 20 सेकंड।","In individual matches archers shoot alternately, with 20 seconds per arrow."]]},
+  {t:["कंपाउंड मैच","Compound Matches"], r:[
+    ["कंपाउंड में सेट सिस्टम नहीं — 3-3 तीरों के 5 राउंड (ends) का कुल स्कोर, अधिकतम 150।","Compound uses no set system — the total of five ends of 3 arrows counts, out of 150."],
+    ["कुल स्कोर बराबर हो तो एक तीर का शूट-ऑफ़।","A tied total goes to a one-arrow shoot-off."]]},
+  {t:["उपकरण और सुरक्षा","Equipment & Safety"], r:[
+    ["रिकर्व धनुष पर साइट (निशाना लगाने का यंत्र) लग सकता है, पर मैग्नीफ़ाइंग लेंस नहीं; कंपाउंड पर लेंस वाला स्कोप चल सकता है।","A recurve bow may have a sight but no magnifying lens; a compound bow may use a magnifying scope."],
+    ["शूटिंग लाइन पर सिग्नल (सीटी/लाइट) मिलने पर ही तीर चढ़ाना; समय ख़त्म होने के बाद चलाया तीर गिना नहीं जाता।","Only nock and shoot on the start signal; an arrow shot after time expires doesn't count (the archer loses their best arrow of the end)."],
+    ["कोई भी अगर टारगेट की ओर जा रहा हो तो तुरंत शूटिंग रुकती है।","Shooting stops immediately if anyone is near the targets."]]}
+  ]},
+
+{ id:"snooker", name:["स्नूकर","Snooker"], icon:"🎱", c:"#047857",
+  body:["WPBSA · World Snooker Tour · BSFI","WPBSA · World Snooker Tour · BSFI"],
+  facts:[[["खिलाड़ी","Players"],["2","2"]],[["गेंदें","Balls"],["15 लाल + 6 रंगीन + सफ़ेद","15 reds + 6 colours + cue ball"]],[["अधिकतम ब्रेक","Max break"],["147","147"]],[["कम से कम फ़ाउल","Min foul"],["4 पॉइंट","4 points"]]],
+  sections:[
+  {t:["गेंदें और पॉइंट","Balls & Values"], r:[
+    ["लाल = 1, पीली = 2, हरी = 3, भूरी = 4, नीली = 5, गुलाबी = 6, काली = 7 पॉइंट।","Red = 1, yellow = 2, green = 3, brown = 4, blue = 5, pink = 6, black = 7 points."],
+    ["सफ़ेद गेंद (cue ball) से ही मारना होता है; यही बाकी गेंदों को पॉकेट में भेजती है।","Only the white cue ball is struck; it is used to pot the others."]]},
+  {t:["खेल का क्रम","Order of Play"], r:[
+    ["पहले एक लाल पॉकेट करनी होती है, फिर कोई एक रंगीन गेंद, फिर लाल, फिर रंगीन — बारी-बारी।","You must pot a red first, then any colour, then a red, then a colour, alternately."],
+    ["लाल गेंदें बची हों तब तक पॉकेट हुई रंगीन गेंद वापस अपनी जगह (spot) पर रखी जाती है।","While reds remain, a potted colour is put back on its spot."],
+    ["सारी लाल ख़त्म होने के बाद रंगीन गेंदें बढ़ते क्रम में: पीली, हरी, भूरी, नीली, गुलाबी, काली।","Once the reds are gone, the colours are potted in order: yellow, green, brown, blue, pink, black."],
+    ["गेंद पॉकेट की तो बारी जारी; चूके तो विरोधी की बारी। एक बारी में बने कुल पॉइंट को 'ब्रेक' कहते हैं।","Pot a ball and you keep playing; miss and it's your opponent's turn. The points scored in one visit are a 'break'."],
+    ["मैक्सिमम ब्रेक 147: 15 लाल हर बार काली के साथ (15×8 = 120) और फिर सारे रंग (27)।","The maximum break of 147 is all 15 reds each with the black (15×8 = 120), then all the colours (27)."]]},
+  {t:["फ़ाउल","Fouls"], r:[
+    ["फ़ाउल पर कम से कम 4 पॉइंट विरोधी को; शामिल गेंद की क़ीमत ज़्यादा हो तो उतने (अधिकतम 7)।","A foul gives the opponent at least 4 points, or the value of the ball involved if higher (up to 7)."],
+    ["फ़ाउल: सफ़ेद गेंद का पहले सही गेंद (ball on) से न टकराना, सफ़ेद का पॉकेट में जाना, गलत गेंद पॉकेट करना।","Fouls include missing the ball on with the first contact, potting the cue ball, and potting the wrong ball."],
+    ["किसी गेंद को हाथ, कपड़े या क्यू से छूना, जंप शॉट, पुश शॉट, या मारते समय दोनों पैर ज़मीन से उठे होना भी फ़ाउल।","Touching a ball with hand, clothing or cue, a jump shot, a push shot, or having no foot on the floor while striking are also fouls."],
+    ["फ़ाउल के बाद विरोधी खुद खेल सकता है या फ़ाउल करने वाले को दोबारा खेलने को कह सकता है।","After a foul the opponent can play on or make the offender play again."],
+    ["मिस (Miss): रेफ़री को लगे कि सही गेंद तक पहुँचने की पूरी कोशिश नहीं हुई, तो विरोधी गेंदें वापस रखवाकर दोबारा शॉट करवा सकता है।","Miss: if the referee rules there was no proper attempt to hit the ball on, the opponent can have the balls replaced and the shot replayed."]]},
+  {t:["स्नूकर और फ़्रेम","Snookers & Frames"], r:[
+    ["स्नूकर (Snooker): सफ़ेद गेंद ऐसी जगह छोड़ना कि विरोधी सीधे सही गेंद तक न मार सके।","Snooker: leaving the cue ball where the opponent can't hit the ball on directly."],
+    ["फ़्री बॉल: फ़ाउल के बाद खिलाड़ी स्नूकर हो, तो वो किसी भी गेंद को 'ball on' मानकर खेल सकता है।","Free ball: if a foul leaves you snookered, you may nominate any ball as the ball on."],
+    ["एक फ़्रेम में ज़्यादा पॉइंट वाला जीतता है; मैच 'बेस्ट ऑफ़' फ़्रेम (जैसे 9, 19, 35) का होता है।","The player with more points wins the frame; matches are best of a set number of frames (such as 9, 19 or 35)."],
+    ["फ़्रेम आख़िर में बराबर रहे तो काली गेंद दोबारा रखी जाती है (re-spotted black) और पहले पॉकेट करने वाला जीतता है।","If a frame ends level, the black is re-spotted and whoever pots it first wins."]]}
+  ]},
+
+{ id:"handball", name:["हैंडबॉल","Handball"], icon:"🤾", c:"#2563eb",
+  body:["IHF · HFI (Handball Federation of India)","IHF · HFI (Handball Federation of India)"],
+  facts:[[["खिलाड़ी","Players"],["7 (GK सहित)","7 (incl. GK)"]],[["समय","Duration"],["2 × 30 मिनट","2 × 30 min"]],[["कोर्ट","Court"],["40 × 20 मी","40 × 20 m"]],[["गोल एरिया","Goal area"],["6 मी","6 m"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम के 7 खिलाड़ी कोर्ट पर — 6 फ़ील्ड खिलाड़ी और 1 गोलकीपर। सब्स्टिट्यूशन असीमित, अपने सब्स्टिट्यूशन ज़ोन से।","7 players per side — 6 court players and a goalkeeper. Substitutions are unlimited, through your own substitution zone."],
+    ["30-30 मिनट के 2 हाफ़, 10 मिनट का ब्रेक।","Two halves of 30 minutes with a 10-minute break."],
+    ["बॉल हाथ से खेली जाती है; घुटने के नीचे पैर से छूना मना है (गोलकीपर को छोड़कर)।","The ball is played with the hands; touching it with the leg below the knee isn't allowed (except for the goalkeeper)."],
+    ["नॉकआउट मैच बराबर रहे तो 5-5 मिनट के 2 एक्स्ट्रा टाइम, फिर भी बराबर तो 7 मी शूटआउट।","A level knockout match goes to two 5-minute periods of extra time, then a 7-metre shootout."]]},
+  {t:["बॉल के साथ","With the Ball"], r:[
+    ["बॉल पकड़कर ज़्यादा से ज़्यादा 3 कदम चल सकते हैं।","You may take at most 3 steps while holding the ball."],
+    ["बॉल पकड़कर ज़्यादा से ज़्यादा 3 सेकंड रख सकते हैं।","You may hold the ball for at most 3 seconds."],
+    ["डबल ड्रिबल मना: ड्रिबल रोककर बॉल पकड़ने के बाद दोबारा ड्रिबल नहीं।","No double dribble: once you stop dribbling and catch the ball, you can't dribble again."],
+    ["पैसिव प्ले: टीम गोल की कोशिश न करे तो रेफ़री हाथ उठाकर चेतावनी देता है; उसके बाद अधिकतम 4 पास में शॉट लेना होता है।","Passive play: if a team isn't trying to score, the referee raises an arm as a warning; the team then has at most 4 passes to shoot."]]},
+  {t:["गोल एरिया","Goal Area"], r:[
+    ["6 मी के गोल एरिया (D) में सिर्फ़ गोलकीपर जा सकता है।","Only the goalkeeper may stand in the 6 m goal area."],
+    ["हमलावर खिलाड़ी हवा में कूदकर गोल एरिया के ऊपर से शॉट ले सकता है, बशर्ते बॉल छोड़ने से पहले लाइन के अंदर पैर न रखे।","An attacker may jump into the air over the goal area to shoot, as long as they release the ball before landing inside it."],
+    ["डिफ़ेंडर फ़ायदे के लिए जानबूझकर गोल एरिया में घुसे तो विरोधी को 7 मी थ्रो।","A defender who deliberately enters the goal area to gain an advantage concedes a 7-metre throw."]]},
+  {t:["फ़ाउल और सज़ा","Fouls & Penalties"], r:[
+    ["फ़्री थ्रो: छोटे फ़ाउल पर, 9 मी की डैश लाइन के बाहर से।","Free throw: awarded for minor fouls, taken from outside the 9 m dashed line."],
+    ["7 मी थ्रो (पेनल्टी): गोल का साफ़ मौका गलत तरीके से छीना जाए।","7-metre throw (penalty): awarded when a clear chance to score is illegally destroyed."],
+    ["पीला कार्ड चेतावनी; 2 मिनट का निलंबन — टीम उतनी देर एक खिलाड़ी कम।","A yellow card is a warning; a 2-minute suspension leaves the team one player short for that time."],
+    ["एक ही खिलाड़ी को तीसरा 2 मिनट निलंबन मिले तो लाल कार्ड — वो बाहर, पर 2 मिनट बाद टीम दूसरा खिलाड़ी ला सकती है।","A player's third 2-minute suspension brings a red card — they're out, but the team can bring on a replacement after 2 minutes."]]}
+  ]},
+
+{ id:"golf", name:["गोल्फ़","Golf"], icon:"⛳", c:"#15803d",
+  body:["R&A · USGA · IGU (Indian Golf Union)","R&A · USGA · IGU (Indian Golf Union)"],
+  facts:[[["राउंड","Round"],["18 होल","18 holes"]],[["क्लब","Clubs"],["अधिकतम 14","Max 14"]],[["लक्ष्य","Goal"],["सबसे कम स्ट्रोक","Fewest strokes"]],[["खोई गेंद","Lost ball"],["3 मिनट तलाश","3-min search"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["एक राउंड में 18 होल; हर होल पर गेंद को टी (tee) से शुरू करके कप में डालना होता है।","A round is 18 holes; on each you play the ball from the tee into the hole."],
+    ["स्ट्रोक प्ले: पूरे राउंड में सबसे कम स्ट्रोक वाला जीतता है। मैच प्ले: हर होल अलग से जीता जाता है, ज़्यादा होल जीतने वाला विजेता।","Stroke play: the fewest total strokes wins. Match play: each hole is won separately, and whoever wins more holes wins."],
+    ["पार (Par): किसी होल के लिए तय स्ट्रोक। पार से 1 कम = बर्डी, 2 कम = ईगल, 1 ज़्यादा = बोगी।","Par is the expected number of strokes for a hole. One under is a birdie, two under an eagle, one over a bogey."],
+    ["बैग में अधिकतम 14 क्लब रख सकते हैं।","You may carry a maximum of 14 clubs."]]},
+  {t:["गेंद खेलना","Playing the Ball"], r:[
+    ["गेंद जैसी पड़ी है वैसे ही खेलें (play it as it lies); अपनी पोज़िशन सुधारने के लिए कुछ दबाना या हटाना मना।","Play the ball as it lies; you may not improve your lie by pressing down or bending things."],
+    ["ढीली प्राकृतिक चीज़ें (पत्ते, टहनियाँ) हटा सकते हैं, पर गेंद हिलनी नहीं चाहिए।","Loose natural objects such as leaves and twigs may be removed, as long as the ball doesn't move."],
+    ["होल से सबसे दूर वाला पहले खेलता है; स्ट्रोक प्ले में 'रेडी गोल्फ़' (जो तैयार हो वो खेले) की अनुमति है।","The player farthest from the hole plays first; in stroke play 'ready golf' is encouraged."],
+    ["ग्रीन पर गेंद मार्क करके उठा और साफ़ कर सकते हैं; फ़्लैगस्टिक होल में लगी रहने दे सकते हैं।","On the green you may mark, lift and clean your ball, and you may leave the flagstick in the hole."],
+    ["गलती से दूसरे की गेंद खेल दी (wrong ball): स्ट्रोक प्ले में 2 स्ट्रोक पेनल्टी, मैच प्ले में होल हार।","Playing a wrong ball costs 2 penalty strokes in stroke play, or loss of the hole in match play."]]},
+  {t:["पेनल्टी और राहत","Penalties & Relief"], r:[
+    ["आउट ऑफ़ बाउंड्स (सफ़ेद खूँटे) या खोई गेंद: 1 पेनल्टी स्ट्रोक, और पिछली जगह से दोबारा (stroke and distance)।","Out of bounds (white stakes) or a lost ball: 1 penalty stroke and replay from where you last hit (stroke and distance)."],
+    ["गेंद ढूँढने के लिए अधिकतम 3 मिनट; नहीं मिली तो खोई मानी जाती है।","You have 3 minutes to search for a ball; after that it's lost."],
+    ["पेनल्टी एरिया (लाल/पीले खूँटे, जैसे पानी): 1 पेनल्टी स्ट्रोक लेकर तय जगह पर गेंद ड्रॉप कर सकते हैं — या जैसी पड़ी है वैसे खेलें।","Penalty area (red or yellow stakes, such as water): take relief with 1 penalty stroke and drop in the allowed area — or play it as it lies."],
+    ["अनप्लेएबल गेंद: खिलाड़ी खुद तय करे, 1 पेनल्टी स्ट्रोक लेकर राहत।","Unplayable ball: the player may declare it unplayable and take relief for 1 penalty stroke."],
+    ["कार्ट पाथ, स्प्रिंकलर जैसी चीज़ों से बिना पेनल्टी राहत (free relief) मिलती है।","Free relief is allowed from things like cart paths and sprinkler heads."],
+    ["ड्रॉप घुटने की ऊँचाई से करना होता है।","Drops must be made from knee height."]]}
+  ]}
+,
+
+{ id:"pickleball", name:["पिकलबॉल","Pickleball"], icon:"🥎", c:"#0891b2",
+  body:["USA Pickleball नियम · भारत में तेज़ी से लोकप्रिय","USA Pickleball rules · fast-growing in India"],
+  facts:[[["खिलाड़ी","Players"],["1 या 2 प्रति साइड","1 or 2 per side"]],[["स्कोरिंग","Scoring"],["11 पॉइंट, 2 की बढ़त","11 pts, win by 2"]],[["कोर्ट","Court"],["13.41 × 6.10 मी","13.41 × 6.10 m"]],[["किचन","Kitchen"],["नेट से 2.13 मी","2.13 m from net"]]],
+  sections:[
+  {t:["सर्विस","Service"], r:[
+    ["सर्विस अंडरआर्म होती है: पैडल कमर के नीचे से ऊपर की ओर चलाते हुए बॉल मारें; 'ड्रॉप सर्व' (बॉल टप्पा खिलाकर मारना) भी मान्य है।","The serve is underhand, with an upward paddle motion and contact below the waist; a 'drop serve' (letting the ball bounce first) is also allowed."],
+    ["सर्विस तिरछी (diagonal) होती है और नॉन-वॉली ज़ोन (किचन) के पार गिरनी चाहिए; किचन लाइन पर गिरी सर्विस फ़ॉल्ट।","The serve goes diagonally and must land beyond the non-volley zone (kitchen); a serve landing on the kitchen line is a fault."],
+    ["सर्विस के समय कम से कम एक पैर बेसलाइन के पीछे ज़मीन पर हो, और कोई पैर बेसलाइन या कोर्ट को न छुए।","At the serve, at least one foot must be on the ground behind the baseline, and neither foot may touch the baseline or court."],
+    ["हर पॉइंट पर सिर्फ़ एक सर्विस का मौका; नेट छूकर सही जगह गिरी सर्विस खेल में रहती है (कोई लेट नहीं)।","Only one serve attempt per point; a serve that clips the net and lands in is in play (no let)."]]},
+  {t:["टू-बाउंस और किचन","Two-Bounce Rule & Kitchen"], r:[
+    ["टू-बाउंस रूल: सर्विस के बाद रिसीवर की तरफ़ बॉल एक बार टप्पा खाए, और रिटर्न के बाद सर्वर की तरफ़ भी एक बार — उसके बाद ही वॉली (बिना टप्पे मारना) की अनुमति।","Two-bounce rule: the serve must bounce once on the receiver's side and the return must bounce once on the server's side — only then are volleys allowed."],
+    ["नॉन-वॉली ज़ोन (किचन): नेट के दोनों तरफ़ 2.13 मी (7 फ़ुट) का हिस्सा, जिसमें खड़े होकर या लाइन छूकर वॉली नहीं कर सकते।","Non-volley zone (kitchen): a 7 ft (2.13 m) area on each side of the net where you can't volley while standing in it or touching its line."],
+    ["वॉली मारने के बाद रफ़्तार (momentum) से किचन में चले गए, तो भी फ़ॉल्ट।","If your momentum carries you into the kitchen after a volley, it's still a fault."],
+    ["बॉल किचन में टप्पा खा ले, तो आप किचन में जाकर उसे मार सकते हैं।","You may enter the kitchen to play a ball that has bounced there."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["आमतौर पर सिर्फ़ सर्व करने वाली टीम पॉइंट जीतती है; गेम 11 पॉइंट का, 2 पॉइंट की बढ़त ज़रूरी।","Normally only the serving side scores; games go to 11 and must be won by 2."],
+    ["डबल्स स्कोर तीन संख्याओं में बोला जाता है: सर्वर का स्कोर, रिसीवर का स्कोर, सर्वर नंबर (1 या 2)।","Doubles scores are called as three numbers: serving team score, receiving team score, and server number (1 or 2)."],
+    ["डबल्स में दोनों पार्टनर सर्व करते हैं, पर गेम की शुरुआत वाली टीम को सिर्फ़ एक सर्वर मिलता है — इसलिए शुरुआती स्कोर '0-0-2'।","In doubles both partners serve, but the first serving team gets only one server — that's why the game starts at '0-0-2'."],
+    ["कुछ टूर्नामेंट रैली स्कोरिंग (हर रैली पर पॉइंट) भी अपनाते हैं।","Some events use rally scoring, where every rally wins a point."]]},
+  {t:["फ़ॉल्ट","Faults"], r:[
+    ["बॉल बाहर गिरे, नेट में लगे, या नेट पार न करे।","The ball lands out, hits the net, or fails to cross it."],
+    ["बॉल अपनी तरफ़ दो बार टप्पा खा ले।","The ball bounces twice on your side."],
+    ["रैली के दौरान पैडल, शरीर या कपड़ों से नेट या नेट पोस्ट छूना।","Touching the net or net post with paddle, body or clothing during a rally."],
+    ["लाइन पर गिरी बॉल अंदर है — सिवाय सर्विस के जो किचन लाइन पर गिरे।","A ball on the line is in — except a serve landing on the kitchen line."]]}
+  ]},
+
+{ id:"squash", name:["स्क्वैश","Squash"], icon:"🧱", c:"#7e22ce",
+  body:["World Squash · PSA · SRFI","World Squash · PSA · SRFI"],
+  facts:[[["स्कोरिंग","Scoring"],["11 पॉइंट (PAR)","11 pts (PAR)"]],[["मैच","Match"],["बेस्ट ऑफ़ 5 गेम","Best of 5 games"]],[["कोर्ट","Court"],["9.75 × 6.4 मी","9.75 × 6.4 m"]],[["टिन","Tin"],["48 सेमी (प्रो 43)","48 cm (pro 43)"]]],
+  sections:[
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["PAR (पॉइंट-अ-रैली): हर रैली पर पॉइंट, चाहे सर्विस किसी की हो।","Point-a-rally (PAR): every rally scores, whoever served."],
+    ["गेम 11 पॉइंट का; 10-10 पर 2 पॉइंट की बढ़त ज़रूरी। मैच बेस्ट ऑफ़ 5 गेम।","Games go to 11; at 10-10 you need a 2-point lead. Matches are best of 5 games."],
+    ["रैली जीतने वाला सर्व करता है।","The rally winner serves."]]},
+  {t:["सर्विस","Service"], r:[
+    ["सर्वर का कम से कम एक पैर सर्विस बॉक्स के अंदर ज़मीन पर, लाइन को छुए बिना।","The server must have at least one foot on the floor inside the service box, not touching the line."],
+    ["बॉल सामने की दीवार पर सर्विस लाइन और आउट लाइन के बीच लगे, और (अगर वॉली न की जाए) सामने वाले के पीछे के क्वार्टर में गिरे।","The ball must hit the front wall between the service line and the out line, and — unless volleyed — land in the opposite back quarter."],
+    ["पॉइंट जीतकर सर्विस जारी रखने वाला सर्वर हर बार सर्विस बॉक्स बदलता है।","A server who keeps the serve switches service boxes after each point."]]},
+  {t:["रैली","The Rally"], r:[
+    ["बॉल ज़मीन पर गिरने से पहले सामने की दीवार पर लगनी चाहिए; बीच में बगल या पीछे की दीवार से लग सकती है।","The ball must reach the front wall before touching the floor; it may hit side or back walls on the way."],
+    ["बॉल ज़मीन पर अधिकतम एक बार टप्पा खा सकती है।","The ball may bounce on the floor at most once."],
+    ["बॉल टिन (सामने नीचे की पट्टी) या आउट लाइन पर/ऊपर लगी तो आउट।","A ball hitting the tin (the low strip on the front wall) or on or above the out lines is out."]]},
+  {t:["लेट और स्ट्रोक","Lets & Strokes"], r:[
+    ["खिलाड़ी को शॉट के बाद विरोधी को बॉल तक सीधा रास्ता और खेलने की जगह देनी होती है।","After playing a shot, you must give your opponent direct access to the ball and room to play it."],
+    ["लेट (Let): रुकावट हुई पर कोई गलती नहीं, या खिलाड़ी बॉल तक पहुँच सकता था — रैली दोबारा।","Let: interference occurred but neither player is at fault, or the striker could have reached the ball — the rally is replayed."],
+    ["स्ट्रोक (Stroke): विरोधी ने रास्ता नहीं छोड़ा, या रुकावट न होती तो विजयी शॉट बनता — पॉइंट रोके गए खिलाड़ी को।","Stroke: the opponent didn't clear, or the striker would have hit a winner — the point goes to the obstructed player."],
+    ["नो लेट: खिलाड़ी बॉल तक पहुँच ही नहीं सकता था, या रुकावट नाममात्र थी — पॉइंट विरोधी को।","No let: the striker couldn't have reached the ball, or the interference was minimal — the opponent wins the point."],
+    ["बॉल विरोधी को लगे और वो सीधे सामने की दीवार पर जा रही थी तो स्ट्रोक (मारने वाले का पॉइंट); वरना लेट।","If the ball hits the opponent on its way directly to the front wall, it's a stroke to the striker; otherwise it's a let."]]}
+  ]},
+
+{ id:"athletics", name:["एथलेटिक्स","Athletics"], icon:"🏅", c:"#c2410c",
+  body:["World Athletics · AFI (Athletics Federation of India)","World Athletics · AFI (Athletics Federation of India)"],
+  facts:[[["ट्रैक","Track"],["400 मी, 8–9 लेन","400 m, 8–9 lanes"]],[["फ़ॉल्स स्टार्ट","False start"],["एक बार = बाहर","One = out"]],[["हवा सीमा","Wind limit"],["+2.0 मी/से","+2.0 m/s"]],[["फ़ील्ड प्रयास","Field attempts"],["3 + 3 (टॉप 8)","3 + 3 (top 8)"]]],
+  sections:[
+  {t:["ट्रैक इवेंट","Track Events"], r:[
+    ["फ़ॉल्स स्टार्ट: पहली ही गलती पर एथलीट बाहर (डिसक्वालिफ़ाई)। ब्लॉक सेंसर पर 0.100 सेकंड से कम रिएक्शन टाइम फ़ॉल्स स्टार्ट माना जाता है।","False start: a single false start means disqualification. A reaction time under 0.100 s on the block sensors counts as a false start."],
+    ["100 मी, 200 मी, 400 मी और हर्डल्स में पूरी दौड़ अपनी लेन में।","In the 100 m, 200 m, 400 m and hurdles you must stay in your own lane throughout."],
+    ["800 मी में पहले मोड़ (bend) के बाद लेन छोड़कर अंदर आ सकते हैं।","In the 800 m runners may break for the inside lane after the first bend."],
+    ["दौड़ तब पूरी होती है जब धड़ (torso) — सिर, हाथ या पैर नहीं — फ़िनिश लाइन पार करे; फ़ोटो-फ़िनिश से 1/1000 सेकंड तक फ़ैसला।","A runner finishes when their torso — not head, arms or legs — crosses the line; photo-finish separates times to 1/1000 s."],
+    ["हर्डल जानबूझकर हाथ या पैर से गिराना, या बगल से पैर निकालना फ़ाउल; अनजाने में गिर जाना ठीक है।","Deliberately knocking a hurdle down or trailing a leg around it is a foul; accidentally hitting one is fine."]]},
+  {t:["रिले","Relays"], r:[
+    ["बैटन 30 मी के टेक-ओवर ज़ोन के अंदर ही हाथ से हाथ दी जानी चाहिए।","The baton must be passed hand to hand within the 30 m takeover zone."],
+    ["बैटन गिर जाए तो गिराने वाला ही उठाए, बिना दूसरों को रोके।","If the baton is dropped, the athlete who dropped it must pick it up without obstructing others."],
+    ["4×400 मी में पहले धावक का पूरा लैप और दूसरे का पहला मोड़ लेन में; उसके बाद अंदर आ सकते हैं।","In the 4×400 m, the first leg and the first bend of the second leg are run in lanes; then runners may cut in."]]},
+  {t:["जंप इवेंट","Jumps"], r:[
+    ["लॉन्ग जंप और ट्रिपल जंप: टेक-ऑफ़ बोर्ड की लाइन से पैर आगे गया तो फ़ाउल; छलांग बोर्ड की लाइन से रेत के सबसे पास के निशान तक नापी जाती है।","Long and triple jump: stepping past the take-off line is a foul; the jump is measured from the line to the nearest mark in the sand."],
+    ["ट्रिपल जंप का क्रम: हॉप (उसी पैर पर), स्टेप (दूसरे पैर पर), फिर जंप।","Triple jump sequence: hop (same foot), step (other foot), then jump."],
+    ["हाई जंप और पोल वॉल्ट: एक ऊँचाई पर लगातार 3 नाकाम प्रयास = बाहर। एथलीट कोई ऊँचाई छोड़ (pass) भी सकता है।","High jump and pole vault: three consecutive failures eliminate you. Athletes may also pass heights."],
+    ["हाई जंप में एक पैर से टेक-ऑफ़ ज़रूरी।","In the high jump you must take off from one foot."],
+    ["बराबरी पर: आख़िरी पार की गई ऊँचाई पर कम नाकामी, फिर पूरे इवेंट में कम नाकामी वाला आगे।","Ties are broken by fewer failures at the last height cleared, then fewer failures overall."]]},
+  {t:["थ्रो इवेंट","Throws"], r:[
+    ["शॉट पुट, डिस्कस, हैमर और जैवलिन — गोला/भाला तय सेक्टर लाइनों के अंदर गिरना चाहिए।","Shot put, discus, hammer and javelin must land inside the sector lines."],
+    ["जैवलिन धातु की नोक (tip) पहले ज़मीन छुए तभी वैध; दौड़कर आर्क लाइन के पार पैर नहीं जाना चाहिए।","A javelin is valid only if the metal tip lands first; the thrower mustn't step beyond the arc."],
+    ["फ़ेंकने वाला चीज़ ज़मीन पर गिरने से पहले सर्कल/रनवे नहीं छोड़ सकता, और पीछे के आधे हिस्से से बाहर निकलना होता है।","Throwers may not leave the circle or runway until the implement lands, and must exit from the back half."],
+    ["शॉट पुट 'पुट' किया जाता है — कंधे के पास से धकेलना, फेंकना नहीं।","The shot is 'put' — pushed from the shoulder, not thrown."],
+    ["फ़ाइनल में सभी को 3 प्रयास; टॉप 8 को 3 और। सबसे अच्छा एक प्रयास गिना जाता है।","In finals everyone gets 3 attempts; the top 8 get 3 more. The single best counts."]]},
+  {t:["रिकॉर्ड और रेस वॉक","Records & Race Walk"], r:[
+    ["100 मी, 200 मी, हर्डल्स, लॉन्ग जंप और ट्रिपल जंप में पीछे से हवा +2.0 मी/से से ज़्यादा हो तो रिकॉर्ड मान्य नहीं।","In the 100 m, 200 m, hurdles, long jump and triple jump, a tailwind above +2.0 m/s means records don't count."],
+    ["रेस वॉक: एक पैर हमेशा ज़मीन से लगा दिखे, और आगे वाला पैर ज़मीन छूने से लेकर शरीर के नीचे आने तक सीधा (घुटना न मुड़े)।","Race walk: one foot must always appear to touch the ground, and the front leg must stay straight from contact until it passes under the body."]]}
+  ]},
+
+{ id:"weightlifting", name:["भारोत्तोलन","Weightlifting"], icon:"🏋️", c:"#a21caf",
+  body:["IWF · IWLF (Indian Weightlifting Federation)","IWF · IWLF (Indian Weightlifting Federation)"],
+  facts:[[["लिफ़्ट","Lifts"],["स्नैच · क्लीन एंड जर्क","Snatch · Clean & Jerk"]],[["प्रयास","Attempts"],["हर लिफ़्ट में 3","3 per lift"]],[["रेफ़री","Referees"],["3 (2 सफ़ेद = वैध)","3 (2 white = good)"]],[["समय","Clock"],["1 मिनट","1 min"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["दो लिफ़्ट: स्नैच (एक ही झटके में सिर के ऊपर) और क्लीन एंड जर्क (पहले कंधों तक, फिर सिर के ऊपर)।","Two lifts: the snatch (floor to overhead in one move) and the clean & jerk (to the shoulders, then overhead)."],
+    ["हर लिफ़्ट में 3 प्रयास; टोटल = सबसे अच्छा स्नैच + सबसे अच्छा क्लीन एंड जर्क।","Three attempts at each lift; the total is the best snatch plus the best clean & jerk."],
+    ["किसी एक लिफ़्ट में एक भी सफल प्रयास नहीं, तो टोटल नहीं ('बम आउट')।","No successful attempt in either lift means no total — a 'bomb-out'."],
+    ["लिफ़्टर वज़न वर्ग में मुक़ाबला करते हैं; वज़न मुक़ाबले से 2 घंटे पहले।","Lifters compete in bodyweight categories, weighing in 2 hours before."],
+    ["बार पर वज़न कभी कम नहीं होता — अगला प्रयास कम से कम 1 किलो ज़्यादा।","The bar never gets lighter — each attempt must be at least 1 kg heavier."]]},
+  {t:["वैध लिफ़्ट","Good Lift"], r:[
+    ["लिफ़्टर बार को सिर के ऊपर सीधी बाँहों और स्थिर पैरों के साथ रोके; रेफ़री के 'डाउन' सिग्नल के बाद ही नीचे लाए।","The lifter holds the bar overhead with straight arms and still feet, lowering it only after the referee's 'down' signal."],
+    ["3 रेफ़री होते हैं; कम से कम 2 सफ़ेद लाइट = वैध लिफ़्ट।","There are 3 referees; at least 2 white lights means a good lift."],
+    ["नाम पुकारे जाने के बाद 1 मिनट में लिफ़्ट शुरू करनी होती है; अपने ही लगातार प्रयास में 2 मिनट।","You have 1 minute to start after being called, or 2 minutes for consecutive attempts of your own."]]},
+  {t:["नाकाम लिफ़्ट","No Lift"], r:[
+    ["प्रेस-आउट: बाँह मुड़ने के बाद धकेलकर सीधी करना।","Press-out: bending and then pushing the arms straight overhead."],
+    ["पैरों के अलावा शरीर का कोई हिस्सा (जैसे घुटना) प्लेटफ़ॉर्म छू जाए।","Any part of the body other than the feet touching the platform (such as a knee)."],
+    ["'डाउन' सिग्नल से पहले बार नीचे लाना, या बार को पीछे गिरा देना।","Lowering the bar before the 'down' signal, or dropping it behind."],
+    ["क्लीन में बार को कंधों पर रखने से पहले छाती से छुआना; प्लेटफ़ॉर्म से बाहर पैर रखना।","Touching the bar to the chest before racking it in the clean, or stepping off the platform."]]},
+  {t:["जीत","Winning"], r:[
+    ["सबसे बड़ा टोटल जीतता है; स्नैच और क्लीन एंड जर्क के अलग मेडल भी कई प्रतियोगिताओं में मिलते हैं।","The biggest total wins; many competitions also award separate medals for the snatch and the clean & jerk."],
+    ["टोटल बराबर हो तो जिसने वो टोटल पहले हासिल किया, वो आगे।","If totals are equal, the lifter who reached that total first ranks higher."]]}
+  ]},
+
+{ id:"shooting", name:["निशानेबाज़ी","Shooting"], icon:"🎯", c:"#57534e",
+  body:["ISSF · NRAI (National Rifle Association of India)","ISSF · NRAI (National Rifle Association of India)"],
+  facts:[[["प्रकार","Types"],["राइफ़ल · पिस्टल · शॉटगन","Rifle · Pistol · Shotgun"]],[["एयर इवेंट","Air events"],["10 मी","10 m"]],[["फ़ाइनल","Finals"],["8 निशानेबाज़","8 shooters"]],[["सबसे ज़्यादा","Max shot"],["10.9 (डेसिमल)","10.9 (decimal)"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["तीन वर्ग: राइफ़ल, पिस्टल (कागज़/इलेक्ट्रॉनिक टारगेट पर) और शॉटगन (उड़ती मिट्टी की तश्तरियों — क्ले टारगेट पर)।","Three groups: rifle and pistol (shot at paper or electronic targets) and shotgun (shot at flying clay targets)."],
+    ["ओलंपिक इवेंट: 10 मी एयर राइफ़ल, 10 मी एयर पिस्टल, 50 मी राइफ़ल 3 पोज़िशन, 25 मी पिस्टल, 25 मी रैपिड फ़ायर पिस्टल, ट्रैप और स्कीट।","Olympic events include 10 m air rifle, 10 m air pistol, 50 m rifle 3 positions, 25 m pistol, 25 m rapid-fire pistol, trap and skeet."],
+    ["क्वालिफ़िकेशन के टॉप 8 निशानेबाज़ फ़ाइनल में जाते हैं; फ़ाइनल में स्कोर शून्य से शुरू होता है।","The top 8 from qualification reach the final, where scores start again from zero."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["टारगेट में 10 घेरे, बीच वाला 10। राइफ़ल में डेसिमल स्कोरिंग — एक शॉट अधिकतम 10.9।","Targets have 10 rings with 10 in the centre. Rifle uses decimal scoring — up to 10.9 per shot."],
+    ["पिस्टल क्वालिफ़िकेशन में पूरे अंक (अधिकतम 10), फ़ाइनल में डेसिमल।","Pistol qualification uses whole numbers (max 10); finals use decimals."],
+    ["फ़ाइनल में तय शॉट्स के बाद सबसे कम स्कोर वाला बाहर होता जाता है (elimination), जब तक विजेता न बचे।","In finals the lowest scorer is eliminated after set numbers of shots until a winner remains."],
+    ["25 मी रैपिड फ़ायर और 25 मी पिस्टल के रैपिड हिस्से में 9.7 या उससे ज़्यादा का शॉट 'हिट' गिना जाता है।","In 25 m rapid-fire pistol and the rapid stage of 25 m pistol finals, a shot of 9.7 or more counts as a hit."]]},
+  {t:["शॉटगन","Shotgun"], r:[
+    ["ट्रैप: तश्तरी आगे की ओर अलग-अलग दिशाओं में उड़ती है; हर तश्तरी पर 2 गोली चला सकते हैं।","Trap: clays fly away from the shooter at varying angles; you may fire 2 shots at each."],
+    ["स्कीट: दो ऊँचाइयों के घरों से तश्तरियाँ एक-दूसरे को काटते हुए उड़ती हैं; हर तश्तरी पर सिर्फ़ 1 गोली।","Skeet: clays cross from a high and a low house; only 1 shot per clay."],
+    ["तश्तरी का दिखता हुआ टुकड़ा टूटे तभी 'हिट' — सिर्फ़ धूल उड़ना काफ़ी नहीं।","A clay counts as hit only if a visible piece breaks off — dust alone isn't enough."]]},
+  {t:["सुरक्षा","Safety"], r:[
+    ["बंदूक की नली हमेशा टारगेट की दिशा (downrange) में।","The muzzle must always point downrange."],
+    ["शूटिंग न करते समय बंदूक का एक्शन खुला रहे और राइफ़ल/पिस्टल में सेफ़्टी फ़्लैग (chamber flag) लगा हो।","When not shooting, actions stay open and rifles and pistols carry a safety (chamber) flag."],
+    ["'Load' कमांड से पहले लोड करना या 'Stop' के बाद गोली चलाना गंभीर उल्लंघन — अयोग्यता तक हो सकती है।","Loading before the 'Load' command or firing after 'Stop' is a serious breach that can lead to disqualification."]]}
+  ]},
+
+{ id:"swimming", name:["तैराकी","Swimming"], icon:"🏊", c:"#0ea5e9",
+  body:["World Aquatics · SFI (Swimming Federation of India)","World Aquatics · SFI (Swimming Federation of India)"],
+  facts:[[["स्ट्रोक","Strokes"],["4","4"]],[["पूल","Pool"],["50 मी (लॉन्ग कोर्स)","50 m (long course)"]],[["फ़ॉल्स स्टार्ट","False start"],["एक बार = बाहर","One = out"]],[["पानी के नीचे","Underwater"],["अधिकतम 15 मी","Max 15 m"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["पूल 50 मी (लॉन्ग कोर्स) या 25 मी (शॉर्ट कोर्स)। हर तैराक अपनी लेन में रहता है।","Pools are 50 m (long course) or 25 m (short course). Each swimmer stays in their own lane."],
+    ["फ़ॉल्स स्टार्ट: एक ही गलती पर अयोग्य।","False start: a single false start means disqualification."],
+    ["फ़्रीस्टाइल, बैकस्ट्रोक और बटरफ़्लाई में स्टार्ट और हर टर्न के बाद अधिकतम 15 मी तक पानी के नीचे रह सकते हैं।","In freestyle, backstroke and butterfly you may stay underwater for at most 15 m after the start and each turn."],
+    ["दौड़ में हर टर्न पर दीवार छूना ज़रूरी; किसी और की लेन में जाकर रुकावट डालना अयोग्यता।","You must touch the wall at every turn; obstructing another swimmer by crossing lanes means disqualification."]]},
+  {t:["चार स्ट्रोक","The Four Strokes"], r:[
+    ["फ़्रीस्टाइल: कोई भी स्ट्रोक चल सकता है (आमतौर पर फ़्रंट क्रॉल); टर्न और फ़िनिश पर शरीर का कोई हिस्सा दीवार छुए।","Freestyle: any stroke is allowed (usually front crawl); some part of the body must touch the wall at turns and the finish."],
+    ["बैकस्ट्रोक: पानी में से शुरुआत, पूरी दौड़ पीठ के बल (टर्न के समय छोड़कर)।","Backstroke: starts in the water and is swum on the back throughout, except during turns."],
+    ["ब्रेस्टस्ट्रोक: दोनों हाथ और दोनों पैर एक साथ, एक जैसी हरकत; टर्न और फ़िनिश पर दोनों हाथों से एक साथ दीवार छूना। स्टार्ट/टर्न के बाद एक डॉल्फ़िन किक की अनुमति।","Breaststroke: arms and legs move together and symmetrically; touch the wall with both hands together at turns and the finish. One dolphin kick is allowed after the start and each turn."],
+    ["बटरफ़्लाई: दोनों बाँहें एक साथ पानी के ऊपर से आगे, पैरों की डॉल्फ़िन किक; टर्न और फ़िनिश पर दोनों हाथों से एक साथ छूना।","Butterfly: both arms recover together over the water with a dolphin kick; touch with both hands together at turns and the finish."]]},
+  {t:["मेडले और रिले","Medley & Relays"], r:[
+    ["इंडिविजुअल मेडले का क्रम: बटरफ़्लाई → बैकस्ट्रोक → ब्रेस्टस्ट्रोक → फ़्रीस्टाइल।","Individual medley order: butterfly → backstroke → breaststroke → freestyle."],
+    ["मेडले रिले का क्रम: बैकस्ट्रोक → ब्रेस्टस्ट्रोक → बटरफ़्लाई → फ़्रीस्टाइल।","Medley relay order: backstroke → breaststroke → butterfly → freestyle."],
+    ["मेडले में 'फ़्रीस्टाइल' का मतलब बाकी तीन स्ट्रोक के अलावा कोई भी स्ट्रोक।","In medley events, 'freestyle' means any stroke other than the other three."],
+    ["रिले में अगला तैराक तब ही ब्लॉक छोड़े जब साथी दीवार छू ले; पहले छोड़ा तो टीम अयोग्य।","In relays the next swimmer may leave the block only after the teammate touches the wall; an early take-off disqualifies the team."]]}
+  ]}
+
+];
+
+const GLOSSARY = [
+ ["LBW","LBW","cricket","गेंद बल्ले से पहले पैड/शरीर पर लगे और स्टंप पर जा रही हो तो आउट।","Out if the ball hits the pad/body before the bat and would hit the stumps."],
+ ["फ्री हिट","Free Hit","cricket","नो-बॉल के बाद की गेंद, जिस पर बोल्ड/कैच/LBW नहीं होता।","The ball after a no-ball; no bowled, caught or LBW dismissals."],
+ ["DLS","DLS","cricket","बारिश से कटे मैच में टारगेट तय करने का तरीका।","Method for resetting targets in rain-shortened matches."],
+ ["मेडन ओवर","Maiden Over","cricket","ऐसा ओवर जिसमें बल्लेबाज़ कोई रन न बनाए।","An over in which no runs are scored off the bat."],
+ ["डक","Duck","cricket","बल्लेबाज़ बिना रन बनाए आउट।","A batter dismissed without scoring."],
+ ["ऑफ़साइड","Offside","football","आख़िरी डिफ़ेंडर और गेंद से आगे खड़े होकर खेल में दख़ल।","Being ahead of the ball and second-last defender while involved in play."],
+ ["हैट्रिक","Hat-trick","football","एक मैच में एक खिलाड़ी के 3 गोल (क्रिकेट में लगातार 3 गेंदों पर 3 विकेट)।","3 goals by one player in a match (in cricket, 3 wickets in 3 balls)."],
+ ["VAR","VAR","football","वीडियो असिस्टेंट रेफ़री — गोल, पेनल्टी, लाल कार्ड की जाँच।","Video Assistant Referee — checks goals, penalties and red cards."],
+ ["क्लीन शीट","Clean Sheet","football","पूरे मैच में एक भी गोल न खाना।","Not conceding a single goal in a match."],
+ ["ड्यूस","Deuce","badminton","20-20 पर 2 पॉइंट की बढ़त तक खेल चलना।","At 20-20, play continues until a 2-point lead."],
+ ["स्मैश","Smash","badminton","ऊपर से तेज़ नीचे की ओर मारा गया शॉट।","A powerful shot hit steeply downward."],
+ ["लेट","Let","badminton","रैली दोबारा, किसी को पॉइंट नहीं।","Rally replayed with no point awarded."],
+ ["बॉक लाइन","Baulk Line","kabaddi","वो लाइन जो रेडर को हर रेड में पार करनी ही है।","The line a raider must cross on every raid."],
+ ["बोनस लाइन","Bonus Line","kabaddi","6+ डिफ़ेंडर होने पर इसे पार करने से बोनस पॉइंट।","Crossing it with 6+ defenders on court earns a bonus point."],
+ ["ऑल आउट / लोना","All Out / Lona","kabaddi","पूरी टीम आउट; विरोधी को 2 एक्स्ट्रा पॉइंट।","Whole team out; opponents get 2 extra points."],
+ ["डू-ऑर-डाई","Do-or-Die","kabaddi","2 खाली रेड के बाद वाली रेड, जिसमें पॉइंट लाना ज़रूरी।","The raid after 2 empty raids, which must score."],
+ ["पेनल्टी कॉर्नर","Penalty Corner","hockey","सर्कल में डिफ़ेंस के फ़ाउल पर बैकलाइन से अटैक।","Set-piece from the back line after a defensive foul in the circle."],
+ ["ड्रैग फ़्लिक","Drag Flick","hockey","पेनल्टी कॉर्नर पर गेंद घसीटकर ऊँचा शॉट।","A dragging, lifted shot used at penalty corners."],
+ ["D / स्ट्राइकिंग सर्कल","D / Striking Circle","hockey","गोल के सामने का अर्धवृत्त; गोल सिर्फ़ यहीं से।","The arc in front of goal; goals only count from inside it."],
+ ["ग्रीन कार्ड","Green Card","hockey","2 मिनट का निलंबन (कबड्डी में सिर्फ़ चेतावनी)।","2-minute suspension (just a warning in kabaddi)."],
+ ["खो","Kho","khokho","बैठे साथी को पीछे से छूकर पीछा सौंपना।","Passing the chase by touching a seated teammate from behind."],
+ ["वज़ीर","Wazir","khokho","UKK लीग का चेज़र जो दोनों दिशाओं में दौड़ सकता है।","A UKK league chaser allowed to run in either direction."],
+ ["चेकमेट","Checkmate","chess","राजा चेक में और बचने की कोई चाल नहीं — खेल ख़त्म।","King in check with no escape — game over."],
+ ["कैसलिंग","Castling","chess","राजा और हाथी की एक साथ होने वाली ख़ास चाल।","Special move of king and rook together."],
+ ["एक्सपीडाइट","Expedite","tabletennis","10 मिनट से लंबे गेम में 13 रिटर्न में पॉइंट जीतने का नियम।","Rule forcing the server to win within 13 returns in long games."],
+ ["टॉपस्पिन","Topspin","tabletennis","आगे की ओर घूमती बॉल जो तेज़ी से नीचे गिरती है।","Forward spin that makes the ball dip quickly."],
+ ["लिबेरो","Libero","volleyball","अलग जर्सी वाला डिफ़ेंसिव खिलाड़ी, सिर्फ़ बैक-रो में।","Back-row defensive specialist in a different jersey."],
+ ["स्पाइक","Spike","volleyball","नेट के ऊपर से ज़ोर से नीचे मारा गया अटैक।","A powerful downward attack over the net."],
+ ["शॉट क्लॉक","Shot Clock","basketball","शॉट लेने के लिए 24 सेकंड की घड़ी।","24-second clock within which a shot must be taken."],
+ ["ट्रैवलिंग","Travelling","basketball","बिना ड्रिबल बॉल लेकर कदम चलना।","Walking with the ball without dribbling."],
+ ["ऐस","Ace","tennis","ऐसी सर्विस जिसे विरोधी छू भी न पाए।","A serve the opponent can't even touch."],
+ ["लव","Love","tennis","टेनिस में शून्य (0) का स्कोर।","Tennis term for a score of zero."],
+ ["क्वीन कवर","Queen Cover","carrom","क्वीन के बाद अपनी गोटी डालकर उसे पक्का करना।","Pocketing your own coin after the queen to secure it."],
+ ["ड्यू","Due","carrom","फ़ाउल पर लौटानी पड़ने वाली गोटी।","A coin owed back to the board after a foul."],
+ ["चित / फ़ॉल","Fall / Pin","wrestling","विरोधी के दोनों कंधे मैट पर — तुरंत जीत।","Both of the opponent's shoulders on the mat — instant win."],
+ ["टेकडाउन","Takedown","wrestling","विरोधी को गिराकर ऊपर से नियंत्रण।","Bringing the opponent down and controlling them."],
+ ["नॉकआउट (KO)","Knockout (KO)","boxing","10 की गिनती तक न उठ पाना।","Failing to get up before the count of 10."],
+ ["जैब","Jab","boxing","आगे वाले हाथ से सीधा तेज़ मुक्का।","A quick straight punch with the lead hand."],
+ ["इनर टेन (X)","Inner Ten (X)","archery","टारगेट का सबसे छोटा केंद्र घेरा; टाई तोड़ने में काम आता है।","The tiny centre ring, used to break ties."],
+ ["शूट-ऑफ़","Shoot-off","archery","बराबरी पर एक तीर का फ़ैसला।","A one-arrow tie-breaker."],
+ ["ब्रेक","Break","snooker","एक बारी में लगातार बनाए पॉइंट।","Points scored in one visit to the table."],
+ ["फ़्री बॉल","Free Ball","snooker","फ़ाउल के बाद स्नूकर होने पर किसी भी गेंद को 'ball on' मानना।","Nominating any ball as the ball on after a foul leaves you snookered."],
+ ["7 मी थ्रो","7-metre Throw","handball","गोल का साफ़ मौका छीनने पर पेनल्टी।","Penalty for destroying a clear scoring chance."],
+ ["पैसिव प्ले","Passive Play","handball","गोल की कोशिश न करने पर चेतावनी; फिर 4 पास में शॉट।","Warning for not attacking; then 4 passes to shoot."],
+ ["बर्डी","Birdie","golf","होल को पार से 1 स्ट्रोक कम में पूरा करना।","Completing a hole in one under par."],
+ ["होल-इन-वन","Hole-in-one","golf","टी से एक ही शॉट में गेंद होल में।","Holing the ball with the first shot from the tee."],
+ ["किचन","Kitchen","pickleball","नेट के पास का नॉन-वॉली ज़ोन।","The non-volley zone next to the net."],
+ ["डिंक","Dink","pickleball","किचन में हल्का, धीमा शॉट।","A soft shot dropped into the kitchen."],
+ ["टिन","Tin","squash","सामने की दीवार की निचली पट्टी; छूने पर बॉल आउट।","The low strip on the front wall; hitting it is out."],
+ ["स्ट्रोक","Stroke","squash","रुकावट पर रोके गए खिलाड़ी को मिला पॉइंट।","A point awarded to an obstructed player."],
+ ["फ़ॉल्स स्टार्ट","False Start","athletics","गन से पहले दौड़ शुरू करना — एक बार में बाहर।","Leaving before the gun — one and you're out."],
+ ["टेक-ओवर ज़ोन","Takeover Zone","athletics","30 मी का हिस्सा जिसमें बैटन पास होती है।","The 30 m area where the baton must change hands."],
+ ["स्नैच","Snatch","weightlifting","ज़मीन से सिर के ऊपर एक ही झटके में।","Floor to overhead in one movement."],
+ ["बम आउट","Bomb-out","weightlifting","किसी लिफ़्ट में एक भी सफल प्रयास न होना।","Failing all attempts in a lift, so no total."],
+ ["डेसिमल स्कोरिंग","Decimal Scoring","shooting","शॉट को दशमलव में गिनना, अधिकतम 10.9।","Scoring shots to one decimal place, max 10.9."],
+ ["ट्रैप","Trap","shooting","आगे उड़ती तश्तरियों पर शॉटगन इवेंट; 2 गोली प्रति तश्तरी।","Shotgun event at clays flying away; 2 shots per clay."],
+ ["इंडिविजुअल मेडले","Individual Medley","swimming","एक ही तैराक चारों स्ट्रोक तैरता है।","One swimmer swims all four strokes."],
+ ["फ़्लिप टर्न","Flip Turn","swimming","दीवार पर कलाबाज़ी खाकर तेज़ी से मुड़ना।","A somersault turn at the wall."]
+];
+
+const CMP_COLS = [["खिलाड़ी","Players"],["फ़ॉर्मेट / समय","Format / Duration"],["जीत कैसे","How to win"],["टाई पर","If tied"],["संस्था","Body"]];
+const CMP = {
+ cricket:["11",["Test 5 दिन · ODI 50 ओवर · T20 20 ओवर","Test 5 days · ODI 50 overs · T20 20 overs"],["ज़्यादा रन","More runs"],["सुपर ओवर","Super Over"],"ICC"],
+ football:["11",["90 मिनट","90 min"],["ज़्यादा गोल","More goals"],["एक्स्ट्रा टाइम + पेनल्टी","Extra time + penalties"],"FIFA / IFAB"],
+ badminton:[["1 या 2","1 or 2"],["21 पॉइंट · बेस्ट ऑफ़ 3","21 pts · best of 3"],["2 गेम पहले जीतो","First to 2 games"],["20-20 पर 2 की बढ़त","2-point lead at 20-20"],"BWF"],
+ kabaddi:["7",["40 मिनट","40 min"],["ज़्यादा पॉइंट","More points"],["टाई-ब्रेकर रेड","Tie-breaker raids"],"AKFI / IKF"],
+ hockey:["11",["60 मिनट (4×15)","60 min (4×15)"],["ज़्यादा गोल","More goals"],["शूटआउट","Shootout"],"FIH"],
+ khokho:["9",["2 पारी · 9-9 मिनट","2 innings · 9-min turns"],["ज़्यादा पॉइंट","More points"],["अतिरिक्त पारी","Extra innings"],"KKFI"],
+ chess:["2",["समय नियंत्रण के हिसाब से","Depends on time control"],["चेकमेट","Checkmate"],["ड्रॉ (½-½)","Draw (½-½)"],"FIDE / AICF"],
+ tabletennis:[["1 या 2","1 or 2"],["11 पॉइंट · बेस्ट ऑफ़ 5/7","11 pts · best of 5/7"],["ज़्यादा गेम","Most games"],["10-10 पर 2 की बढ़त","2-point lead at 10-10"],"ITTF"],
+ volleyball:["6",["25 पॉइंट · बेस्ट ऑफ़ 5","25 pts · best of 5"],["3 सेट पहले जीतो","First to 3 sets"],["5वाँ सेट 15 पॉइंट","5th set to 15"],"FIVB"],
+ basketball:["5",["40 मिनट (4×10)","40 min (4×10)"],["ज़्यादा पॉइंट","More points"],["5 मिनट ओवरटाइम","5-min overtime"],"FIBA"],
+ tennis:[["1 या 2","1 or 2"],["बेस्ट ऑफ़ 3 या 5 सेट","Best of 3 or 5 sets"],["ज़्यादा सेट","Most sets"],["6-6 पर टाई-ब्रेक","Tie-break at 6-6"],"ITF"],
+ carrom:[["2 या 4","2 or 4"],["25 पॉइंट या 8 बोर्ड","25 pts or 8 boards"],["पहले 25 पॉइंट","First to 25"],"—","ICF / AICF"],
+ wrestling:[["1 बनाम 1","1 vs 1"],["2 × 3 मिनट","2 × 3 min"],["फ़ॉल या ज़्यादा पॉइंट","Fall or more points"],["बड़े दाँव / कम चेतावनी","Bigger move / fewer cautions"],"UWW"],
+ boxing:[["1 बनाम 1","1 vs 1"],["3 × 3 मिनट","3 × 3 min"],["KO, RSC या जजों का फ़ैसला","KO, RSC or judges' decision"],["जजों का बहुमत","Judges' majority"],"World Boxing"],
+ archery:[["1 या टीम","1 or team"],["सेट सिस्टम (रिकर्व)","Set system (recurve)"],["पहले 6 सेट पॉइंट","First to 6 set points"],["एक तीर शूट-ऑफ़","One-arrow shoot-off"],"World Archery"],
+ snooker:["2",["बेस्ट ऑफ़ फ़्रेम","Best of frames"],["ज़्यादा फ़्रेम","Most frames"],["काली गेंद दोबारा","Re-spotted black"],"WPBSA"],
+ handball:["7",["60 मिनट (2×30)","60 min (2×30)"],["ज़्यादा गोल","More goals"],["एक्स्ट्रा टाइम + 7 मी शूटआउट","Extra time + 7 m shootout"],"IHF"],
+ golf:[["1+","1+"],["18 होल","18 holes"],["सबसे कम स्ट्रोक","Fewest strokes"],["प्ले-ऑफ़ होल","Play-off holes"],"R&A / USGA"],
+ pickleball:[["1 या 2","1 or 2"],["11 पॉइंट, 2 की बढ़त","11 pts, win by 2"],["ज़्यादा गेम","Most games"],["2 पॉइंट की बढ़त तक","Until a 2-point lead"],"USA Pickleball"],
+ squash:["2",["11 पॉइंट · बेस्ट ऑफ़ 5","11 pts · best of 5"],["3 गेम पहले जीतो","First to 3 games"],["10-10 पर 2 की बढ़त","2-point lead at 10-10"],"World Squash"],
+ athletics:[["1 या रिले टीम","1 or relay team"],["इवेंट के हिसाब से","Varies by event"],["सबसे तेज़ / दूर / ऊँचा","Fastest / farthest / highest"],["फ़ोटो-फ़िनिश / काउंटबैक","Photo finish / countback"],"World Athletics"],
+ weightlifting:["1",["2 लिफ़्ट × 3 प्रयास","2 lifts × 3 attempts"],["सबसे बड़ा टोटल","Biggest total"],["जिसने टोटल पहले बनाया","Whoever reached it first"],"IWF"],
+ shooting:[["1 या टीम","1 or team"],["क्वालिफ़िकेशन + फ़ाइनल","Qualification + final"],["सबसे ज़्यादा स्कोर","Highest score"],["शूट-ऑफ़","Shoot-off"],"ISSF"],
+ swimming:[["1 या रिले टीम","1 or relay team"],["50 मी से 1500 मी","50 m to 1500 m"],["सबसे तेज़ समय","Fastest time"],["स्विम-ऑफ़","Swim-off"],"World Aquatics"]
+};
+
+const UI = {
+ search:["कोई भी नियम खोजें…","Search any rule…"],
+ guide:["गाइड","Guide"], all:["सभी खेल","All sports"],
+ kicker:["2026 संस्करण · हमेशा अपडेट","2026 Edition · always up to date"],
+ heroA:["हर खेल,","Every sport,"], heroB:["हर नियम","every rule"], heroC:["एक जगह","in one place"],
+ heroSub:[`क्रिकेट से कैरम तक — ${GAMES.length} खेलों के नियम आसान भाषा में, एक टैप में खोजने लायक।`,`From cricket to carrom — rules of ${GAMES.length} sports, explained simply and searchable in one tap.`],
+ sSports:["खेल","Sports"], sRules:["नियम","Rules"], sTerms:["शब्द","Terms"],
+ pick:["अपना खेल चुनें","Pick your sport"], pickSub:["हर नियमावली भागों में बँटी है","Every rulebook is split into sections"],
+ sec:["भाग","sections"], rul:["नियम","rules"],
+ dyk:["क्या आप जानते हैं?","Did you know?"], next:["अगला","Next"],
+ gTitle:["तुलना और शब्द गाइड","Compare & Glossary"], gSub:["सारे खेल एक नज़र में, और ज़रूरी शब्दों के मतलब।","Every sport at a glance, plus the key terms explained."],
+ gCard:[`${GAMES.length} खेल एक टेबल में, ज़रूरी शब्दों के साथ`,`${GAMES.length} sports in one table, plus key terms`],
+ compare:["एक नज़र में","At a glance"], gloss:["शब्द गाइड","Glossary"], glossQ:["शब्द खोजें…","Search terms…"],
+ filter:["इस खेल में खोजें…","Search this sport…"], expand:["सब खोलें","Expand all"], collapse:["सब बंद","Collapse all"],
+ contents:["इस पेज पर","On this page"], none:["कोई नियम नहीं मिला। दूसरा शब्द आज़माएँ।","No rules found. Try another word."],
+ nextSport:["अगला खेल","Next sport"], rulebook:["नियमावली","Rulebook"],
+ pHint:["हिंदी या English में कुछ भी लिखें","Type anything, in Hindi or English"], pTry:["आज़माएँ","Try"],
+ fNav:["चुनें","navigate"], fOpen:["खोलें","open"], found:["नतीजे","results"],
+ terms:["शब्द","Terms"], rulesG:["नियम","Rules"],
+ pause:["रोकें","Pause"], resume:["जारी रखें","Resume"], listenAll:["सारे नियम सुनें","Listen to all rules"], listen:["सुनें","Listen"], listenRule:["यह नियम सुनें","Listen to this rule"],
+ rule:["नियम","Rule"], section:["भाग","Section"], didYou:["क्या आप जानते हैं","Did you know"],
+ noVoice:["इस डिवाइस पर हिंदी आवाज़ नहीं मिली — फ़ोन की Text-to-speech सेटिंग में हिंदी जोड़ें।","No Hindi voice found on this device — add Hindi in your phone's text-to-speech settings."],
+ noVoiceEn:["इस डिवाइस पर अंग्रेज़ी आवाज़ नहीं मिली।","No English voice found on this device."],
+ noTTS:["इस ऐप में सुनने की सुविधा नहीं है। फ़ाइल को Chrome या Safari में खोलें।","Read-aloud isn't available in this app. Open the file in Chrome or Safari to listen."],
+ foot:["नियम आधिकारिक संस्थाओं (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics) पर आधारित, आसान भाषा में। टूर्नामेंट के हिसाब से कुछ नियम बदल सकते हैं।","Rules based on official bodies (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics), simplified. Some rules vary by tournament."]
+};
+const SUGGS = {
+  en:["LBW","Offside","Checkmate","Kitchen","False start","Knockout","Snatch","147","Medley","Birdie"],
+  hi:["LBW","ऑफ़साइड","चेकमेट","किचन","फ़ॉल्स स्टार्ट","नॉकआउट","स्नैच","147","मेडले","बर्डी"]
+};
+const sugg = () => SUGGS[lang==='en'?'en':'hi'];
+
+/* ================= STATE ================= */
+const store={get(k){try{return localStorage.getItem('krb-'+k)}catch(e){return null}},set(k,v){try{localStorage.setItem('krb-'+k,v)}catch(e){}}};
+let lang = store.get('lang')==='hi' ? 'hi' : 'en';
+const byId = Object.fromEntries(GAMES.map(g=>[g.id,g]));
+const app = document.getElementById('app');
+const INDEX = [];
+GAMES.forEach(g=>g.sections.forEach((s,si)=>s.r.forEach((p,ri)=>INDEX.push({g,si,ri,s,p,id:`${g.id}-${si}-${ri}`,
+  hay:(p[0]+' '+p[1]+' '+s.t[0]+' '+s.t[1]+' '+g.name[0]+' '+g.name[1]).toLowerCase()}))));
+const TOTAL = INDEX.length;
+
+/* ================= HELPERS ================= */
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const terms = q => q.toLowerCase().trim().split(/\s+/).filter(Boolean);
+const has = (hay,ts) => ts.every(t=>hay.includes(t));
+function hl(text, ts=[]){
+  if(!ts.length) return esc(text);
+  const re = new RegExp('('+ts.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')','gi');
+  return String(text).split(re).map((p,i)=> i%2 ? '<mark>'+esc(p)+'</mark>' : esc(p)).join('');
+}
+const ui = k => UI[k][lang==='en'?1:0];
+const L = p => Array.isArray(p) ? p[lang==='en'?1:0] : p;
+function B(p, ts=[]){
+  if(!Array.isArray(p)) return hl(p,ts);
+  return hl(p[lang==='en'?1:0],ts);
+}
+function setOpen(sec, v){ if(!sec) return; sec.classList.toggle('open', v);
+  const b=sec.querySelector('.sh'); if(b) b.setAttribute('aria-expanded', v); }
+const ruleCount = g => g.sections.reduce((a,s)=>a+s.r.length,0);
+const ICON = {
+  sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+  arrow:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  chev:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>',
+  speaker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
+  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>',
+  pause:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>',
+  stop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  prev:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h2v14H7zM20 6v12L10 12z"/></svg>',
+  next:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 5h2v14h-2zM4 6v12l10-6z"/></svg>',
+  search:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
+};
+function setAccent(c){
+  const r=document.documentElement.style;
+  if(!c){ ['--c','--b1','--b2'].forEach(k=>r.removeProperty(k)); return; }
+  r.setProperty('--c',c); r.setProperty('--b1',c); r.setProperty('--b2',c);
+}
+
+/* ================= CHROME ================= */
+function updateChrome(active){
+  document.documentElement.lang = lang==='en'?'en':'hi';
+  document.getElementById('logoTx').innerHTML = lang==='en'?'<b>Sports</b><span>Rulebook</span>':'<b>खेल</b><span>नियमावली</span>';
+  document.title = lang==='en' ? 'Sports Rulebook' : 'खेल नियमावली';
+  document.getElementById('strigTx').textContent = ui('search');
+  document.getElementById('navGuide').textContent = ui('guide');
+  document.getElementById('navGuide').classList.toggle('on', active==='guide');
+  document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('on', b.dataset.l===lang));
+  document.getElementById('langBtn').textContent = lang==='en' ? 'हिं' : 'EN';
+  document.getElementById('pin').placeholder = ui('search');
+  document.getElementById('fNav').textContent = ui('fNav');
+  document.getElementById('fOpen').textContent = ui('fOpen');
+  document.getElementById('foot').textContent = ui('foot');
+  document.getElementById('tabs').innerHTML =
+    `<a class="tab home ${active==='home'?'on':''}" style="--tc:var(--text)" href="#/">◎ ${ui('all')}</a>` +
+    GAMES.map(g=>`<a class="tab ${active===g.id?'on':''}" style="--tc:${g.c}" href="#/game/${g.id}">${g.icon} ${L(g.name)}</a>`).join('');
+  const at = document.querySelector('.tab.on'); if(at) at.scrollIntoView({inline:'center',block:'nearest'});
+}
+function applyTheme(t){
+  document.documentElement.dataset.theme = t; store.set('theme',t);
+  document.getElementById('themeBtn').innerHTML = t==='dark'?ICON.sun:ICON.moon;
+}
+document.getElementById('themeBtn').onclick = ()=>{
+  const next = document.documentElement.dataset.theme==='dark'?'light':'dark';
+  if(document.startViewTransition) document.startViewTransition(()=>applyTheme(next)); else applyTheme(next);
+};
+document.getElementById('langBtn').onclick=()=>document.querySelector(`#langSeg button[data-l="${lang==='en'?'hi':'en'}"]`).click();
+document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{
+  lang=b.dataset.l; store.set('lang',lang); TTS.vlang=lang; const y=scrollY; render(true); scrollTo(0,y);
+  if(pal.classList.contains('on')) runPal();
+});
+
+/* ================= EFFECTS ================= */
+let io, spy, timers=[];
+function reveal(){
+  if(io) io.disconnect();
+  io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }),{threshold:.06});
+  app.querySelectorAll('.rv').forEach((el,i)=>{ el.style.setProperty('--d',(Math.min(i,8)*55)+'ms'); io.observe(el); });
+  timers.push(setTimeout(()=>app.querySelectorAll('.rv:not(.in)').forEach(el=>{ if(el.getBoundingClientRect().top<innerHeight) el.classList.add('in'); }),900));
+}
+function countUp(){
+  app.querySelectorAll('[data-count]').forEach(el=>{
+    const to=+el.dataset.count, t0=performance.now(), d=1300;
+    const step=t=>{ const k=Math.min(1,(t-t0)/d), e=1-Math.pow(1-k,3); el.textContent=Math.round(to*e); if(k<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+document.addEventListener('pointermove', e=>{
+  const c = e.target.closest && e.target.closest('.gc'); if(!c) return;
+  const r=c.getBoundingClientRect(); c.style.setProperty('--mx',(e.clientX-r.left)+'px'); c.style.setProperty('--my',(e.clientY-r.top)+'px');
+});
+function typer(el){
+  const words = lang==='en'
+    ? ["LBW","offside","checkmate","deuce","kho","shot clock","super over","libero","queen cover"]
+    : ["LBW","ऑफ़साइड","चेकमेट","ड्यूस","खो","शॉट क्लॉक","सुपर ओवर","लिबेरो","क्वीन कवर"];
+  let w=0,i=0,del=false;
+  const tick=()=>{ if(!document.body.contains(el)) return;
+    const s=words[w]; el.textContent = s.slice(0,i);
+    if(!del && i<s.length) i++; else if(!del){ del=true; timers.push(setTimeout(tick,1200)); return; }
+    else if(i>0) i--; else { del=false; w=(w+1)%words.length; }
+    timers.push(setTimeout(tick, del?45:90)); };
+  tick();
+}
+
+/* ================= PAGES ================= */
+function pageHome(){
+  setAccent();
+  const tick = GLOSSARY.map(t=>`<a href="#/game/${t[2]}" style="--tc:${byId[t[2]].c}"><i></i>${esc(L([t[0],t[1]]))}</a>`).join('');
+  app.innerHTML = `
+  <section class="hero">
+    <div class="rv"><span class="kicker"><span class="dot"></span>${ui('kicker')}</span></div>
+    <h1 class="rv">${ui('heroA')} <span class="grad">${ui('heroB')}</span> ${ui('heroC')}</h1>
+    <p class="rv">${ui('heroSub')}</p>
+    <button class="bigsearch glass rv" id="bigS">${ICON.search}<span>${lang==='en'?'Search':'खोजें'}: <b class="typer" id="typer"></b></span><kbd>/</kbd></button>
+    <div class="sugg rv">${sugg().map(s=>`<button data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>
+    <div class="stats">
+      <div class="stat glass rv"><b data-count="${GAMES.length}">0</b><span>${ui('sSports')}</span></div>
+      <div class="stat glass rv"><b data-count="${TOTAL}">0</b><span>${ui('sRules')}</span></div>
+      <div class="stat glass rv"><b data-count="${GLOSSARY.length}">0</b><span>${ui('sTerms')}</span></div>
+    </div>
+  </section>
+  <div class="ticker rv"><div class="track">${tick}${tick}</div></div>
+  <div class="sec-h rv"><h2>${ui('pick')}</h2><p>${ui('pickSub')}</p></div>
+  <div class="bento">
+    ${GAMES.map((g,i)=>`<a class="gc glass rv ${i<2?'big':''}" style="--tc:${g.c}" href="#/game/${g.id}">
+      <span class="emo">${g.icon}</span>
+      <span class="tag">${esc(L(g.body).split('·')[0].trim())}</span>
+      <h3>${B(g.name)}</h3>
+      <div class="meta">${g.sections.length} ${ui('sec')} · ${ruleCount(g)} ${ui('rul')}</div>
+      <div class="fl">${g.facts.slice(0,3).map(f=>`<span>${esc(L(f[1]))}</span>`).join('')}</div>
+      <span class="go">${ICON.arrow}</span></a>`).join('')}
+    <div class="dyk glass rv" id="dyk">
+      <div class="lbl"><b>💡 ${ui('dyk')}</b><div class="acts">${true?`<button class="spk" id="dykSpk" data-src="d" aria-label="${ui('listen')}">${ICON.speaker}</button>`:''}<button class="pbtn" id="dykNext" style="padding:6px 12px">${ui('next')} ↻</button></div></div>
+      <a class="body" id="dykBody"></a>
+      <div class="src" id="dykSrc"></div>
+      <div class="bar" id="dykBar"></div>
+    </div>
+    <a class="gcard2 glass rv" href="#/guide">
+      <div class="top"><span class="tag2">${ui('guide')}</span><span class="go2">${ICON.arrow}</span></div>
+      <div class="avs">${GAMES.slice(0,8).map(g=>`<span style="--tc:${g.c}">${g.icon}</span>`).join('')}${GAMES.length>8?`<span class="more">+${GAMES.length-8}</span>`:''}</div>
+      <div><h3>${ui('gTitle')}</h3><p>${ui('gCard')}</p></div></a>
+  </div>`;
+  document.getElementById('bigS').onclick=()=>openPal();
+  app.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>openPal(b.dataset.s));
+  typer(document.getElementById('typer'));
+  countUp();
+  // Did you know rotator
+  let last=-1;
+  const show=()=>{
+    let i; do{ i=Math.floor(Math.random()*INDEX.length);}while(i===last); last=i;
+    const x=INDEX[i], body=document.getElementById('dykBody'), bar=document.getElementById('dykBar'); if(!body) return; dykCur=x;
+    body.classList.add('out');
+    timers.push(setTimeout(()=>{
+      body.innerHTML=B(x.p); body.href=`#/game/${x.g.id}/${x.id}`; body.classList.remove('out');
+      document.getElementById('dyk').style.setProperty('--tc',x.g.c);
+      document.getElementById('dykSrc').innerHTML=`<b>${x.g.icon} ${esc(L(x.g.name))}</b> · ${esc(L(x.s.t))}`;
+      bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run');
+    },300));
+  };
+  show(); timers.push(setInterval(()=>{ if(!TTS.active) show(); },7000));
+  document.getElementById('dykNext').onclick=show;
+  const ds=document.getElementById('dykSpk');
+  if(ds) ds.onclick=()=>ttsSrc('d', ()=>{ if(dykCur) ttsPlay([{p:dykCur.p,g:dykCur.g,si:dykCur.si,ri:dykCur.ri,id:null,dyk:true}],0,dykCur.g.c); });
+}
+
+function pageGame(id, target){
+  const g = byId[id]; if(!g) return pageHome();
+  setAccent(g.c, g.c, g.c, '#22d3ee');
+  const idx = GAMES.indexOf(g), nx = GAMES[(idx+1)%GAMES.length];
+  app.innerHTML = `
+  <section class="ghero glass rv">
+    <span class="emo">${g.icon}</span>
+    <span class="kicker" style="font-size:12px">${esc(L(g.body))}</span>
+    <h1>${esc(L(g.name))} ${ui('rulebook')}</h1>
+    <div class="bd">${g.sections.length} ${ui('sec')} · ${ruleCount(g)} ${ui('rul')}</div>
+    ${true?`<button class="lsn big" id="lsnAll" data-src="a:${g.id}" data-lbl="${ui('listenAll')}">${ICON.speaker}<span>${ui('listenAll')}</span></button>`:''}
+    <div class="facts">${g.facts.map(f=>`<div class="fact"><span>${esc(L(f[0]))}</span><b>${B(f[1])}</b></div>`).join('')}</div>
+  </section>
+  <div class="glayout">
+    <aside class="toc glass rv"><small>${ui('contents')}</small>
+      ${g.sections.map((s,i)=>`<a data-to="s${i}"><em>0${i+1}</em><span>${B(s.t)}</span></a>`).join('')}
+    </aside>
+    <div>
+      <div class="tools rv">
+        <label class="finput glass">${ICON.search}<input id="gq" type="search" placeholder="${ui('filter')}" autocomplete="off"></label>
+        <button class="pbtn" id="tog">${ui('collapse')}</button>
+      </div>
+      ${g.sections.map((s,si)=>`
+      <section class="sec glass rv open" id="s${si}">
+        <div class="shw"><button class="sh" type="button" aria-expanded="true"><span class="n">${String(si+1).padStart(2,'0')}</span><span class="st">${B(s.t)}</span><span class="cnt">${s.r.length} ${ui('rul')}</span><span class="chev">${ICON.chev}</span></button>${true?`<button class="lsn" data-ls="${si}" data-src="s:${g.id}-${si}" data-lbl="${ui('listen')}" aria-label="${ui('listen')}">${ICON.speaker}<span>${ui('listen')}</span></button>`:''}</div>
+        <div class="sb"><div><ol class="rules">${s.r.map((p,ri)=>`<li id="${g.id}-${si}-${ri}"><span class="num">${si+1}.${ri+1}</span><div class="tx">${B(p)}</div>${true?`<button class="spk" data-sp="${si}-${ri}" data-src="r:${g.id}-${si}-${ri}" aria-label="${ui('listenRule')}">${ICON.speaker}</button>`:''}</li>`).join('')}</ol></div></div>
+      </section>`).join('')}
+      <div class="empty hidden" id="gempty">${ui('none')}</div>
+      <a class="nextg glass rv" href="#/game/${nx.id}" style="--tc:${nx.c}">
+        <div><small>${ui('nextSport')} →</small><b>${esc(L(nx.name))}</b></div><span class="e">${nx.icon}</span></a>
+    </div>
+  </div>`;
+
+  // TOC click + scrollspy
+  app.querySelectorAll('.toc a').forEach(a=>a.onclick=()=>{ const el=document.getElementById(a.dataset.to); setOpen(el,true); el.scrollIntoView({behavior:'smooth',block:'start'}); });
+  app.querySelectorAll('.sec .sh').forEach(b=>b.onclick=()=>{ const sec=b.closest('.sec'); setOpen(sec, !sec.classList.contains('open')); });
+  {
+    const ruleItem=(si,ri)=>({p:g.sections[si].r[ri], g, si, ri, id:`${g.id}-${si}-${ri}`});
+    const secItems=si=>[{head:true,g,si,id:'s'+si}, ...g.sections[si].r.map((_,ri)=>ruleItem(si,ri))
+      .filter(x=>!document.getElementById(x.id)?.classList.contains('hidden'))];
+    app.querySelectorAll('.spk[data-sp]').forEach(b=>b.onclick=()=>{ const [si,ri]=b.dataset.sp.split('-').map(Number);
+      ttsSrc(b.dataset.src, ()=>ttsPlay([ruleItem(si,ri)], 0, g.c, true)); });
+    app.querySelectorAll('.lsn[data-ls]').forEach(b=>b.onclick=()=>{ const si=+b.dataset.ls; ttsSrc(b.dataset.src, ()=>ttsPlay(secItems(si),0,g.c)); });
+    const all=document.getElementById('lsnAll');
+    if(all) all.onclick=()=>ttsSrc(all.dataset.src, ()=>ttsPlay([{intro:true,g}, ...g.sections.flatMap((_,si)=>secItems(si))],0,g.c));
+  }
+  if(spy) spy.disconnect();
+  spy = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){
+    app.querySelectorAll('.toc a').forEach(a=>a.classList.toggle('on',a.dataset.to===e.target.id)); }}),{rootMargin:'-35% 0px -60% 0px'});
+  app.querySelectorAll('.sec').forEach(d=>spy.observe(d));
+
+  // Filter
+  const gq=document.getElementById('gq');
+  gq.oninput=()=>{
+    const ts=terms(gq.value); let any=0;
+    g.sections.forEach((s,si)=>{
+      const det=document.getElementById('s'+si); let c=0;
+      s.r.forEach((p,ri)=>{
+        const li=document.getElementById(`${g.id}-${si}-${ri}`);
+        const ok=!ts.length||has((p[0]+' '+p[1]+' '+s.t[0]+' '+s.t[1]).toLowerCase(),ts);
+        li.classList.toggle('hidden',!ok); li.querySelector('.tx').innerHTML=B(p,ts); if(ok)c++;
+      });
+      det.classList.toggle('hidden',!c); if(ts.length&&c) setOpen(det,true); any+=c;
+    });
+    document.getElementById('gempty').classList.toggle('hidden',!!any);
+  };
+  const tog=document.getElementById('tog');
+  tog.onclick=()=>{ const all=[...app.querySelectorAll('.sec')], open=all.some(d=>d.classList.contains('open'));
+    all.forEach(d=>setOpen(d,!open)); tog.textContent=open?ui('expand'):ui('collapse'); };
+
+  if(target){
+    const el=document.getElementById(target);
+    if(el){ const d=el.closest('.sec'); if(d){ setOpen(d,true); d.classList.add('in'); }
+      setTimeout(()=>{ el.scrollIntoView({behavior:'smooth',block:el.tagName==='LI'?'center':'start'}); if(el.tagName==='LI') el.classList.add('flash'); },120); }
+  }
+}
+
+function pageGuide(){
+  setAccent();
+  app.innerHTML = `
+  <section class="hero" style="padding:26px 0 18px;text-align:left">
+    <span class="kicker rv"><span class="dot"></span>${GAMES.length} ${ui('sSports')} · ${GLOSSARY.length} ${ui('sTerms')}</span>
+    <h1 class="rv" style="font-size:clamp(34px,5.5vw,60px);margin:14px 0 8px;max-width:none">${ui('gTitle')}</h1>
+    <p class="rv" style="margin:0">${ui('gSub')}</p>
+  </section>
+  <div class="tablewrap glass rv"><table>
+    <thead><tr><th class="sp">${lang==='en'?'Sport':'खेल'}</th>${CMP_COLS.map(c=>`<th>${esc(L(c))}</th>`).join('')}</tr></thead>
+    <tbody>${GAMES.map(g=>`<tr style="--tc:${g.c}"><th class="sp"><a href="#/game/${g.id}"><span class="e">${g.icon}</span>${esc(L(g.name))}</a></th>${(CMP[g.id]||[]).map(c=>`<td>${B(c)}</td>`).join('')}</tr>`).join('')}</tbody>
+  </table></div>
+  <div class="sec-h rv"><h2>${ui('gloss')}</h2></div>
+  <div class="tools rv"><label class="finput glass">${ICON.search}<input id="glq" type="search" placeholder="${ui('glossQ')}" autocomplete="off"></label></div>
+  <div class="gloss" id="gloss"></div>`;
+  const draw=v=>{ const ts=terms(v);
+    const list=GLOSSARY.filter(t=>!ts.length||has((t[0]+' '+t[1]+' '+t[3]+' '+t[4]).toLowerCase(),ts));
+    document.getElementById('gloss').innerHTML = list.length ? list.map(t=>`<a class="term glass" href="#/game/${t[2]}" style="--tc:${byId[t[2]].c}">
+      <small>${byId[t[2]].icon} ${esc(L(byId[t[2]].name))}</small><b>${B([t[0],t[1]],ts)}</b><p>${B([t[3],t[4]],ts)}</p></a>`).join('')
+      : `<div class="empty" style="grid-column:1/-1">${ui('none')}</div>`; };
+  draw(''); document.getElementById('glq').oninput=e=>draw(e.target.value);
+}
+
+/* ================= COMMAND PALETTE ================= */
+const pal=document.getElementById('pal'), pin=document.getElementById('pin'), plist=document.getElementById('plist'), pchips=document.getElementById('pchips');
+let pFilter='all', pSel=0, pItems=[];
+function openPal(q){ pal.classList.add('on'); pal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+  pin.value=q||''; pFilter='all'; runPal(); setTimeout(()=>pin.focus(),30); }
+function closePal(){ pal.classList.remove('on'); pal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+function runPal(){
+  const ts=terms(pin.value);
+  if(!ts.length){
+    pchips.innerHTML=''; pItems=[]; document.getElementById('pcount').textContent='';
+    plist.innerHTML=`<div class="phint">${ui('pHint')}<div class="sugg">${sugg().map(s=>`<button data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div></div>`;
+    plist.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{ pin.value=b.dataset.s; runPal(); pin.focus(); });
+    return;
+  }
+  const res=INDEX.filter(x=>has(x.hay,ts));
+  const gl=GLOSSARY.filter(t=>has((t[0]+' '+t[1]+' '+t[3]+' '+t[4]).toLowerCase(),ts));
+  const counts={}; res.forEach(x=>counts[x.g.id]=(counts[x.g.id]||0)+1);
+  if(pFilter!=='all'&&!counts[pFilter]) pFilter='all';
+  const shown=(pFilter==='all'?res:res.filter(x=>x.g.id===pFilter)).slice(0,80);
+  pchips.innerHTML = res.length ? `<button data-f="all" class="${pFilter==='all'?'on':''}">${ui('all')} · ${res.length}</button>`+
+    GAMES.filter(g=>counts[g.id]).map(g=>`<button data-f="${g.id}" class="${pFilter===g.id?'on':''}">${g.icon} ${esc(L(g.name))} · ${counts[g.id]}</button>`).join('') : '';
+  pchips.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{ pFilter=b.dataset.f; runPal(); pin.focus(); });
+  let html='';
+  if(gl.length && pFilter==='all'){ html+=`<div class="pgrp">${ui('terms')}</div>`+gl.slice(0,4).map(t=>`<a class="pi" href="#/game/${t[2]}" style="--tc:${byId[t[2]].c}"><span class="e">📖</span><div><div class="m"><b>${byId[t[2]].icon} ${esc(L(byId[t[2]].name))}</b></div><div class="t"><b>${B([t[0],t[1]],ts)}</b> — ${B([t[3],t[4]],ts)}</div></div></a>`).join(''); }
+  if(shown.length){ html+=`<div class="pgrp">${ui('rulesG')}</div>`+shown.map(x=>`<a class="pi" href="#/game/${x.g.id}/${x.id}" style="--tc:${x.g.c}"><span class="e">${x.g.icon}</span><div><div class="m"><b>${esc(L(x.g.name))}</b> › ${esc(L(x.s.t))}</div><div class="t">${B(x.p,ts)}</div></div></a>`).join(''); }
+  if(!html) html=`<div class="phint">${ui('none')}</div>`;
+  plist.innerHTML=html;
+  pItems=[...plist.querySelectorAll('.pi')]; pSel=0; markSel();
+  pItems.forEach((a,i)=>{ a.onclick=closePal; a.onmousemove=()=>{ if(pSel!==i){pSel=i;markSel(false);} }; });
+  document.getElementById('pcount').textContent = `${res.length} ${ui('found')}`;
+}
+function markSel(scroll=true){ pItems.forEach((a,i)=>a.classList.toggle('sel',i===pSel)); if(scroll&&pItems[pSel]) pItems[pSel].scrollIntoView({block:'nearest'}); }
+pin.addEventListener('input',runPal);
+pin.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'){ e.preventDefault(); pSel=Math.min(pItems.length-1,pSel+1); markSel(); }
+  else if(e.key==='ArrowUp'){ e.preventDefault(); pSel=Math.max(0,pSel-1); markSel(); }
+  else if(e.key==='Enter' && pItems[pSel]){ e.preventDefault(); closePal(); go(pItems[pSel].getAttribute('href')); }
+});
+pal.addEventListener('click',e=>{ if(e.target===pal) closePal(); });
+document.getElementById('strig').onclick=()=>openPal();
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape' && pal.classList.contains('on')) return closePal();
+  const typing=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+  if((e.key==='k'&&(e.ctrlKey||e.metaKey)) || (e.key==='/'&&!typing)){ e.preventDefault(); openPal(); }
+});
+
+/* ================= READ ALOUD ================= */
+let dykCur=null;
+const TTS={ ok:('speechSynthesis' in window)&&('SpeechSynthesisUtterance' in window), voices:[], q:[], i:0, active:false, playing:false,
+  vlang:null, rate:1, tok:0, accent:null, key:null };
+function ttsLoadVoices(){ try{ TTS.voices=speechSynthesis.getVoices()||[]; }catch(e){ TTS.voices=[]; } }
+if(TTS.ok){ ttsLoadVoices(); try{ speechSynthesis.addEventListener('voiceschanged',ttsLoadVoices); }catch(e){} }
+function ttsVoice(l){
+  const v=TTS.voices; if(!v.length) return null;
+  const by=re=>v.filter(x=>re.test(x.lang.replace('_','-')));
+  const pref=list=>list.find(x=>/google|natural|neural|premium|enhanced/i.test(x.name))||list[0];
+  return l==='hi' ? pref(by(/^hi-IN/i))||pref(by(/^hi/i))
+                  : pref(by(/^en-IN/i))||pref(by(/^en-GB/i))||pref(by(/^en-US/i))||pref(by(/^en/i));
+}
+function ttsClean(t,l){
+  const hi=l==='hi', N='(\\d+(?:\\.\\d+)?)', E='(?=[\\s,.;:!?।)]|$)';
+  let x=String(t);
+  // symbols that should never be voiced literally
+  x=x.replace(/½-½/g, hi?'आधा आधा':'half each')
+     .replace(/×/g, hi?' गुणा ':' by ').replace(/·/g,', ').replace(/→/g,', ').replace(/[—]/g,', ')
+     .replace(/=/g, hi?' बराबर ':' equals ');
+  // fractions, rates and alternatives written with "/"
+  x=x.replace(/1\/1000 s\b/g,'a thousandth of a second').replace(/1\/1000 सेकंड/g,'सेकंड के हज़ारवें हिस्से')
+     .replace(/m\/s\b/g,'metres per second').replace(/मी\/से/g,'मीटर प्रति सेकंड')
+     .replace(new RegExp(N+'\\/'+N,'g'), hi?'$1 या $2':'$1 or $2')
+     .replace(/\s*\/\s*/g, hi?' या ':' or ');
+  // plus signs
+  x=x.replace(new RegExp('\\+'+N,'g'), hi?'प्लस $1':'plus $1')
+     .replace(new RegExp(N+'\\+','g'), hi?'$1 से ज़्यादा':'$1 plus')
+     .replace(/\s\+\s/g, hi?' और ':' plus ');
+  // number–number patterns: seasons, call-outs, ties/scores, ranges
+  x=x.replace(/\b(\d{4})[-–](\d{2})\b/g,(m,a,b)=>hi?`${a} ${b}`:`${a} to ${a.slice(0,2)}${b}`)
+     .replace(/\b(\d+)-(\d+)-(\d+)\b/g,'$1, $2, $3')
+     .replace(new RegExp(N+'\\s*[-–]\\s*'+N,'g'),(m,a,b)=> a===b ? (hi?`${a} ${b}`:`${a} all`) : (hi?`${a} से ${b}`:`${a} to ${b}`))
+     .replace(/\s[-–]\s/g,', ')
+     .replace(/[-–]/g,' ');               // any hyphen left is a compound word: read it as a space
+  // units after numbers
+  if(hi){
+    x=x.replace(new RegExp(N+'\\s*सेमी'+E,'g'),'$1 सेंटीमीटर').replace(new RegExp(N+'\\s*मिमी'+E,'g'),'$1 मिलीमीटर')
+       .replace(new RegExp(N+'\\s*मी'+E,'g'),'$1 मीटर');
+  } else {
+    x=x.replace(new RegExp(N+'\\s*cm'+E,'g'),'$1 centimetres').replace(new RegExp(N+'\\s*mm'+E,'g'),'$1 millimetres')
+       .replace(new RegExp(N+'\\s*m'+E,'g'),'$1 metres').replace(new RegExp(N+'\\s*s'+E,'g'),'$1 seconds');
+  }
+  return x.replace(/\s+([,.;:।])/g,'$1').replace(/\s+/g,' ').trim();
+}
+function ttsText(it,l){
+  const k=l==='hi'?0:1;
+  if(it.intro) return l==='hi' ? `${it.g.name[0]} नियमावली।` : `${it.g.name[1]} rulebook.`;
+  if(it.head) return l==='hi' ? `भाग ${it.si+1}. ${it.g.sections[it.si].t[0]}।` : `Section ${it.si+1}. ${it.g.sections[it.si].t[1]}.`;
+  return ttsClean(it.p[k],l);
+}
+function ttsLabel(it,l){
+  const k=l==='hi'?0:1, nm=`${it.g.icon} ${esc(it.g.name[k])}`;
+  if(it.intro) return `<b>${nm}</b>`;
+  if(it.head) return `<b>${nm}</b> · ${UI.section[k]} ${it.si+1}`;
+  if(it.dyk) return `<b>${nm}</b> · ${UI.didYou[k]}`;
+  return `<b>${nm}</b> · ${UI.rule[k]} ${it.si+1}.${it.ri+1}`;
+}
+const EQ='<span class="eq"><i></i><i></i><i></i></span>';
+function ttsMark(){
+  document.querySelectorAll('.rules li.speaking').forEach(e=>e.classList.remove('speaking'));
+  document.querySelectorAll('.sec.speaking-h').forEach(e=>e.classList.remove('speaking-h'));
+  document.querySelectorAll('.spk.eqon').forEach(b=>{ b.classList.remove('eqon'); });
+  document.querySelectorAll('[data-src]').forEach(b=>{
+    const mine = TTS.active && b.dataset.src===TTS.src;
+    const icon = mine ? (TTS.playing?ICON.pause:ICON.play) : ICON.speaker;
+    b.classList.toggle('on', mine);
+    b.innerHTML = b.classList.contains('spk') ? icon : icon+`<span>${mine?(TTS.playing?ui('pause'):ui('resume')):b.dataset.lbl}</span>`;
+    b.setAttribute('aria-label', mine?(TTS.playing?ui('pause'):ui('resume')):(b.dataset.lbl||ui('listen')));
+  });
+  if(!TTS.active) return;
+  const it=TTS.q[TTS.i]; if(!it||!it.id) return;
+  const el=document.getElementById(it.id); if(!el) return;
+  const sec=el.closest('.sec'); if(sec) setOpen(sec,true);
+  if(it.head){ el.classList.add('speaking-h'); }
+  else { el.classList.add('speaking'); const b=el.querySelector('.spk'); if(b&&TTS.playing&&!b.classList.contains('on')){ b.classList.add('eqon'); b.innerHTML=EQ; } }
+  const r=el.getBoundingClientRect();
+  const pl=document.getElementById('player'), ph=pl.classList.contains('on')?pl.getBoundingClientRect().height+24:0;
+  if(r.top<130 || r.bottom>innerHeight-Math.max(ph,140)){
+    const y=scrollY+r.top-Math.max(130,(innerHeight-ph-r.height)/2); scrollTo({top:Math.max(0,y),behavior:'smooth'}); }
+}
+function ttsUI(){
+  const pl=document.getElementById('player');
+  pl.classList.toggle('on',TTS.active); document.body.classList.toggle('tts-on',TTS.active);
+  if(!TTS.active){ ttsMark(); return; }
+  pl.style.setProperty('--c',TTS.accent||'');
+  const it=TTS.q[TTS.i], l=TTS.vlang, k=l==='hi'?0:1;
+  document.getElementById('tPlay').innerHTML=TTS.playing?ICON.pause:ICON.play;
+  document.getElementById('tLabel').innerHTML=it?ttsLabel(it,l)+` <span>${TTS.i+1}/${TTS.q.length}</span>`:'';
+  document.getElementById('tNow').textContent=it?ttsText(it,l):'';
+  document.getElementById('tRate').textContent=TTS.rate+'×';
+  document.querySelectorAll('#player .vl button').forEach(b=>b.classList.toggle('on',b.dataset.v===l));
+  const note=document.getElementById('tNote'), missing=TTS.voices.length && !ttsVoice(l);
+  note.textContent = missing ? (l==='hi'?UI.noVoice[k]:UI.noVoiceEn[k]) : '';
+  note.classList.toggle('hidden',!missing);
+  document.getElementById('tPg').style.width=((TTS.i+(TTS.playing?0.5:0))/Math.max(1,TTS.q.length)*100)+'%';
+  ttsMark();
+}
+function ttsSpeak(){
+  const tok=++TTS.tok;
+  try{ speechSynthesis.cancel(); }catch(e){}
+  const it=TTS.q[TTS.i]; if(!it){ ttsStop(); return; }
+  TTS.playing=true; ttsUI();
+  const l=TTS.vlang, u=new SpeechSynthesisUtterance(ttsText(it,l));
+  u.lang = l==='hi'?'hi-IN':'en-IN'; const v=ttsVoice(l); if(v){ u.voice=v; u.lang=v.lang; }
+  u.rate=TTS.rate; u.pitch=1;
+  const done=()=>{ if(tok!==TTS.tok) return; if(TTS.i<TTS.q.length-1){ TTS.i++; ttsSpeak(); } else ttsStop(); };
+  u.onend=done;
+  u.onerror=e=>{ if(tok!==TTS.tok) return; if(e&&(e.error==='interrupted'||e.error==='canceled')) return; done(); };
+  // Some browsers need a tick after cancel() before speak()
+  setTimeout(()=>{ if(tok===TTS.tok) speechSynthesis.speak(u); },60);
+}
+function ttsPlay(items,start,accent,single){
+  if(!TTS.ok){ alertNote(); return; }
+  ttsLoadVoices();
+  TTS.q=items; TTS.i=Math.max(0,start||0); TTS.active=true; TTS.accent=accent; TTS.follow=!single;
+  if(!TTS.vlang) TTS.vlang=lang;
+  ttsSpeak();
+}
+function ttsSrc(src,startFn){
+  if(TTS.active && TTS.src===src && TTS.q.length){ TTS.playing?ttsPause():ttsSpeak(); return; }
+  TTS.src=src; startFn();
+}
+function ttsPause(){ TTS.tok++; TTS.playing=false; try{ speechSynthesis.cancel(); }catch(e){} ttsUI(); }
+function ttsStop(){ TTS.tok++; try{ speechSynthesis.cancel(); }catch(e){} TTS.active=false; TTS.playing=false; TTS.q=[]; TTS.i=0; TTS.src=null; ttsUI(); }
+function alertNote(){ toast(ui('noTTS')); }
+let toastT;
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),5000); }
+document.getElementById('tPlay').onclick=()=>{ if(!TTS.q.length) return ttsStop(); TTS.playing?ttsPause():ttsSpeak(); };
+document.getElementById('tStop').onclick=ttsStop;
+document.getElementById('tPrev').onclick=()=>{ if(TTS.i>0){ TTS.i--; TTS.follow=true; ttsSpeak(); } };
+document.getElementById('tNext').onclick=()=>{ if(TTS.i<TTS.q.length-1){ TTS.i++; TTS.follow=true; ttsSpeak(); } };
+document.getElementById('tRate').onclick=()=>{ const r=[0.8,1,1.25,1.5]; TTS.rate=r[(r.indexOf(TTS.rate)+1)%r.length]; if(TTS.playing) ttsSpeak(); else ttsUI(); };
+document.querySelectorAll('#player .vl button').forEach(b=>b.onclick=()=>{ TTS.vlang=b.dataset.v; if(TTS.playing) ttsSpeak(); else ttsUI(); });
+document.getElementById('tPlay').innerHTML=ICON.play; document.getElementById('tStop').innerHTML=ICON.stop;
+document.getElementById('tPrev').innerHTML=ICON.prev; document.getElementById('tNext').innerHTML=ICON.next;
+addEventListener('pagehide',()=>{ try{ speechSynthesis.cancel(); }catch(e){} });
+
+/* ================= ROUTER ================= */
+function readHash(){ try{ return location.hash && location.hash.startsWith('#/') ? location.hash : '#/'; }catch(e){ return '#/'; } }
+let ROUTE = readHash();
+let lastRoute='';
+function render(keep){
+  timers.forEach(t=>{clearTimeout(t);clearInterval(t);}); timers=[];
+  const parts=ROUTE.replace(/^#\/?/,'').split('/');
+  const route = parts[0]==='game' ? 'game/'+parts[1] : parts[0];
+  if(route!==lastRoute && lastRoute && TTS.active) ttsStop();
+  if(parts[0]==='game'){ updateChrome(parts[1]); pageGame(parts[1],parts[2]); }
+  else if(parts[0]==='guide'){ updateChrome('guide'); pageGuide(); }
+  else { updateChrome('home'); pageHome(); }
+  reveal();
+  if(!keep && !parts[2] && route!==lastRoute) scrollTo({top:0,behavior:'instant'});
+  lastRoute=route; onScroll();
+  if(TTS.active) ttsUI();
+}
+function onScroll(){
+  const p=document.getElementById('prog');
+  if(!ROUTE.startsWith('#/game')){ p.style.width='0'; return; }
+  const h=document.documentElement.scrollHeight-innerHeight; p.style.width=(h>0?scrollY/h*100:0)+'%';
+}
+addEventListener('scroll',onScroll,{passive:true});
+let lastY=0;
+addEventListener('scroll',()=>{ const y=scrollY; if(Math.abs(y-lastY)<8) return;
+  document.body.classList.toggle('tabs-hide', y>lastY && y>160); lastY=y; },{passive:true});
+function transition(fn){ if(document.startViewTransition){ try{ document.startViewTransition(fn); return; }catch(e){} } fn(); }
+function go(h){ ROUTE=h||'#/'; try{ history.pushState(null,'',ROUTE); }catch(e){} transition(()=>render()); }
+document.addEventListener('click',e=>{
+  const a=e.target.closest && e.target.closest('a[href^="#/"]'); if(!a) return;
+  e.preventDefault(); go(a.getAttribute('href'));
+});
+addEventListener('popstate',()=>{ ROUTE=readHash(); transition(()=>render()); });
+applyTheme(document.documentElement.dataset.theme);
+render();
+</script>
+</body>
+</html>
