@@ -7,4 +7,6 @@ Rules of 24 sports — cricket, football, badminton, kabaddi, hockey, kho-kho, c
 - Light and dark themes
 - Works on phones and desktops
 
+Live at **https://sports-rulebook.vercel.app**
+
 It's a single static page (`index.html`) with no build step, so it can be hosted anywhere (e.g. Vercel).
