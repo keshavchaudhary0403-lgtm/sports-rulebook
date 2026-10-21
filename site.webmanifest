@@ -1,7 +1,7 @@
 {
   "name": "Sports Rulebook",
   "short_name": "Rulebook",
-  "description": "Rules of 24 sports in Hindi and English — searchable, with read-aloud.",
+  "description": "Rules of 30 sports in Hindi and English — searchable, with read-aloud.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f5f4ef",

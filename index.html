@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sports Rulebook</title>
-<meta name="description" content="Rules of 24 sports — cricket, football, kabaddi, chess and more — in Hindi and English. Searchable, with read-aloud.">
+<meta name="description" content="Rules of 30 sports — cricket, football, kabaddi, chess and more — in Hindi and English. Searchable, with read-aloud.">
 <meta name="theme-color" content="#c6f432">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E %3Crect width="32" height="32" rx="8" fill="%23c6f432"/%3E %3Cpath d="M6 10.6c3.2-1.8 6.6-1.8 10 0v14c-3.4-1.8-6.8-1.8-10 0zM16 10.6c3.4-1.8 6.8-1.8 10 0v14c-3.2-1.8-6.6-1.8-10 0z" fill="none" stroke="%2314160f" stroke-width="2.1" stroke-linejoin="round"/%3E %3Cpath d="M9.2 15h3.4M9.2 18.6h3.4M19.4 15h3.4M19.4 18.6h3.4" stroke="%2314160f" stroke-width="1.7" stroke-linecap="round"/%3E %3Ccircle cx="25" cy="7" r="3.6" fill="%2314160f"/%3E %3C/svg%3E'>
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta property="og:title" content="Sports Rulebook">
-<meta property="og:description" content="Rules of 24 sports in Hindi and English — searchable, with read-aloud.">
+<meta property="og:description" content="Rules of 30 sports in Hindi and English — searchable, with read-aloud.">
 <meta property="og:image" content="https://sports-rulebook.vercel.app/icon-512.png">
 <meta property="og:url" content="https://sports-rulebook.vercel.app/">
 <link rel="canonical" href="https://sports-rulebook.vercel.app/">
@@ -1279,6 +1279,141 @@ const GAMES = [
     ["मेडले में 'फ़्रीस्टाइल' का मतलब बाकी तीन स्ट्रोक के अलावा कोई भी स्ट्रोक।","In medley events, 'freestyle' means any stroke other than the other three."],
     ["रिले में अगला तैराक तब ही ब्लॉक छोड़े जब साथी दीवार छू ले; पहले छोड़ा तो टीम अयोग्य।","In relays the next swimmer may leave the block only after the teammate touches the wall; an early take-off disqualifies the team."]]}
   ]}
+,
+
+{ id:"rugby", name:["रग्बी","Rugby"], icon:"🏉", c:"#9a3412",
+  body:["World Rugby · Rugby India","World Rugby · Rugby India"],
+  facts:[[["खिलाड़ी","Players"],["15 (सेवन्स में 7)","15 (7 in sevens)"]],[["समय","Duration"],["2 × 40 मिनट (सेवन्स 2 × 7)","2 × 40 min (sevens 2 × 7)"]],[["ट्राई","Try"],["5 पॉइंट","5 points"]],[["पास","Passing"],["सिर्फ़ पीछे या बगल में","Backwards or sideways only"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["रग्बी यूनियन में हर टीम के 15 खिलाड़ी, 40-40 मिनट के 2 हाफ़। रग्बी सेवन्स (ओलंपिक) में 7 खिलाड़ी और 7-7 मिनट के 2 हाफ़।","Rugby union has 15 players per side and two 40-minute halves. Rugby sevens (the Olympic format) has 7 players and two 7-minute halves."],
+    ["बॉल हाथ से सिर्फ़ पीछे या बगल में पास कर सकते हैं; आगे पास करना (forward pass) गलती है।","The ball may only be passed backwards or sideways; a forward pass is an infringement."],
+    ["नॉक-ऑन: बॉल हाथ से छूटकर आगे गिर जाए तो गलती — विरोधी को स्क्रम मिलता है।","Knock-on: if the ball goes forward off a player's hands, the opponents get a scrum."],
+    ["बॉल को पैर से आगे किक कर सकते हैं।","The ball may be kicked forward."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["ट्राई (Try) = 5 पॉइंट: विरोधी के इन-गोल एरिया में बॉल को ज़मीन पर दबाना (grounding)।","Try = 5 points: grounding the ball in the opponent's in-goal area."],
+    ["कन्वर्ज़न = 2 पॉइंट: ट्राई के बाद, जिस जगह ट्राई हुआ उसकी सीध से किक करके पोस्ट के बीच और क्रॉसबार के ऊपर।","Conversion = 2 points: after a try, a kick taken in line with where the try was scored, between the posts and over the crossbar."],
+    ["पेनल्टी गोल = 3 पॉइंट; ड्रॉप गोल (खेल के दौरान बॉल टप्पा खिलाकर किक) = 3 पॉइंट।","Penalty goal = 3 points; drop goal (kicking the ball on the half-volley in open play) = 3 points."],
+    ["पेनल्टी ट्राई = 7 पॉइंट: फ़ाउल से संभावित ट्राई रोकी गई हो; कन्वर्ज़न नहीं लेना पड़ता।","Penalty try = 7 points: awarded when foul play prevents a probable try; no conversion is taken."]]},
+  {t:["टैकल और रक","Tackle & Ruck"], r:[
+    ["सिर्फ़ बॉल लेकर दौड़ रहे खिलाड़ी को ही टैकल कर सकते हैं, और कंधों की लाइन के नीचे।","Only the ball carrier may be tackled, and only below the line of the shoulders."],
+    ["टैकल हुआ खिलाड़ी ज़मीन पर गिरते ही बॉल तुरंत छोड़े; टैकल करने वाला भी उसे तुरंत छोड़े।","A tackled player must release the ball immediately on the ground, and the tackler must release the tackled player."],
+    ["रक (Ruck): ज़मीन पर पड़ी बॉल के ऊपर दोनों तरफ़ के खिलाड़ी खड़े होकर भिड़ें; रक में हाथ से बॉल उठाना मना, और पीछे से (गेट से) ही अंदर आना होता है।","Ruck: players from both sides contest a ball on the ground on their feet; handling the ball in a ruck is banned, and players must join from behind (through the 'gate')."],
+    ["ऑफ़साइड: खेल के दौरान बॉल से आगे खड़ा खिलाड़ी खेल में हिस्सा नहीं ले सकता, जब तक वो ऑनसाइड न हो जाए।","Offside: in open play, a player in front of the ball can't take part until they are put back onside."],
+    ["खतरनाक टैकल (ऊँचा टैकल, हवा में उछले खिलाड़ी को गिराना, स्पीयर टैकल) पर पेनल्टी और कार्ड।","Dangerous tackles (high tackles, tackling a player in the air, spear tackles) bring penalties and cards."]]},
+  {t:["सेट पीस और कार्ड","Set Pieces & Cards"], r:[
+    ["स्क्रम (Scrum): छोटी गलती (जैसे नॉक-ऑन या फ़ॉरवर्ड पास) के बाद 8-8 खिलाड़ी (सेवन्स में 3-3) झुककर आपस में भिड़ते हैं और बॉल बीच में डाली जाती है।","Scrum: after a minor infringement (such as a knock-on or forward pass), 8 forwards from each side (3 in sevens) bind together and the ball is fed in between them."],
+    ["लाइनआउट (Lineout): बॉल साइडलाइन (touch) के बाहर जाए तो खिलाड़ी दो लाइनों में खड़े होते हैं और बॉल बीच में सीधी फेंकी जाती है।","Lineout: when the ball goes into touch, players form two lines and the ball is thrown in straight between them."],
+    ["पीला कार्ड = 10 मिनट 'सिन बिन' (सेवन्स में 2 मिनट); लाल कार्ड = बाहर।","Yellow card = 10 minutes in the sin bin (2 minutes in sevens); red card = sent off."],
+    ["सेवन्स के नॉकआउट मैच बराबर रहें तो 5-5 मिनट का एक्स्ट्रा टाइम, पहला स्कोर जीतता है।","Level sevens knockout matches go to 5-minute periods of extra time, with the first score winning."]]}
+  ]},
+
+{ id:"baseball", name:["बेसबॉल","Baseball"], icon:"⚾", c:"#1e40af",
+  body:["WBSC · MLB · Amateur Baseball Federation of India","WBSC · MLB · Amateur Baseball Federation of India"],
+  facts:[[["खिलाड़ी","Players"],["9 प्रति टीम","9 per side"]],[["इनिंग","Innings"],["9","9"]],[["आउट","Outs"],["3 प्रति आधी इनिंग","3 per half-inning"]],[["बेस","Bases"],["4 (होम सहित)","4 (incl. home)"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम के 9 खिलाड़ी; मैच 9 इनिंग का। हर इनिंग में दोनों टीमें एक-एक बार बल्लेबाज़ी करती हैं।","Each side fields 9 players; a game is 9 innings, and in each inning both teams bat once."],
+    ["बल्लेबाज़ी करने वाली टीम के 3 खिलाड़ी आउट होते ही उसकी आधी इनिंग ख़त्म।","A team's half-inning at bat ends when 3 of its players are out."],
+    ["रन तब बनता है जब खिलाड़ी पहले, दूसरे, तीसरे बेस को क्रम से छूकर होम प्लेट तक पहुँचे।","A run scores when a runner touches first, second and third base in order and reaches home plate."],
+    ["9 इनिंग के बाद बराबरी हो तो एक्स्ट्रा इनिंग; कई लीग में एक्स्ट्रा इनिंग की शुरुआत एक रनर पहले से बेस पर रखकर होती है (MLB में दूसरे बेस पर)।","If tied after 9 innings, extra innings are played; many leagues start each extra inning with a runner already on base (on second in MLB)."]]},
+  {t:["पिचिंग और बल्लेबाज़ी","Pitching & Batting"], r:[
+    ["स्ट्राइक: बल्लेबाज़ बल्ला घुमाकर चूके, या पिच स्ट्राइक ज़ोन से गुज़रे और बल्लेबाज़ न मारे। 3 स्ट्राइक = आउट (strikeout)।","Strike: the batter swings and misses, or doesn't swing at a pitch through the strike zone. Three strikes = out (strikeout)."],
+    ["फ़ाउल बॉल पहले दो स्ट्राइक तक स्ट्राइक गिनी जाती है; 2 स्ट्राइक के बाद फ़ाउल से आउट नहीं होते (सिवाय बंट के)।","A foul ball counts as a strike until there are two strikes; after that a foul doesn't make an out (except on a bunt)."],
+    ["बॉल (Ball): स्ट्राइक ज़ोन के बाहर की पिच जिस पर बल्लेबाज़ न मारे। 4 बॉल = वॉक — बल्लेबाज़ पहले बेस पर।","Ball: a pitch outside the strike zone that the batter doesn't swing at. Four balls = a walk to first base."],
+    ["पिच बल्लेबाज़ को लग जाए (hit by pitch) तो भी पहला बेस मिलता है।","A batter hit by a pitch is also awarded first base."],
+    ["होम रन: बॉल फ़ेयर टेरिटरी में बाउंड्री फ़ेंस के पार — बल्लेबाज़ और बेस पर सभी रनर स्कोर करते हैं।","Home run: the ball clears the outfield fence in fair territory — the batter and all runners score."],
+    ["MLB में पिच क्लॉक: बेस खाली हों तो 15 सेकंड, रनर हों तो 18 सेकंड में पिच करनी होती है।","MLB pitch clock: pitchers have 15 seconds with the bases empty and 18 seconds with runners on."]]},
+  {t:["आउट करने के तरीके","Getting Outs"], r:[
+    ["फ़्लाई आउट: मारी हुई बॉल ज़मीन छूने से पहले फ़ील्डर पकड़ ले।","Fly out: a fielder catches the batted ball before it touches the ground."],
+    ["फ़ोर्स आउट: रनर को अगले बेस पर जाना ही था, और फ़ील्डर बॉल लेकर उससे पहले बेस छू ले।","Force out: the runner had to advance, and a fielder holding the ball touches the base first."],
+    ["टैग आउट: बेस से दूर रनर को बॉल वाले हाथ/दस्ताने से छू लेना।","Tag out: touching a runner who is off a base with the ball, or the glove holding it."],
+    ["फ़्लाई बॉल पकड़ी जाए तो रनर को अपने बेस पर वापस छूना (tag up) होता है, उसके बाद ही आगे दौड़ सकता है।","On a caught fly ball, runners must return to touch their base (tag up) before advancing."],
+    ["इनफ़ील्ड फ़्लाई रूल: 2 से कम आउट हों, पहले और दूसरे बेस पर रनर हों, और इनफ़ील्डर आसानी से पकड़ सके ऐसी ऊँची बॉल — बल्लेबाज़ अपने-आप आउट।","Infield fly rule: with fewer than two outs and runners on first and second, a fair fly ball an infielder can catch with ordinary effort is an automatic out."]]}
+  ]},
+
+{ id:"judo", name:["जूडो","Judo"], icon:"🥋", c:"#0f766e",
+  body:["IJF · Judo Federation of India","IJF · Judo Federation of India"],
+  facts:[[["समय","Duration"],["4 मिनट","4 min"]],[["टाई पर","If tied"],["गोल्डन स्कोर","Golden score"]],[["तुरंत जीत","Instant win"],["इप्पोन","Ippon"]],[["पेनल्टी","Penalties"],["3 शिदो = हार","3 shido = loss"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["सीनियर मुक़ाबला 4 मिनट का। स्कोर बराबर हो तो 'गोल्डन स्कोर' — बिना समय सीमा, पहला स्कोर या पेनल्टी फ़ैसला करती है।","Senior contests last 4 minutes. If level, 'golden score' follows with no time limit — the first score or penalty decides it."],
+    ["जूडोका वज़न वर्ग में लड़ते हैं; एक सफ़ेद और एक नीली जूडोगी पहनता है।","Judoka compete in weight categories; one wears a white judogi and the other blue."],
+    ["रेफ़री के आदेश: 'हाजिमे' (शुरू), 'मते' (रुको), 'ओसाएकोमी' (होल्ड-डाउन शुरू), 'तोकेता' (होल्ड टूटा)।","Referee calls: 'hajime' (begin), 'matte' (stop), 'osaekomi' (hold-down on), 'toketa' (hold broken)."]]},
+  {t:["स्कोरिंग","Scoring"], r:[
+    ["इप्पोन (Ippon) = तुरंत जीत: विरोधी को ताक़त, तेज़ी और नियंत्रण के साथ पीठ के बल पटकना; 20 सेकंड का होल्ड-डाउन; या चोक/आर्मलॉक पर विरोधी का हार मानना (टैप करना)।","Ippon = instant win: throwing the opponent largely on the back with force, speed and control; a 20-second hold-down; or a submission from a choke or armlock."],
+    ["वाज़ा-आरी (Waza-ari): थ्रो में इप्पोन का कोई एक हिस्सा कम हो, या 10 सेकंड का होल्ड-डाउन। दो वाज़ा-आरी = इप्पोन।","Waza-ari: a throw missing one element of ippon, or a 10-second hold-down. Two waza-ari make ippon."],
+    ["2025 के नियमों से 'युको' वापस आया — छोटा स्कोर (जैसे 5 सेकंड का होल्ड-डाउन); युको जुड़कर वाज़ा-आरी नहीं बनते।","Since the 2025 rules, 'yuko' is back — a smaller score (such as a 5-second hold-down); yuko don't add up to waza-ari."],
+    ["समय ख़त्म होने पर ज़्यादा स्कोर वाला जीतता है।","When time ends, the judoka with the higher score wins."]]},
+  {t:["पेनल्टी","Penalties"], r:[
+    ["शिदो (Shido): छोटी गलती पर चेतावनी — जैसे पकड़ न बनाना, बेवजह बचाव करना, बिना वजह मैट से बाहर जाना, या कमर के नीचे सीधे पैर पकड़ना।","Shido: a minor penalty — for avoiding grips, excessive defence, stepping out without reason, or directly grabbing the legs."],
+    ["3 शिदो = हनसोकु-माके (हार)।","Three shido = hansoku-make (loss)."],
+    ["सीधा हनसोकु-माके: खतरनाक हरकतें, जैसे सिर के बल गोता (head dive) या जानबूझकर चोट पहुँचाना।","Direct hansoku-make: dangerous actions such as diving head-first or deliberately injuring the opponent."],
+    ["नियमित समय में सिर्फ़ शिदो की गिनती से जीत तय नहीं होती — स्कोर चाहिए।","In regular time, shido alone don't decide the winner — a score is needed."]]}
+  ]},
+
+{ id:"taekwondo", name:["ताइक्वांडो","Taekwondo"], icon:"🦵", c:"#be185d",
+  body:["World Taekwondo · India Taekwondo","World Taekwondo · India Taekwondo"],
+  facts:[[["राउंड","Rounds"],["बेस्ट ऑफ़ 3","Best of 3"]],[["राउंड समय","Round time"],["2 मिनट","2 min"]],[["सबसे बड़ा","Top score"],["5 (घूमकर सिर पर किक)","5 (turning head kick)"]],[["स्कोरिंग","Scoring"],["इलेक्ट्रॉनिक सेंसर","Electronic sensors"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["मुक़ाबला 'बेस्ट ऑफ़ 3 राउंड' का; हर राउंड 2 मिनट। जो 2 राउंड पहले जीते, वो विजेता।","Contests are best of three 2-minute rounds; the first to win 2 rounds wins."],
+    ["हर राउंड का स्कोर अलग — अगले राउंड में स्कोर फिर शून्य से।","Each round is scored separately — scores reset to zero for the next round."],
+    ["शरीर और सिर पर इलेक्ट्रॉनिक सेंसर (PSS) किक के पॉइंट दर्ज करते हैं; मुक्कों के पॉइंट रेफ़री देते हैं।","Electronic sensors (PSS) on the body protector and headgear record kicks; referees award punches."]]},
+  {t:["पॉइंट","Scoring"], r:[
+    ["धड़ (body protector) पर मुक्का = 1 पॉइंट।","Punch to the body protector = 1 point."],
+    ["धड़ पर किक = 2 पॉइंट; घूमकर (turning) धड़ पर किक = 4 पॉइंट।","Kick to the body = 2 points; turning kick to the body = 4 points."],
+    ["सिर पर किक = 3 पॉइंट; घूमकर सिर पर किक = 5 पॉइंट।","Kick to the head = 3 points; turning kick to the head = 5 points."],
+    ["सिर पर मुक्का मारना मना है।","Punching to the head is not allowed."],
+    ["एक राउंड में 12 पॉइंट की बढ़त होते ही वो राउंड वहीं ख़त्म (point gap)।","A 12-point lead in a round ends that round immediately (point gap)."]]},
+  {t:["पेनल्टी और फ़ैसला","Penalties & Decisions"], r:[
+    ["गाम-जोम (Gam-jeom): हर पेनल्टी पर विरोधी को 1 पॉइंट।","Gam-jeom: each penalty gives the opponent 1 point."],
+    ["पेनल्टी के कारण: बाउंड्री लाइन से बाहर जाना, गिर जाना, पकड़ना या धक्का देना, कमर के नीचे किक, 'काल-यो' (रुको) के बाद हमला।","Penalties include stepping over the boundary line, falling down, grabbing or pushing, kicking below the waist, and attacking after 'kal-yeo' (stop)."],
+    ["एक राउंड में 5 गाम-जोम होने पर खिलाड़ी वो राउंड हार जाता है।","A contestant who receives 5 gam-jeom in a round loses that round."],
+    ["राउंड बराबर रहे तो ज़्यादा क़ीमत वाले दाँव (जैसे घूमकर किक) से हुए पॉइंट, फिर कम पेनल्टी वगैरह से फ़ैसला।","A tied round is decided by points from higher-value techniques (such as turning kicks), then fewer penalties, and so on."],
+    ["कोच फ़ैसले पर वीडियो रिव्यू माँग सकता है।","Coaches can request a video review of a decision."]]}
+  ]},
+
+{ id:"fencing", name:["तलवारबाज़ी","Fencing"], icon:"🤺", c:"#6d28d9",
+  body:["FIE · Fencing Association of India","FIE · Fencing Association of India"],
+  facts:[[["हथियार","Weapons"],["फ़ॉयल · एपे · सेबर","Foil · Épée · Sabre"]],[["पिस्ट","Piste"],["14 मी लंबा","14 m long"]],[["पूल","Pools"],["5 टच तक","First to 5"]],[["नॉकआउट","Knockout"],["15 टच तक","First to 15"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["तीन हथियार: फ़ॉयल, एपे और सेबर — हर एक के नियम और टारगेट अलग।","Three weapons: foil, épée and sabre — each with its own target and rules."],
+    ["टच इलेक्ट्रॉनिक तरीके से दर्ज होते हैं; सही टच पर रंगीन लाइट, टारगेट के बाहर टच पर सफ़ेद लाइट।","Touches are recorded electronically; a valid touch lights a coloured lamp, an off-target touch a white one."],
+    ["पूल मुक़ाबले 5 टच तक (3 मिनट); नॉकआउट मुक़ाबले 15 टच तक, 3-3 मिनट के 3 पीरियड और बीच में 1 मिनट का ब्रेक।","Pool bouts go to 5 touches (3 minutes); knockout bouts go to 15, in three 3-minute periods with 1-minute breaks."],
+    ["समय ख़त्म होने पर बराबरी हो तो 1 मिनट और; उससे पहले टॉस से एक खिलाड़ी को 'प्रायोरिटी' मिलती है — कोई टच न हो तो वही जीतता है।","If tied when time ends, there's one extra minute; a draw first gives one fencer 'priority', who wins if no touch is scored."]]},
+  {t:["तीनों हथियार","The Three Weapons"], r:[
+    ["फ़ॉयल: सिर्फ़ नोक (point) से टच, टारगेट सिर्फ़ धड़ (बाँहें और सिर नहीं)। राइट ऑफ़ वे लागू।","Foil: touches with the point only, on the torso (not arms or head). Right of way applies."],
+    ["एपे: सिर्फ़ नोक से टच, पूरा शरीर टारगेट। कोई राइट ऑफ़ वे नहीं — दोनों ने एक साथ टच किया तो दोनों को पॉइंट।","Épée: point only, the whole body is target. No right of way — if both hit at the same time, both score."],
+    ["सेबर: नोक और धार (cut) दोनों से टच; टारगेट कमर के ऊपर — सिर और बाँहों सहित। राइट ऑफ़ वे लागू।","Sabre: touches with the point or the edge; the target is everything above the waist, including head and arms. Right of way applies."],
+    ["राइट ऑफ़ वे (प्रायोरिटी): फ़ॉयल और सेबर में दोनों ने टच किया तो पॉइंट उसे जिसने हमला पहले शुरू किया या सही तरह से बचाव करके जवाब दिया।","Right of way (priority): in foil and sabre, when both fencers hit, the point goes to whoever started the attack first or parried and riposted correctly."]]},
+  {t:["पिस्ट और कार्ड","Piste & Cards"], r:[
+    ["पिस्ट (मुक़ाबले की पट्टी) 14 मी लंबी; पीछे की लाइन से दोनों पैर बाहर गए तो विरोधी को टच।","The piste is 14 m long; stepping off the back end with both feet gives the opponent a touch."],
+    ["बगल से दोनों पैर बाहर गए तो खेल रुकता है और गलती करने वाला 1 मी पीछे से दोबारा शुरू करता है।","Leaving the side with both feet stops play and the offender restarts 1 m further back."],
+    ["पीला कार्ड = चेतावनी; लाल कार्ड = विरोधी को टच; काला कार्ड = प्रतियोगिता से बाहर।","Yellow card = warning; red card = a touch to the opponent; black card = exclusion from the competition."],
+    ["टीम मुक़ाबले रिले होते हैं — 9 बाउट, कुल 45 टच तक।","Team events are relays — 9 bouts, up to 45 touches in total."]]}
+  ]},
+
+{ id:"netball", name:["नेटबॉल","Netball"], icon:"🥅", c:"#c026d3",
+  body:["World Netball · Netball Federation of India","World Netball · Netball Federation of India"],
+  facts:[[["खिलाड़ी","Players"],["7 प्रति टीम","7 per side"]],[["समय","Duration"],["4 × 15 मिनट","4 × 15 min"]],[["बॉल पकड़ना","Holding"],["अधिकतम 3 सेकंड","Max 3 seconds"]],[["गोल","Goal"],["1 पॉइंट","1 point"]]],
+  sections:[
+  {t:["बुनियादी नियम","Basics"], r:[
+    ["हर टीम के 7 खिलाड़ी, हर एक की अपनी पोज़िशन (GS, GA, WA, C, WD, GD, GK) और तय ज़ोन, जिनसे बाहर नहीं जा सकते।","7 players per side, each with a position (GS, GA, WA, C, WD, GD, GK) and set zones they may not leave."],
+    ["15-15 मिनट के 4 क्वार्टर।","Four 15-minute quarters."],
+    ["गोल के बाद खेल बीच से 'सेंटर पास' से शुरू होता है; सेंटर पास बारी-बारी दोनों टीमों को मिलता है।","After each goal, play restarts with a centre pass, which alternates between the teams."]]},
+  {t:["बॉल के साथ","With the Ball"], r:[
+    ["बॉल पकड़कर दौड़ नहीं सकते और ड्रिबल नहीं कर सकते — बॉल पास करके ही आगे बढ़ती है।","You can't run or dribble with the ball — it moves only by passing."],
+    ["बॉल अधिकतम 3 सेकंड तक पकड़ सकते हैं।","You may hold the ball for at most 3 seconds."],
+    ["फ़ुटवर्क: जिस पैर पर उतरे, उसे उठा सकते हैं पर दोबारा ज़मीन पर रखने से पहले बॉल छोड़नी होगी; दूसरे पैर पर घूम (pivot) सकते हैं।","Footwork: you may lift your landing foot but must release the ball before it touches down again; you may pivot on the other foot."],
+    ["बॉल को कोर्ट के पूरे एक-तिहाई हिस्से के ऊपर से बिना किसी के छुए नहीं फेंक सकते।","The ball can't be thrown over a whole third of the court without being touched in it."]]},
+  {t:["शूटिंग और डिफ़ेंस","Shooting & Defence"], r:[
+    ["सिर्फ़ गोल शूटर (GS) और गोल अटैक (GA) गोल कर सकते हैं, और वो भी गोल सर्कल के अंदर से। हर गोल = 1 पॉइंट।","Only the Goal Shooter (GS) and Goal Attack (GA) can score, and only from inside the goal circle. Each goal = 1 point."],
+    ["डिफ़ेंडर बॉल वाले खिलाड़ी से कम से कम 0.9 मी (3 फ़ुट) दूर रहकर ही बचाव करे, वरना ऑब्स्ट्रक्शन।","A defender must stay at least 0.9 m (3 ft) from the player with the ball, or it's obstruction."],
+    ["शारीरिक संपर्क (contact) मना है।","Physical contact is not allowed."],
+    ["ऑब्स्ट्रक्शन या संपर्क पर विरोधी को पेनल्टी पास (या सर्कल में पेनल्टी पास/शॉट); गलती करने वाला खिलाड़ी तब तक बगल में खड़ा रहता है।","Obstruction or contact gives the opponents a penalty pass (or penalty pass or shot in the circle), with the offender standing out of play beside the thrower."]]}
+  ]}
 
 ];
 
@@ -1340,7 +1475,19 @@ const GLOSSARY = [
  ["डेसिमल स्कोरिंग","Decimal Scoring","shooting","शॉट को दशमलव में गिनना, अधिकतम 10.9।","Scoring shots to one decimal place, max 10.9."],
  ["ट्रैप","Trap","shooting","आगे उड़ती तश्तरियों पर शॉटगन इवेंट; 2 गोली प्रति तश्तरी।","Shotgun event at clays flying away; 2 shots per clay."],
  ["इंडिविजुअल मेडले","Individual Medley","swimming","एक ही तैराक चारों स्ट्रोक तैरता है।","One swimmer swims all four strokes."],
- ["फ़्लिप टर्न","Flip Turn","swimming","दीवार पर कलाबाज़ी खाकर तेज़ी से मुड़ना।","A somersault turn at the wall."]
+ ["फ़्लिप टर्न","Flip Turn","swimming","दीवार पर कलाबाज़ी खाकर तेज़ी से मुड़ना।","A somersault turn at the wall."],
+ ["ट्राई","Try","rugby","इन-गोल में बॉल दबाना — 5 पॉइंट।","Grounding the ball in-goal — 5 points."],
+ ["स्क्रम","Scrum","rugby","छोटी गलती के बाद फ़ॉरवर्ड्स का आपस में भिड़कर बॉल जीतना।","Forwards binding together to restart after a minor infringement."],
+ ["होम रन","Home Run","baseball","बॉल फ़ेंस के पार — सबके रन।","Ball over the fence — everyone on base scores."],
+ ["स्ट्राइकआउट","Strikeout","baseball","3 स्ट्राइक पर बल्लेबाज़ आउट।","Batter out on three strikes."],
+ ["इप्पोन","Ippon","judo","पूर्ण अंक — तुरंत जीत।","A full point — instant win."],
+ ["गोल्डन स्कोर","Golden Score","judo","बराबरी पर बिना समय सीमा का अतिरिक्त समय; पहला स्कोर जीतता है।","Untimed extra period; first score wins."],
+ ["गाम-जोम","Gam-jeom","taekwondo","पेनल्टी — विरोधी को 1 पॉइंट।","A penalty that gives the opponent 1 point."],
+ ["पॉइंट गैप","Point Gap","taekwondo","12 पॉइंट की बढ़त पर राउंड ख़त्म।","A 12-point lead ends the round."],
+ ["राइट ऑफ़ वे","Right of Way","fencing","फ़ॉयल और सेबर में पहले हमला करने वाले को प्राथमिकता।","Priority to the fencer who attacked first in foil and sabre."],
+ ["पिस्ट","Piste","fencing","तलवारबाज़ी की 14 मी लंबी पट्टी।","The 14 m fencing strip."],
+ ["सेंटर पास","Centre Pass","netball","गोल के बाद बीच से खेल शुरू करना।","Restart from the centre after each goal."],
+ ["ऑब्स्ट्रक्शन","Obstruction","netball","0.9 मी से कम दूरी से बचाव करना।","Defending closer than 0.9 m."]
 ];
 
 const CMP_COLS = [["खिलाड़ी","Players"],["फ़ॉर्मेट / समय","Format / Duration"],["जीत कैसे","How to win"],["टाई पर","If tied"],["संस्था","Body"]];
@@ -1368,7 +1515,13 @@ const CMP = {
  athletics:[["1 या रिले टीम","1 or relay team"],["इवेंट के हिसाब से","Varies by event"],["सबसे तेज़ / दूर / ऊँचा","Fastest / farthest / highest"],["फ़ोटो-फ़िनिश / काउंटबैक","Photo finish / countback"],"World Athletics"],
  weightlifting:["1",["2 लिफ़्ट × 3 प्रयास","2 lifts × 3 attempts"],["सबसे बड़ा टोटल","Biggest total"],["जिसने टोटल पहले बनाया","Whoever reached it first"],"IWF"],
  shooting:[["1 या टीम","1 or team"],["क्वालिफ़िकेशन + फ़ाइनल","Qualification + final"],["सबसे ज़्यादा स्कोर","Highest score"],["शूट-ऑफ़","Shoot-off"],"ISSF"],
- swimming:[["1 या रिले टीम","1 or relay team"],["50 मी से 1500 मी","50 m to 1500 m"],["सबसे तेज़ समय","Fastest time"],["स्विम-ऑफ़","Swim-off"],"World Aquatics"]
+ swimming:[["1 या रिले टीम","1 or relay team"],["50 मी से 1500 मी","50 m to 1500 m"],["सबसे तेज़ समय","Fastest time"],["स्विम-ऑफ़","Swim-off"],"World Aquatics"],
+ rugby:[["15 (सेवन्स में 7)","15 (7 in sevens)"],["80 मिनट (2×40)","80 min (2×40)"],["ज़्यादा पॉइंट","More points"],["एक्स्ट्रा टाइम (नॉकआउट)","Extra time (knockouts)"],"World Rugby"],
+ baseball:["9",["9 इनिंग","9 innings"],["ज़्यादा रन","More runs"],["एक्स्ट्रा इनिंग","Extra innings"],"WBSC"],
+ judo:[["1 बनाम 1","1 vs 1"],["4 मिनट","4 min"],["इप्पोन या ज़्यादा स्कोर","Ippon or higher score"],["गोल्डन स्कोर","Golden score"],"IJF"],
+ taekwondo:[["1 बनाम 1","1 vs 1"],["बेस्ट ऑफ़ 3 राउंड","Best of 3 rounds"],["2 राउंड पहले जीतो","First to 2 rounds"],["ऊँचे दाँव / कम पेनल्टी","Higher-value moves / fewer penalties"],"World Taekwondo"],
+ fencing:[["1 बनाम 1","1 vs 1"],["5 या 15 टच","5 or 15 touches"],["पहले टच तक पहुँचो","First to the touch total"],["1 मिनट + प्रायोरिटी","1 min + priority"],"FIE"],
+ netball:["7",["60 मिनट (4×15)","60 min (4×15)"],["ज़्यादा गोल","More goals"],["एक्स्ट्रा टाइम","Extra time"],"World Netball"]
 };
 
 const UI = {
@@ -1395,7 +1548,7 @@ const UI = {
  noVoice:["इस डिवाइस पर हिंदी आवाज़ नहीं मिली — फ़ोन की Text-to-speech सेटिंग में हिंदी जोड़ें।","No Hindi voice found on this device — add Hindi in your phone's text-to-speech settings."],
  noVoiceEn:["इस डिवाइस पर अंग्रेज़ी आवाज़ नहीं मिली।","No English voice found on this device."],
  noTTS:["इस ऐप में सुनने की सुविधा नहीं है। फ़ाइल को Chrome या Safari में खोलें।","Read-aloud isn't available in this app. Open the file in Chrome or Safari to listen."],
- foot:["नियम आधिकारिक संस्थाओं (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics) पर आधारित, आसान भाषा में। टूर्नामेंट के हिसाब से कुछ नियम बदल सकते हैं।","Rules based on official bodies (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics), simplified. Some rules vary by tournament."]
+ foot:["नियम आधिकारिक संस्थाओं (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics, World Rugby, WBSC, IJF, World Taekwondo, FIE, World Netball) पर आधारित, आसान भाषा में। टूर्नामेंट के हिसाब से कुछ नियम बदल सकते हैं।","Rules based on official bodies (ICC, FIFA, BWF, AKFI, FIH, KKFI, FIDE, ITTF, FIVB, FIBA, ITF, ICF, UWW, World Boxing, World Archery, WPBSA, IHF, R&A, World Squash, World Athletics, IWF, ISSF, World Aquatics, World Rugby, WBSC, IJF, World Taekwondo, FIE, World Netball), simplified. Some rules vary by tournament."]
 };
 const SUGGS = {
   en:["LBW","Offside","Checkmate","Kitchen","False start","Knockout","Snatch","147","Medley","Birdie"],

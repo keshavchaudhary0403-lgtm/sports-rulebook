@@ -1,6 +1,6 @@
 # Sports Rulebook
 
-Rules of 24 sports — cricket, football, badminton, kabaddi, hockey, kho-kho, chess, table tennis, volleyball, basketball, tennis, carrom, wrestling, boxing, archery, snooker, handball, golf, pickleball, squash, athletics, weightlifting, shooting and swimming — in **Hindi and English**.
+Rules of 30 sports — cricket, football, badminton, kabaddi, hockey, kho-kho, chess, table tennis, volleyball, basketball, tennis, carrom, wrestling, boxing, archery, snooker, handball, golf, pickleball, squash, athletics, weightlifting, shooting, swimming, rugby, baseball, judo, taekwondo, fencing and netball — in **Hindi and English**.
 
 - Search any rule in either language
 - Listen to rules read aloud in Hindi or English
